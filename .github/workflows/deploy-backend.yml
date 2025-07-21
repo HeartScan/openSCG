@@ -9,6 +9,7 @@ env:
   AZURE_CONTAINER_REGISTRY: ${{ vars.AZURE_CONTAINER_REGISTRY }}
   AZURE_RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
   CONTAINER_APP_NAME: ${{ vars.CONTAINER_APP_NAME }}
+  CONTAINER_APP_ENVIRONMENT: ${{ vars.CONTAINER_APP_ENVIRONMENT }}
   IMAGE_NAME: 'openscg-server'
 
 jobs:
@@ -37,6 +38,7 @@ jobs:
         az containerapp create \
           --name ${{ env.CONTAINER_APP_NAME }} \
           --resource-group ${{ env.AZURE_RESOURCE_GROUP }} \
+          --environment ${{ env.CONTAINER_APP_ENVIRONMENT }} \
           --image ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ github.sha }} \
           --registry-server ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io \
           --target-port 8000 \
