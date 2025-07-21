@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'server/**'
 
 env:
   AZURE_CONTAINER_REGISTRY: ${{ vars.AZURE_CONTAINER_REGISTRY }}
