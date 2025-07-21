@@ -87,8 +87,8 @@ const SessionViewer = ({ params }: { params: { sessionId: string } }) => {
                                 plot_bgcolor: '#111827',
                                 paper_bgcolor: '#111827',
                                 font: { color: '#E5E7EB' },
-                                xaxis: { title: 'Time (ms)', gridcolor: '#374151' },
-                                yaxis: { title: 'AZ Axis', gridcolor: '#374151' },
+                                xaxis: { title: { text: 'Time (ms)' }, gridcolor: '#374151' },
+                                yaxis: { title: { text: 'AZ Axis' }, gridcolor: '#374151' },
                                 margin: { l: 50, r: 20, b: 40, t: 20, pad: 4 }
                             }}
                             config={{ responsive: true }}
