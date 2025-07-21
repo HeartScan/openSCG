@@ -1,7 +1,7 @@
 import uuid
 import json
 from datetime import datetime, timezone
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Dict, List
 from database import get_db_connection, initialize_database
@@ -62,7 +62,10 @@ def health_check():
     # Health check endpoint, final final version
     return {"status": "ok"}
 
-@app.post("/api/v1/sessions")
+# Create a router for the API endpoints
+api_router = APIRouter(prefix="/api/v1")
+
+@api_router.post("/sessions")
 async def create_session():
     session_id = str(uuid.uuid4())
     created_at = datetime.now(timezone.utc).isoformat()
@@ -80,7 +83,7 @@ async def create_session():
         "createdAt": created_at,
     }
 
-@app.get("/api/v1/sessions/{session_id}")
+@api_router.get("/sessions/{session_id}")
 async def get_session(session_id: str):
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -144,3 +147,6 @@ async def websocket_endpoint(websocket: WebSocket, session_id: str):
     except Exception as e:
         print(f"Error in websocket: {e}")
         manager.disconnect(websocket, session_id)
+
+# Include the router in the main app
+app.include_router(api_router)
