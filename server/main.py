@@ -22,6 +22,7 @@ def on_startup():
 origins = [
     "http://localhost:3000",
     "https://open-kvwh84de5-mihmoshs-projects.vercel.app",
+    "https://open-9at1bqvmc-mihmoshs-projects.vercel.app",
 ]
 
 app.add_middleware(
