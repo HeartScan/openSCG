@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect, useRef } from "react";
 
-const API_BASE_URL = "http://localhost:8000";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 interface SessionData {
   sessionId: string;
@@ -43,7 +43,8 @@ export default function Home() {
   }, []);
 
   const startMeasurement = () => {
-    const wsUrl = `ws://localhost:8000${session!.websocketUrl}`;
+    const wsProtocol = window.location.protocol === "https:" ? "wss:" : "ws:";
+    const wsUrl = `${wsProtocol}//${API_BASE_URL.replace(/^https?:\/\//, '')}${session!.websocketUrl}`;
     const newSocket = new WebSocket(wsUrl);
     socketRef.current = newSocket;
 

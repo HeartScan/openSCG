@@ -21,6 +21,7 @@ def on_startup():
 # CORS Middleware
 origins = [
     "http://localhost:3000",
+    "https://open-kvwh84de5-mihmoshs-projects.vercel.app",
 ]
 
 app.add_middleware(
