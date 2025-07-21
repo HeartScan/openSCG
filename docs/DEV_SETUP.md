@@ -8,7 +8,7 @@
 ## Quickstart
 
 ```sh
-git clone https://github.com/HeartScan/openSCG.git
+git clone https://github.com/OpenSCG/openSCG.git
 cd openSCG
 docker compose up --build
 ```
@@ -19,4 +19,4 @@ docker compose up --build
 - Copy `.env.example` to `.env` and fill in required values (see below).
 
 ## Troubleshooting
-- If you have issues, check the [issues page](https://github.com/HeartScan/openSCG/issues) or open a new one. 
+- If you have issues, check the [issues page](https://github.com/OpenSCG/openSCG/issues) or open a new one. 

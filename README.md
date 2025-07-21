@@ -47,7 +47,7 @@ Turn any smartphone into a live seismocardiography (SCG) sensor that doctors can
 ## 2. User Workflows
 
 **Patient**
-- Opens `https://openscg.live/` on phone (PWA).
+- Opens `https://openscg.org/` on phone (PWA).
 - Create new session and get URL for viewing data.
 - Places device on chest (mid-sternum or apex).
 - Taps Start – sensor data streams instantly.
@@ -210,6 +210,13 @@ We’re actively looking for collaborators to help with:
 - Defining the OpenSCG JSON spec
 
 Join the project early and help define the open SCG standard!
+
+---
+
+## 🧠 Want to Help?
+
+We’re looking for one contributor to own the backend ingestion layer (FastAPI).  
+If you want to join and build open cardiac tech — [open an issue](https://github.com/HeartScan/openSCG/issues) or email team@heartscan.app
 
 ---
 
