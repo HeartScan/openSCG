@@ -59,6 +59,7 @@ def read_root():
 
 @app.get("/health")
 def health_check():
+    # Health check endpoint
     return {"status": "ok"}
 
 @app.post("/api/v1/sessions")
