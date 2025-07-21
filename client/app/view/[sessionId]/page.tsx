@@ -61,18 +61,23 @@ const SessionViewer = ({ params }: { params: { sessionId: string } }) => {
     }, [sessionId]);
 
     return (
-        <main className="flex min-h-screen flex-col items-center p-8 font-sans bg-gray-900 text-white">
-            <div className="w-full max-w-4xl">
-                <h1 className="text-3xl font-bold text-center mb-2">OpenSCG Viewer</h1>
-                <p className="text-center font-mono text-sm text-gray-400 mb-6">Session ID: {sessionId}</p>
+        <main className="flex min-h-screen flex-col items-center justify-center p-4 font-sans bg-gray-900 text-white">
+            <div className="w-full max-w-5xl">
+                <div className="text-center mb-8">
+                    <h1 className="text-4xl font-bold">OpenSCG Viewer</h1>
+                    <p className="text-lg text-gray-400 mt-2">Session ID: <span className="font-mono text-gray-300">{sessionId}</span></p>
+                </div>
 
-                <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <div className="flex justify-between items-center mb-4">
+                <div className="bg-gray-800 p-4 sm:p-6 rounded-xl shadow-lg">
+                    <div className="flex justify-between items-center mb-4 px-2">
                         <h2 className="text-2xl font-semibold">Live Waveform</h2>
-                        <p>Status: <span className={status === 'Live' ? 'text-green-400' : 'text-red-400'}>{status}</span></p>
+                        <div className="flex items-center space-x-2">
+                            <span className={`h-3 w-3 rounded-full ${status === 'Live' ? 'bg-green-500 animate-pulse' : 'bg-red-500'}`}></span>
+                            <p className="font-medium">{status}</p>
+                        </div>
                     </div>
                     
-                    <div className="bg-gray-900 rounded-md p-2">
+                    <div className="bg-gray-900 rounded-lg p-2">
                         <DynamicPlot
                             data={[
                                 {

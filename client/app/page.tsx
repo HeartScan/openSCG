@@ -115,25 +115,26 @@ export default function Home() {
   }, [isMeasuring, countdown]);
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-8 font-sans bg-gray-900 text-white">
-      <div className="w-full max-w-2xl">
-        <h1 className="text-4xl font-bold text-center mb-8">OpenSCG Patient Client</h1>
+    <main className="flex min-h-screen flex-col items-center justify-center p-4 font-sans bg-gray-900 text-white">
+      <div className="w-full max-w-md text-center">
+        <h1 className="text-4xl font-bold mb-2">OpenSCG</h1>
+        <p className="text-lg text-gray-400 mb-8">Live Heart Signal Sharing</p>
         
         {session && (
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
-            <h2 className="text-2xl font-semibold mb-4">Your Session is Ready</h2>
-            <p className="mb-4">Share this link with your clinician:</p>
+          <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
+            <h2 className="text-xl font-semibold mb-3">Your Session is Ready</h2>
+            <p className="text-gray-400 mb-4">Share this link with your clinician to start.</p>
             <input
               type="text"
               readOnly
               value={`${window.location.origin}/view/${session.sessionId}`}
-              className="w-full p-2 font-mono text-sm bg-gray-700 border border-gray-600 rounded"
+              className="w-full p-3 font-mono text-sm bg-gray-700 border border-gray-600 rounded-lg text-center text-gray-200"
             />
             
             {!isMeasuring && (
               <button
                 onClick={requestPermissionAndStart}
-                className="mt-6 w-full px-4 py-2 font-bold text-white bg-green-600 rounded-md hover:bg-green-700"
+                className="mt-6 w-full px-4 py-3 font-bold text-white bg-green-600 rounded-lg hover:bg-green-700 transition-colors"
               >
                 Start Measurement
               </button>
@@ -142,16 +143,16 @@ export default function Home() {
         )}
 
         {isMeasuring && (
-          <div className="mt-8 text-center">
+          <div className="mt-8">
             {countdown > 0 ? (
-              <div>
-                <p className="text-xl mb-2">Get Ready...</p>
-                <p className="text-7xl font-bold">{countdown}</p>
+              <div className="flex flex-col items-center">
+                <p className="text-2xl mb-4">Get Ready...</p>
+                <p className="text-8xl font-bold text-green-400">{countdown}</p>
               </div>
             ) : (
-              <div>
-                <p className="text-2xl font-bold text-green-400 animate-pulse">Recording...</p>
-                <p>Data is being sent to your clinician.</p>
+              <div className="flex flex-col items-center">
+                <p className="text-3xl font-bold text-red-500 animate-pulse mb-2">Recording...</p>
+                <p className="text-gray-400">Keep the device steady on your chest.</p>
               </div>
             )}
           </div>
