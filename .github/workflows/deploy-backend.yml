@@ -33,7 +33,7 @@ jobs:
     - name: Deploy to Azure Container Apps
       uses: azure/container-apps-deploy-action@v1
       with:
-        resourceGroupName: ${{ env.AZURE_RESOURCE_GROUP }}
+        resourceGroup: ${{ env.AZURE_RESOURCE_GROUP }}
         containerAppName: ${{ env.CONTAINER_APP_NAME }}
         imageToDeploy: ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ github.sha }}
         targetPort: 8000
