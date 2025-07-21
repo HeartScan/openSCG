@@ -54,6 +54,7 @@ manager = ConnectionManager()
 
 @app.get("/")
 def read_root():
+    # Root endpoint
     return {"message": "Welcome to OpenSCG Server"}
 
 @app.get("/health")
