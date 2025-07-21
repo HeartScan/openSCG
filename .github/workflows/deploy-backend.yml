@@ -24,17 +24,9 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    - name: Log in to Azure Container Registry
-      uses: azure/docker-login@v1
-      with:
-        login-server: ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io
-        username: ${{ secrets.ACR_USERNAME }}
-        password: ${{ secrets.ACR_PASSWORD }}
-
-    - name: Build and push Docker image
+    - name: Build and push Docker image using Azure CLI
       run: |
-        docker build ./server -t ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ github.sha }}
-        docker push ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ github.sha }}
+        az acr build --registry ${{ env.AZURE_CONTAINER_REGISTRY }} --image ${{ env.IMAGE_NAME }}:${{ github.sha }} --file server/Dockerfile ./server
 
     - name: Deploy to Azure Container Apps
       uses: azure/container-apps-deploy-action@v1
@@ -44,5 +36,3 @@ jobs:
         imageToDeploy: ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ github.sha }}
         targetPort: 8000
         ingress: 'external'
-        acrUsername: ${{ secrets.ACR_USERNAME }}
-        acrPassword: ${{ secrets.ACR_PASSWORD }}
