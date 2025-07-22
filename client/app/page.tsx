@@ -1,9 +1,7 @@
 "use client";
 
 import { useState, useCallback, useEffect, useRef } from "react";
-import dynamic from 'next/dynamic';
-
-const DynamicPlot = dynamic(() => import('react-plotly.js'), { ssr: false });
+import RealTimeChart from "./components/patient/RealTimeChart";
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
@@ -29,6 +27,7 @@ export default function Home() {
   const [chartData, setChartData] = useState<number[]>([]);
   
   const dataBufferRef = useRef<AccelerometerDataPoint[]>([]);
+  const latestAzRef = useRef<number>(0);
   const socketRef = useRef<WebSocket | null>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
   const lastTimestampRef = useRef<number>(0);
@@ -70,7 +69,7 @@ export default function Home() {
       setError("WebSocket connection failed. Please try again.");
     };
     
-    const intervalId = setInterval(() => {
+    const sendIntervalId = setInterval(() => {
         if (dataBufferRef.current.length > 0) {
             const payload = {
                 type: "samples_batch",
@@ -80,13 +79,17 @@ export default function Home() {
             if (audioRef.current) {
                 audioRef.current.play();
             }
-            setChartData(prev => [...prev, ...dataBufferRef.current.map(d => d.az)].slice(-200));
             dataBufferRef.current = [];
         }
-    }, 1000); // Send data every second
+    }, 1000);
+
+    const chartUpdateIntervalId = setInterval(() => {
+        setChartData(prev => [...prev, latestAzRef.current].slice(-200));
+    }, 50);
 
     return () => {
-        clearInterval(intervalId);
+        clearInterval(sendIntervalId);
+        clearInterval(chartUpdateIntervalId);
         newSocket.close();
     };
   };
@@ -112,6 +115,7 @@ export default function Home() {
       timestamp: timestamp,
     };
     dataBufferRef.current.push(dataPoint);
+    latestAzRef.current = z || 0;
   };
 
   const shareSession = () => {
@@ -212,21 +216,8 @@ export default function Home() {
               <div className="flex flex-col items-center">
                 <p className="text-3xl font-bold text-red-500 animate-pulse mb-2">Recording...</p>
                 <p className="text-gray-400">Keep the device steady on your chest.</p>
-                <div className="w-full h-40 bg-gray-900/50 rounded-lg overflow-hidden border border-gray-700 mt-4">
-                    <DynamicPlot
-                        data={[{ y: chartData, type: 'scatter', mode: 'lines', marker: { color: '#6EE7B7' } }]}
-                        layout={{
-                            title: { text: 'Live Sensor Data' },
-                            plot_bgcolor: '#111827',
-                            paper_bgcolor: '#111827',
-                            font: { color: '#E5E7EB' },
-                            xaxis: { visible: false },
-                            yaxis: { visible: false },
-                            margin: { l: 0, r: 0, b: 0, t: 20, pad: 0 }
-                        }}
-                        config={{ responsive: true }}
-                        className="w-full h-full"
-                    />
+                <div className="w-full h-40 mt-4">
+                    <RealTimeChart azData={chartData} />
                 </div>
               </div>
             )}
