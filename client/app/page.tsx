@@ -1,6 +1,9 @@
 "use client";
 
 import { useState, useCallback, useEffect, useRef } from "react";
+import dynamic from 'next/dynamic';
+
+const DynamicPlot = dynamic(() => import('react-plotly.js'), { ssr: false });
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
@@ -23,9 +26,11 @@ export default function Home() {
   const [isMeasuring, setIsMeasuring] = useState(false);
   const [countdown, setCountdown] = useState(3);
   const [error, setError] = useState<string | null>(null);
+  const [chartData, setChartData] = useState<number[]>([]);
   
   const dataBufferRef = useRef<AccelerometerDataPoint[]>([]);
   const socketRef = useRef<WebSocket | null>(null);
+  const audioRef = useRef<HTMLAudioElement>(null);
   const lastTimestampRef = useRef<number>(0);
   const duplicateTimestampBufferRef = useRef<number[]>([]);
 
@@ -72,6 +77,10 @@ export default function Home() {
                 payload: { samples: dataBufferRef.current }
             };
             newSocket.send(JSON.stringify(payload));
+            if (audioRef.current) {
+                audioRef.current.play();
+            }
+            setChartData(prev => [...prev, ...dataBufferRef.current.map(d => d.az)].slice(-200));
             dataBufferRef.current = [];
         }
     }, 1000); // Send data every second
@@ -105,7 +114,25 @@ export default function Home() {
     dataBufferRef.current.push(dataPoint);
   };
 
+  const shareSession = () => {
+    const url = `${window.location.origin}/view/${session!.sessionId}`;
+    if (navigator.share) {
+      navigator.share({
+        title: 'OpenSCG Session',
+        text: 'Join my OpenSCG session to view my heart signal in real-time.',
+        url: url,
+      });
+    } else {
+      navigator.clipboard.writeText(url);
+      alert('Session link copied to clipboard!');
+    }
+  };
+
   const requestPermissionAndStart = async () => {
+    if (audioRef.current) {
+        audioRef.current.play();
+        audioRef.current.pause();
+    }
     if (typeof (DeviceMotionEvent as any).requestPermission === 'function') {
       const permission = await (DeviceMotionEvent as any).requestPermission();
       if (permission === 'granted') {
@@ -148,12 +175,20 @@ export default function Home() {
           <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
             <h2 className="text-xl font-semibold mb-3">Your Session is Ready</h2>
             <p className="text-gray-400 mb-4">Share this link with your clinician to start.</p>
-            <input
-              type="text"
-              readOnly
-              value={`${window.location.origin}/view/${session.sessionId}`}
-              className="w-full p-3 font-mono text-sm bg-gray-700 border border-gray-600 rounded-lg text-center text-gray-200"
-            />
+            <div className="flex items-center space-x-2">
+                <input
+                  type="text"
+                  readOnly
+                  value={`${window.location.origin}/view/${session.sessionId}`}
+                  className="w-full p-3 font-mono text-sm bg-gray-700 border border-gray-600 rounded-lg text-center text-gray-200"
+                />
+                <button
+                    onClick={shareSession}
+                    className="px-4 py-3 font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                    Share
+                </button>
+            </div>
             
             {!isMeasuring && (
               <button
@@ -177,10 +212,26 @@ export default function Home() {
               <div className="flex flex-col items-center">
                 <p className="text-3xl font-bold text-red-500 animate-pulse mb-2">Recording...</p>
                 <p className="text-gray-400">Keep the device steady on your chest.</p>
+                <div className="w-full h-40 bg-gray-900/50 rounded-lg overflow-hidden border border-gray-700 mt-4">
+                    <DynamicPlot
+                        data={[{ y: chartData, type: 'scatter', mode: 'lines', marker: { color: '#6EE7B7' } }]}
+                        layout={{
+                            plot_bgcolor: '#111827',
+                            paper_bgcolor: '#111827',
+                            font: { color: '#E5E7EB' },
+                            xaxis: { visible: false },
+                            yaxis: { visible: false },
+                            margin: { l: 0, r: 0, b: 0, t: 0, pad: 0 }
+                        }}
+                        config={{ responsive: true, staticPlot: true }}
+                        className="w-full h-full"
+                    />
+                </div>
               </div>
             )}
           </div>
         )}
+        <audio ref={audioRef} src="/heartbeat.mp3" />
       </div>
     </main>
   );
