@@ -216,14 +216,15 @@ export default function Home() {
                     <DynamicPlot
                         data={[{ y: chartData, type: 'scatter', mode: 'lines', marker: { color: '#6EE7B7' } }]}
                         layout={{
+                            title: { text: 'Live Sensor Data' },
                             plot_bgcolor: '#111827',
                             paper_bgcolor: '#111827',
                             font: { color: '#E5E7EB' },
                             xaxis: { visible: false },
                             yaxis: { visible: false },
-                            margin: { l: 0, r: 0, b: 0, t: 0, pad: 0 }
+                            margin: { l: 0, r: 0, b: 0, t: 20, pad: 0 }
                         }}
-                        config={{ responsive: true, staticPlot: true }}
+                        config={{ responsive: true }}
                         className="w-full h-full"
                     />
                 </div>
