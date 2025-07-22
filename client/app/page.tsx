@@ -15,17 +15,19 @@ interface AccelerometerDataPoint {
     ax: number;
     ay: number;
     az: number;
-    t: number;
+    timestamp: number;
 }
 
 export default function Home() {
   const [session, setSession] = useState<SessionData | null>(null);
-  const [socket, setSocket] = useState<WebSocket | null>(null);
   const [isMeasuring, setIsMeasuring] = useState(false);
   const [countdown, setCountdown] = useState(3);
+  const [error, setError] = useState<string | null>(null);
   
   const dataBufferRef = useRef<AccelerometerDataPoint[]>([]);
   const socketRef = useRef<WebSocket | null>(null);
+  const lastTimestampRef = useRef<number>(0);
+  const duplicateTimestampBufferRef = useRef<number[]>([]);
 
   // Auto-create session on load
   useEffect(() => {
@@ -50,12 +52,17 @@ export default function Home() {
 
     newSocket.onopen = () => {
       console.log("WebSocket Connected");
+      setError(null);
       window.addEventListener('devicemotion', handleDeviceMotion);
     };
 
     newSocket.onclose = () => {
       console.log("WebSocket Disconnected");
       window.removeEventListener('devicemotion', handleDeviceMotion);
+    };
+
+    newSocket.onerror = () => {
+      setError("WebSocket connection failed. Please try again.");
     };
     
     const intervalId = setInterval(() => {
@@ -78,11 +85,22 @@ export default function Home() {
   const handleDeviceMotion = (event: DeviceMotionEvent) => {
     if (!event.accelerationIncludingGravity) return;
     const { x, y, z } = event.accelerationIncludingGravity;
+    let timestamp = event.timeStamp;
+
+    if (timestamp === lastTimestampRef.current) {
+      duplicateTimestampBufferRef.current.push(timestamp);
+      const estimatedInterval = 10; // Assuming 100Hz, so 10ms interval
+      timestamp += (estimatedInterval / (duplicateTimestampBufferRef.current.length + 1));
+    } else {
+      lastTimestampRef.current = timestamp;
+      duplicateTimestampBufferRef.current = [];
+    }
+
     const dataPoint: AccelerometerDataPoint = {
       ax: x || 0,
       ay: y || 0,
       az: z || 0,
-      t: event.timeStamp,
+      timestamp: timestamp,
     };
     dataBufferRef.current.push(dataPoint);
   };
@@ -119,6 +137,12 @@ export default function Home() {
       <div className="w-full max-w-md text-center">
         <h1 className="text-4xl font-bold mb-2">OpenSCG</h1>
         <p className="text-lg text-gray-400 mb-8">Live Heart Signal Sharing</p>
+
+        {error && (
+          <div className="bg-red-800 p-4 rounded-lg mb-4">
+            <p className="text-white font-bold">{error}</p>
+          </div>
+        )}
         
         {session && (
           <div className="bg-gray-800 p-6 rounded-xl shadow-lg">

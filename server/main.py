@@ -5,6 +5,10 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException, APIR
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Dict, List
 from database import get_db_connection, initialize_database
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 from processing import preprocess_web_signal
 import numpy as np
 
@@ -19,12 +23,7 @@ def on_startup():
     initialize_database()
 
 # CORS Middleware
-origins = [
-    "http://localhost:3000",
-    "https://open-kvwh84de5-mihmoshs-projects.vercel.app",
-    "https://open-9at1bqvmc-mihmoshs-projects.vercel.app",
-    "https://open-scg.vercel.app",
-]
+origins = os.getenv("CORS_ORIGINS", "http://localhost:3000").split(",")
 
 app.add_middleware(
     CORSMiddleware,
@@ -118,17 +117,19 @@ async def websocket_endpoint(websocket: WebSocket, session_id: str):
             
             if message.get("type") == "samples_batch":
                 samples = message.get("payload", {}).get("samples", [])
+                if not samples:
+                    continue
                 
                 # Core processing step
-                interpolated_signal = preprocess_web_signal(samples)
+                interpolated_signal, new_timestamps = preprocess_web_signal(samples)
                 
+                if interpolated_signal.size == 0:
+                    continue
+
                 # Prepare data for broadcasting
-                # For now, we'll create dummy timestamps for the resampled signal
-                # This will be improved later to use the actual timestamps
-                start_time = samples[0]['t']
                 interpolated_samples = [
-                    {"t": start_time + i * 10, "az": float(val)} 
-                    for i, val in enumerate(interpolated_signal)
+                    {"t": int(t), "az": float(az)} 
+                    for t, az in zip(new_timestamps, interpolated_signal)
                 ]
 
                 broadcast_message = {
