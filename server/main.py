@@ -23,7 +23,7 @@ def on_startup():
     initialize_database()
 
 # CORS Middleware
-origins = os.getenv("CORS_ORIGINS", "http://localhost:3000").split(",")
+origins = os.getenv("CORS_ORIGINS", "http://localhost:3000,https://open-scg.vercel.app").split(",")
 
 app.add_middleware(
     CORSMiddleware,
