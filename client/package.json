@@ -20,6 +20,7 @@
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18",
     "@types/react-plotly.js": "^2.6.3",
+    "autoprefixer": "^10.4.19",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
