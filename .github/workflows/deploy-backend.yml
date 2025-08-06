@@ -29,13 +29,18 @@ jobs:
       run: |
         az acr build --registry ${{ env.AZURE_CONTAINER_REGISTRY }} --image ${{ env.IMAGE_NAME }}:${{ github.sha }} --file server/Dockerfile ./server
 
-    - name: Deploy to Azure Container Apps
-      uses: azure/container-apps-deploy-action@v1
-      with:
-        acrName: ${{ env.AZURE_CONTAINER_REGISTRY }}
-        containerAppName: ${{ env.CONTAINER_APP_NAME }}
-        resourceGroup: ${{ env.AZURE_RESOURCE_GROUP }}
-        imageToDeploy: ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ github.sha }}
-        targetPort: 8000
-        ingress: external
-        yamlConfigPath: server/containerapp.yaml
+    - name: Delete Existing Container App (to ensure clean state)
+      run: |
+        az containerapp delete --name ${{ env.CONTAINER_APP_NAME }} --resource-group ${{ env.AZURE_RESOURCE_GROUP }} --yes || echo "Container app not found, proceeding to create."
+
+    - name: Create and Deploy to Azure Container Apps
+      run: |
+        az containerapp create \
+          --name ${{ env.CONTAINER_APP_NAME }} \
+          --resource-group ${{ env.AZURE_RESOURCE_GROUP }} \
+          --environment ${{ env.CONTAINER_APP_ENVIRONMENT }} \
+          --image ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ github.sha }} \
+          --registry-server ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io \
+          --target-port 8000 \
+          --ingress external \
+          --query properties.configuration.ingress.fqdn
