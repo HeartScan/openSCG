@@ -138,7 +138,7 @@ export default function Home() {
   };
 
   const shareSession = () => {
-    const url = `${window.location.origin}/view/${session!.sessionId}`;
+    const url = `${window.location.origin}${session!.viewerUrl}`;
     if (navigator.share) {
       navigator.share({
         title: 'OpenSCG Session',
@@ -185,8 +185,26 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-4 font-sans bg-gray-900 text-white">
       <div className="w-full max-w-md text-center">
-        <h1 className="text-4xl font-bold mb-2">OpenSCG</h1>
-        <p className="text-lg text-gray-400 mb-8">Live Heart Signal Sharing</p>
+        <header className="mb-8">
+          <h1 className="text-5xl font-bold mb-2">OpenSCG</h1>
+          <p className="text-xl text-gray-400">Live Heart Signal Sharing</p>
+        </header>
+
+        <div className="mb-8 p-6 bg-gray-800 rounded-xl shadow-lg">
+          <p className="text-gray-300">
+            This is an open-source project for real-time seismocardiography (SCG) signal acquisition and streaming.
+            You can find more information and contribute on{' '}
+            <a
+              href="https://github.com/HeartScan/openSCG"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline"
+            >
+              GitHub
+            </a>
+            .
+          </p>
+        </div>
 
         {error && (
           <div className="bg-red-800 p-4 rounded-lg mb-4">
@@ -202,7 +220,7 @@ export default function Home() {
                 <input
                   type="text"
                   readOnly
-                  value={`${window.location.origin}/view/${session.sessionId}`}
+                  value={`${window.location.origin}${session.viewerUrl}`}
                   className="w-full p-3 font-mono text-sm bg-gray-700 border border-gray-600 rounded-lg text-center text-gray-200"
                 />
                 <button

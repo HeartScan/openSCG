@@ -120,9 +120,9 @@ _No logins for MVP – tokenised URL is the key._
 ## 6. Tech Stack
 
 **Frontend**
-- Patient app: Next.js / React (PWA, no install)
-- Doctor viewer: React / TypeScript (SPA)
-- Graphing: D3.js or Plotly.js
+- Next.js / React (PWA, no install)
+- Plotly.js for graphing
+- Tailwind CSS for styling
 
 **Backend**
 - API: FastAPI (async, Python)
@@ -131,8 +131,9 @@ _No logins for MVP – tokenised URL is the key._
 - Security: Anonymous access with unguessable UUIDs for session links. Rate limiting is enforced.
 
 **DevOps**
-- Deployment: Docker + Fly.io / Render / GCP App Engine
-- Monitoring: Prometheus + Grafana (optional)
+- CI/CD: GitHub Actions
+- Backend Deployment: Docker + Azure Container Apps
+- Frontend Deployment: Vercel
 
 ---
 
@@ -144,46 +145,23 @@ For a complete guide on setting up a local development environment, including in
 
 ## 8. Data Format – OpenSCG JSON v0.1
 
-**Current raw data format (as collected):**
+**Sample Data Format**
 
-```json
-[
-  {
-    "ax": -5.2,
-    "ay": 0.3,
-    "az": 8.4,
-    "timestamp": 1743256991352
-  },
-  {
-    "ax": -5.3,
-    "ay": 0.3,
-    "az": 8.4,
-    "timestamp": 1743256991361
-  },
-  // ... more samples ...
-]
-```
-
-- `ax`, `ay`, `az`: Accelerometer readings (float)
-- `timestamp`: Unix timestamp in milliseconds (int)
-
-**Planned OpenSCG JSON spec (for API and storage):**
+The API uses the following format for accelerometer data points:
 
 ```json
 {
-  "session_id": "uuid",
-  "device": "Pixel 6",
-  "sampling_rate": 50,
-  "data": [
-    {"t": 0.00, "x": -0.012, "y": 0.001, "z": 0.098},
-    {"t": 0.02, "x": -0.011, "y": 0.002, "z": 0.097}
-  ]
+  "t": 1743256991352,
+  "ax": -5.2,
+  "ay": 0.3,
+  "az": 8.4
 }
 ```
 
-> **Note:** The ingestion API will accept the raw array format and wrap it with session/device metadata for storage and downstream processing.
+- `t`: Unix timestamp in milliseconds (int)
+- `ax`, `ay`, `az`: Accelerometer readings (float)
 
-See full spec in `docs/openscg-format.md`.
+See the full API contract in `docs/API_CONTRACT.yml`.
 
 ---
 
@@ -205,24 +183,6 @@ No drama — just quality commits
 See `CONTRIBUTING.md` for details.
 
 ---
-
-## 🧠 Looking to contribute?
-
-We’re actively looking for collaborators to help with:
-
-- Real-time signal viewer (React + Plotly.js)
-- FastAPI ingestion logic
-- Docker deployment templates
-- Defining the OpenSCG JSON spec
-
-Join the project early and help define the open SCG standard!
-
----
-
-## 🧠 Want to Help?
-
-We’re looking for one contributor to own the backend ingestion layer (FastAPI).  
-If you want to join and build open cardiac tech — [open an issue](https://github.com/HeartScan/openSCG/issues) or email team@heartscan.app
 
 ---
 
