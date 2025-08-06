@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-dotenv
+psycopg[binary]
+slowapi
+pytest
+httpx
+pydantic-settings
+requests
+websocket-client
+websockets
+celery
+redis

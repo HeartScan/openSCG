@@ -1,0 +1,10 @@
+properties:
+  template:
+    containers:
+      - name: openscg-server
+        resources:
+          cpu: 0.25
+          memory: 0.5Gi
+    scale:
+      minReplicas: 0
+      maxReplicas: 1

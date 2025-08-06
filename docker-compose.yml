@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    container_name: openscg_db
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=openscg
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: openscg_server
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    environment:
+      - DATABASE_URL=postgresql://user:password@db:5432/openscg
+      - CORS_ORIGINS=http://localhost:3000,http://localhost
+    volumes:
+      - ./server:/app
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: openscg_client
+    depends_on:
+      - server
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+      - /app/.next
+
+volumes:
+  postgres_data:

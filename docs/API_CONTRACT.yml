@@ -1,0 +1,186 @@
+openapi: 3.0.3
+info:
+  title: OpenSCG API
+  description: |-
+    The public API for the OpenSCG real-time signal acquisition and streaming service.
+
+    This API provides endpoints for creating and managing measurement sessions and retrieving session data. Real-time communication is handled via a WebSocket connection, the URL for which is provided upon session creation.
+  version: 1.0.0
+servers:
+  - url: / # The base path will be determined by the deployment environment
+paths:
+  /api/v1/sessions:
+    post:
+      tags:
+        - Session
+      summary: Create a new session
+      description: >-
+        Initializes a new measurement session and returns the necessary details
+        to connect a patient client and viewers.
+      operationId: create_session
+      responses:
+        '200':
+          description: Session created successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Session'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /api/v1/sessions/{sessionId}:
+    get:
+      tags:
+        - Session
+      summary: Get session metadata
+      description: Retrieves high-level metadata about a specific session.
+      operationId: get_session_metadata
+      parameters:
+        - $ref: '#/components/parameters/SessionId'
+      responses:
+        '200':
+          description: Successful retrieval of session metadata.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Session'
+        '404':
+          description: Session not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /api/v1/sessions/{sessionId}/end:
+    post:
+      tags:
+        - Session
+      summary: End a session
+      description: >-
+        Marks a session as complete. This is typically called by the patient
+        client to signal the end of the measurement.
+      operationId: end_session
+      parameters:
+        - $ref: '#/components/parameters/SessionId'
+      responses:
+        '200':
+          description: Session ended successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Session ended successfully.
+        '404':
+          description: Session not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /api/v1/sessions/{sessionId}/data:
+    get:
+      tags:
+        - Session
+      summary: Get session raw data
+      description: >-
+        Retrieves the complete raw accelerometer data for a completed session.
+        This endpoint should be used for on-demand analysis and replay.
+      operationId: get_session_data
+      parameters:
+        - $ref: '#/components/parameters/SessionId'
+      responses:
+        '200':
+          description: Successful retrieval of session data.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  samples:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Sample'
+        '404':
+          description: Session not found or data not available.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+components:
+  schemas:
+    Session:
+      type: object
+      properties:
+        sessionId:
+          type: string
+          format: uuid
+          description: The unique identifier for the session.
+          example: a7b1c3d5-e8f6-4a9b-8c7d-1e2f3a4b5c6d
+        createdAt:
+          type: string
+          format: date-time
+          description: The ISO 8601 timestamp of when the session was created.
+        status:
+          type: string
+          enum: [created, active, ended]
+          description: The current status of the session.
+        viewerUrl:
+          type: string
+          format: uri
+          description: The URL for the web-based viewer.
+          example: /view/a7b1c3d5-e8f6-4a9b-8c7d-1e2f3a4b5c6d
+        websocketUrl:
+          type: string
+          description: >-
+            The path for the WebSocket connection. This should be appended to
+            the base WebSocket URL (e.g., ws://host/ws/{sessionId}).
+          example: /ws/a7b1c3d5-e8f6-4a9b-8c7d-1e2f3a4b5c6d
+
+    Sample:
+      type: object
+      description: A single raw accelerometer data point.
+      properties:
+        t:
+          type: number
+          description: The timestamp of the sample, typically in milliseconds.
+        ax:
+          type: number
+          format: float
+        ay:
+          type: number
+          format: float
+        az:
+          type: number
+          format: float
+      required:
+        - t
+        - ax
+        - ay
+        - az
+
+    Error:
+      type: object
+      properties:
+        detail:
+          type: string
+          description: A human-readable description of the error.
+      required:
+        - detail
+
+  parameters:
+    SessionId:
+      name: sessionId
+      in: path
+      required: true
+      description: The UUID of the session.
+      schema:
+        type: string
+        format: uuid

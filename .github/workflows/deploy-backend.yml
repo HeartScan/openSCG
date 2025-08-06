@@ -1,0 +1,41 @@
+name: Deploy Backend to Azure Container Apps
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  AZURE_CONTAINER_REGISTRY: ${{ vars.AZURE_CONTAINER_REGISTRY }}
+  AZURE_RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
+  CONTAINER_APP_NAME: ${{ vars.CONTAINER_APP_NAME }}
+  CONTAINER_APP_ENVIRONMENT: ${{ vars.CONTAINER_APP_ENVIRONMENT }}
+  IMAGE_NAME: 'openscg-server'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Log in to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Build and push Docker image using Azure CLI
+      run: |
+        az acr build --registry ${{ env.AZURE_CONTAINER_REGISTRY }} --image ${{ env.IMAGE_NAME }}:${{ github.sha }} --file server/Dockerfile ./server
+
+    - name: Deploy to Azure Container Apps
+      uses: azure/container-apps-deploy-action@v1
+      with:
+        acrName: ${{ env.AZURE_CONTAINER_REGISTRY }}
+        containerAppName: ${{ env.CONTAINER_APP_NAME }}
+        resourceGroup: ${{ env.AZURE_RESOURCE_GROUP }}
+        imageToDeploy: ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ github.sha }}
+        targetPort: 8000
+        ingress: external
+        yamlConfigPath: server/containerapp.yaml
