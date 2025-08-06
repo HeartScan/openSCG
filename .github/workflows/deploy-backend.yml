@@ -43,4 +43,6 @@ jobs:
           --registry-server ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io \
           --target-port 8000 \
           --ingress external \
+          --secrets "database-url=${{ secrets.DATABASE_URL }}" \
+          --env-vars "DATABASE_URL=secretref:database-url" \
           --query properties.configuration.ingress.fqdn
