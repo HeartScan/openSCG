@@ -5,9 +5,9 @@ import time
 from threading import Thread
 
 # --- Configuration ---
-BASE_URL = "http://localhost:8000"
+BASE_URL = "https://openscg-server.wittyforest-610791c4.eastus.azurecontainerapps.io"
 API_URL = f"{BASE_URL}/api/v1"
-WS_URL_BASE = "ws://localhost:8000/ws"
+WS_URL_BASE = "wss://openscg-server.wittyforest-610791c4.eastus.azurecontainerapps.io/ws"
 
 # --- Mock Data ---
 MOCK_SAMPLES = [

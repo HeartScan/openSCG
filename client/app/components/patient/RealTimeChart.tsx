@@ -32,7 +32,8 @@ const RealTimeChart = ({ azData }: RealTimeChartProps) => {
             ctx.stroke();
 
             if (azData.length > 1) {
-                const max = Math.max(...azData.map(a => Math.abs(a))) || 10;
+                const visibleData = azData.slice(-200);
+                const max = Math.max(...visibleData.map(a => Math.abs(a))) || 10;
                 const scale = (canvas.clientHeight / 2) / (max * 1.2);
 
                 ctx.strokeStyle = '#6EE7B7';

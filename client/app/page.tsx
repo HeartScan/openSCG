@@ -9,13 +9,14 @@ interface SessionData {
   viewerUrl: string;
   websocketUrl: string;
   createdAt: string;
+  status: 'created' | 'active' | 'ended';
 }
 
 interface AccelerometerDataPoint {
     ax: number;
     ay: number;
     az: number;
-    timestamp: number;
+    t: number;
 }
 
 export default function Home() {
@@ -35,34 +36,26 @@ export default function Home() {
 
   useEffect(() => {
     const initialize = async () => {
-      const url = await getApiBaseUrl(process.env.NEXT_PUBLIC_API_URL);
-      setApiBaseUrl(url);
-    };
-    initialize();
-  }, []);
-
-  // Auto-create session on load
-  useEffect(() => {
-    if (!apiBaseUrl) return;
-
-    const createSession = async () => {
       try {
-        const response = await fetch(`${apiBaseUrl}/api/v1/sessions`, { method: "POST" });
+        const url = await getApiBaseUrl(process.env.NEXT_PUBLIC_API_URL);
+        setApiBaseUrl(url);
+
+        const response = await fetch(`${url}/api/v1/sessions`, { method: "POST" });
         if (!response.ok) throw new Error("Failed to create session");
         const data: SessionData = await response.json();
         setSession(data);
       } catch (error) {
-        console.error("Error creating session:", error);
+        console.error("Error initializing session:", error);
         setError("Failed to connect to the backend. Please check the server.");
       }
     };
-    createSession();
-  }, [apiBaseUrl]);
+    initialize();
+  }, []);
 
   const startMeasurement = () => {
-    if (!apiBaseUrl) return;
+    if (!apiBaseUrl || !session) return;
     const wsProtocol = window.location.protocol === "https:" ? "wss:" : "ws:";
-    const wsUrl = `${wsProtocol}//${apiBaseUrl.replace(/^https?:\/\//, '')}${session!.websocketUrl}`;
+    const wsUrl = `${wsProtocol}//${apiBaseUrl.replace(/^https?:\/\//, '')}${session.websocketUrl}`;
     const newSocket = new WebSocket(wsUrl);
     socketRef.current = newSocket;
 
@@ -96,7 +89,7 @@ export default function Home() {
     }, 1000);
 
     const chartUpdateIntervalId = setInterval(() => {
-        setChartData(prev => [...prev, latestAzRef.current].slice(-200));
+        setChartData((prev: number[]) => [...prev, latestAzRef.current].slice(-200));
     }, 50);
 
     return () => {
@@ -124,10 +117,24 @@ export default function Home() {
       ax: x || 0,
       ay: y || 0,
       az: z || 0,
-      timestamp: timestamp,
+      t: timestamp,
     };
     dataBufferRef.current.push(dataPoint);
     latestAzRef.current = z || 0;
+  };
+
+  const stopMeasurement = async () => {
+    setIsMeasuring(false);
+    if (socketRef.current) {
+        socketRef.current.close();
+    }
+    if (session) {
+        try {
+            await fetch(`${apiBaseUrl}/api/v1/sessions/${session.sessionId}/end`, { method: "POST" });
+        } catch (error) {
+            console.error("Error ending session:", error);
+        }
+    }
   };
 
   const shareSession = () => {
@@ -164,7 +171,7 @@ export default function Home() {
   useEffect(() => {
     if (isMeasuring) {
       const countdownInterval = setInterval(() => {
-        setCountdown(prev => prev - 1);
+        setCountdown((prev: number) => prev - 1);
       }, 1000);
 
       if (countdown === 0) {
@@ -229,10 +236,16 @@ export default function Home() {
                 <p className="text-3xl font-bold text-red-500 animate-pulse mb-2">Recording...</p>
                 <p className="text-gray-400">Keep the device steady on your chest.</p>
                 <div className="w-full h-40 mt-4">
-                    <RealTimeChart azData={chartData} />
+                  <RealTimeChart azData={chartData} />
                 </div>
               </div>
             )}
+            <button
+              onClick={stopMeasurement}
+              className="mt-6 w-full px-4 py-3 font-bold text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors"
+            >
+              Stop Measurement
+            </button>
           </div>
         )}
         <audio ref={audioRef} src="/heartbeat.mp3" />

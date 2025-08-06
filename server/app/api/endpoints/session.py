@@ -102,7 +102,7 @@ def get_session_metadata(request: Request, session_id: uuid.UUID, db: Connection
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Database error: {e}")
 
-@router.get("/sessions/{session_id}/data", response_model=List[Sample], responses={404: {"model": Error}})
+@router.get("/sessions/{session_id}/data", responses={404: {"model": Error}})
 @limiter.limit("60/minute")
 def get_session_data(request: Request, session_id: uuid.UUID, db: Connection = Depends(get_db)):
     """
@@ -118,7 +118,7 @@ def get_session_data(request: Request, session_id: uuid.UUID, db: Connection = D
                 if not cursor.fetchone():
                     raise HTTPException(status_code=404, detail="Session not found")
             
-            return [Sample(t=row['t'], ax=row['ax'], ay=row['ay'], az=row['az']) for row in data_rows]
+            return {"samples": [Sample(t=row['t'], ax=row['ax'], ay=row['ay'], az=row['az']) for row in data_rows]}
     except HTTPException:
         raise
     except Exception as e:

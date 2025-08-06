@@ -66,8 +66,8 @@ _No logins for MVP – tokenised URL is the key._
 - **Patient side (Browser):** A Progressive Web App (PWA) captures raw accelerometer data.
 - **Backend Server (FastAPI):** Acts as a high-performance, real-time message broker and data archiver.
   - **Live Broadcast:** Immediately relays raw data to viewers via WebSockets.
-  - **Asynchronous Persistence:** Saves all raw data to PostgreSQL in the background.
-- **Viewer (Clinician side):** A React web app that receives the raw data stream, performs client-side interpolation, and renders the waveform.
+  - **Data Persistence:** Buffers data in memory during the session and writes it to PostgreSQL when the session ends.
+- **Viewer (Clinician side):** A React web app that receives the live data stream (and any buffered historical data on connection) and performs client-side interpolation and rendering.
 - **REST API:** Provides endpoints to create sessions and retrieve full, raw data for completed sessions.
 - **ML layer (Future):** An optional, proprietary module for advanced signal analysis.
 
@@ -79,11 +79,11 @@ _No logins for MVP – tokenised URL is the key._
 +----------------+      +----------------------+      +----------------+
 |                |      |                      |      |                |
 |  Patient Phone |----->|  FastAPI Backend     |----->| Viewer Browser |
-| (PWA)          |      | (WebSocket Broker)   |      | (React/Plotly) |
+| (PWA)          |      | (WebSocket & Buffer) |      | (React/Plotly) |
 |                |      |                      |      |                |
 +----------------+      +----------+-----------+      +----------------+
                                    |
-                                   | (Async Write)
+                                   | (Write on Session End)
                                    |
                          +---------v---------+
                          |                   |
