@@ -26,6 +26,8 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [chartData, setChartData] = useState<number[]>([]);
   const [apiBaseUrl, setApiBaseUrl] = useState<string>("");
+  const [isLoading, setIsLoading] = useState(true);
+  const [showCopyConfirmation, setShowCopyConfirmation] = useState(false);
   
   const dataBufferRef = useRef<AccelerometerDataPoint[]>([]);
   const latestAzRef = useRef<number>(0);
@@ -47,6 +49,8 @@ export default function Home() {
       } catch (error) {
         console.error("Error initializing session:", error);
         setError("Failed to connect to the backend. Please check the server.");
+      } finally {
+        setIsLoading(false);
       }
     };
     initialize();
@@ -137,6 +141,13 @@ export default function Home() {
     }
   };
 
+  const copyToClipboard = () => {
+    const url = `${window.location.origin}${session!.viewerUrl}`;
+    navigator.clipboard.writeText(url);
+    setShowCopyConfirmation(true);
+    setTimeout(() => setShowCopyConfirmation(false), 2000);
+  };
+
   const shareSession = () => {
     const url = `${window.location.origin}${session!.viewerUrl}`;
     if (navigator.share) {
@@ -146,8 +157,7 @@ export default function Home() {
         url: url,
       });
     } else {
-      navigator.clipboard.writeText(url);
-      alert('Session link copied to clipboard!');
+      copyToClipboard();
     }
   };
 
@@ -211,24 +221,48 @@ export default function Home() {
             <p className="text-white font-bold">{error}</p>
           </div>
         )}
+
+        {isLoading && (
+          <div className="flex flex-col items-center justify-center p-6 bg-gray-800 rounded-xl shadow-lg">
+            <svg className="animate-spin h-8 w-8 text-white mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <p className="text-lg text-gray-300">Creating session, please wait...</p>
+          </div>
+        )}
         
-        {session && (
+        {session && !isLoading && (
           <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
             <h2 className="text-xl font-semibold mb-3">Your Session is Ready</h2>
             <p className="text-gray-400 mb-4">Share this link with your clinician to start.</p>
-            <div className="flex items-center space-x-2">
-                <input
-                  type="text"
-                  readOnly
-                  value={`${window.location.origin}${session.viewerUrl}`}
-                  className="w-full p-3 font-mono text-sm bg-gray-700 border border-gray-600 rounded-lg text-center text-gray-200"
-                />
+            <div className="relative">
+              <div className="flex items-center space-x-2">
+                <div className="w-full p-3 font-mono text-sm bg-gray-700 border border-gray-600 rounded-lg text-center text-gray-200 truncate">
+                  {`${window.location.origin}${session.viewerUrl}`}
+                </div>
+                <button
+                  onClick={copyToClipboard}
+                  className="p-3 text-white bg-gray-600 rounded-lg hover:bg-gray-700 transition-colors"
+                  aria-label="Copy link"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" />
+                    <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" />
+                  </svg>
+                </button>
                 <button
                     onClick={shareSession}
                     className="px-4 py-3 font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
                 >
                     Share
                 </button>
+              </div>
+              {showCopyConfirmation && (
+                <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 px-3 py-1 bg-green-600 text-white text-sm rounded-md shadow-lg">
+                  Link copied!
+                </div>
+              )}
             </div>
             
             {!isMeasuring && (
