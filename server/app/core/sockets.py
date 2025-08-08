@@ -39,4 +39,9 @@ class ConnectionManager:
                 if connection != sender:
                     await connection.send_text(message)
 
+    async def broadcast_session_ended(self, session_id: str):
+        if session_id in self.active_connections:
+            for connection in self.active_connections[session_id]:
+                await connection.send_json({"type": "session_ended"})
+
 manager = ConnectionManager()

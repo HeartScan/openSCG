@@ -12,7 +12,7 @@ from typing import List
 
 router = APIRouter()
 
-@router.post("/sessions", response_model=Session, status_code=201)
+@router.post("/sessions", response_model=Session, status_code=200)
 @limiter.limit("10/minute")
 def create_session(request: Request, db: Connection = Depends(get_db)):
     """
@@ -41,7 +41,7 @@ def create_session(request: Request, db: Connection = Depends(get_db)):
 
 @router.post("/sessions/{session_id}/end", responses={404: {"model": Error}})
 @limiter.limit("60/minute")
-def end_session(request: Request, session_id: uuid.UUID, db: Connection = Depends(get_db)):
+async def end_session(request: Request, session_id: uuid.UUID, db: Connection = Depends(get_db)):
     """
     Marks a session as complete and writes the buffered data to the database.
     """
@@ -74,6 +74,9 @@ def end_session(request: Request, session_id: uuid.UUID, db: Connection = Depend
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Database error: {e}")
+
+    # 4. Notify all viewers that the session has ended
+    await manager.broadcast_session_ended(str(session_id))
 
     return {"message": f"Session ended successfully. {len(buffered_data)} samples saved."}
 

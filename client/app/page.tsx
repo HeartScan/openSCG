@@ -30,6 +30,7 @@ export default function Home() {
   const [showCopyConfirmation, setShowCopyConfirmation] = useState(false);
   
   const dataBufferRef = useRef<AccelerometerDataPoint[]>([]);
+  const initialize = useRef<() => Promise<void> | null>(null);
   const latestAzRef = useRef<number>(0);
   const socketRef = useRef<WebSocket | null>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -37,7 +38,9 @@ export default function Home() {
   const duplicateTimestampBufferRef = useRef<number[]>([]);
 
   useEffect(() => {
-    const initialize = async () => {
+    initialize.current = async () => {
+      setIsLoading(true);
+      setError(null);
       try {
         const url = await getApiBaseUrl(process.env.NEXT_PUBLIC_API_URL);
         setApiBaseUrl(url);
@@ -53,7 +56,7 @@ export default function Home() {
         setIsLoading(false);
       }
     };
-    initialize();
+    initialize.current();
   }, []);
 
   const startMeasurement = () => {
@@ -134,9 +137,21 @@ export default function Home() {
     }
     if (session) {
         try {
-            await fetch(`${apiBaseUrl}/api/v1/sessions/${session.sessionId}/end`, { method: "POST" });
+            const response = await fetch(`${apiBaseUrl}/api/v1/sessions/${session.sessionId}/end`, { method: "POST" });
+            if (response.ok) {
+                // Reset chart and other relevant states
+                setChartData([]);
+                setCountdown(3);
+                // Fetch a new session
+                if(initialize.current) {
+                    await initialize.current();
+                }
+            } else {
+                throw new Error("Failed to end session");
+            }
         } catch (error) {
             console.error("Error ending session:", error);
+            setError("Failed to end the session. Please try again.");
         }
     }
   };
