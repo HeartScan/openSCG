@@ -40,11 +40,14 @@ const RealTimeChart = ({ azData }: RealTimeChartProps) => {
                 ctx.lineWidth = 2;
                 ctx.beginPath();
 
-                azData.forEach((az, idx) => {
-                    const x = (idx / azData.length) * canvas.clientWidth;
+                visibleData.forEach((az, idx) => {
+                    const x = (idx / (visibleData.length - 1)) * canvas.clientWidth;
                     const y = canvas.clientHeight / 2 - az * scale;
-                    if (idx === 0) ctx.moveTo(x, y);
-                    else ctx.lineTo(x, y);
+                    if (idx === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
                 });
                 ctx.stroke();
             }

@@ -1,6 +1,7 @@
 {
 	"dependencies": {
+		"@types/node": "^24.2.0",
 		"@types/react": "^19.1.9",
-		"@types/node": "^24.2.0"
+		"cubic-spline": "^3.0.3"
 	}
 }

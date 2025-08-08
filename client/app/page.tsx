@@ -30,6 +30,7 @@ export default function Home() {
   const [showCopyConfirmation, setShowCopyConfirmation] = useState(false);
   
   const dataBufferRef = useRef<AccelerometerDataPoint[]>([]);
+  const chartContainerRef = useRef<HTMLDivElement>(null);
   const latestAzRef = useRef<number>(0);
   const socketRef = useRef<WebSocket | null>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -200,6 +201,9 @@ export default function Home() {
       if (countdown === 0) {
         clearInterval(countdownInterval);
         startMeasurement();
+        setTimeout(() => {
+          chartContainerRef.current?.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
       }
       return () => clearInterval(countdownInterval);
     }
@@ -290,7 +294,7 @@ export default function Home() {
         )}
 
         {isMeasuring && (
-          <div className="mt-8">
+          <div className="mt-8" ref={chartContainerRef}>
             {countdown > 0 ? (
               <div className="flex flex-col items-center">
                 <p className="text-2xl mb-4">Get Ready...</p>

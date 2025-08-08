@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
+import Spline from 'cubic-spline';
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 const INTERPOLATION_RATE = 100; // Hz
@@ -13,49 +14,10 @@ interface WaveformData {
     az: number[];
 }
 
-// Linear interpolation function
-const interpolate = (samples: Sample[], rate: number): WaveformData => {
-    if (samples.length < 2) {
-        return { t: samples.map(s => s.t), az: samples.map(s => s.az) };
-    }
-
-    const newT: number[] = [];
-    const newAz: number[] = [];
-    const interval = 1000 / rate;
-
-    let lastSample = samples[0];
-
-    for (let i = 1; i < samples.length; i++) {
-        const currentSample = samples[i];
-        const t1 = lastSample.t;
-        const t2 = currentSample.t;
-        const az1 = lastSample.az;
-        const az2 = currentSample.az;
-
-        if (t2 <= t1) { // Skip duplicate or out-of-order timestamps
-            continue;
-        }
-
-        let t = Math.ceil(t1 / interval) * interval;
-
-        while (t < t2) {
-            const ratio = (t - t1) / (t2 - t1);
-            const interpolatedAz = az1 + ratio * (az2 - az1);
-            newT.push(t);
-            newAz.push(interpolatedAz);
-            t += interval;
-        }
-        lastSample = currentSample;
-    }
-
-    return { t: newT, az: newAz };
-};
-
-
 export const useScgSocket = (sessionId: string) => {
     const [status, setStatus] = useState('Connecting...');
     const [fullData, setFullData] = useState<WaveformData>({ t: [], az: [] });
-    const lastSampleRef = useRef<Sample | null>(null);
+    const sampleBufferRef = useRef<Sample[]>([]);
 
     useEffect(() => {
         const wsProtocol = window.location.protocol === "https:" ? "wss:" : "ws:";
@@ -74,15 +36,38 @@ export const useScgSocket = (sessionId: string) => {
                     const newSamples: Sample[] = message.payload.samples.map((s: any) => ({ t: s.t, az: s.az }));
                     
                     if (newSamples.length > 0) {
-                        const samplesToInterpolate = lastSampleRef.current ? [lastSampleRef.current, ...newSamples] : newSamples;
-                        const interpolated = interpolate(samplesToInterpolate, INTERPOLATION_RATE);
-                        
-                        setFullData(prevData => ({
-                            t: [...prevData.t, ...interpolated.t],
-                            az: [...prevData.az, ...interpolated.az],
-                        }));
+                        sampleBufferRef.current.push(...newSamples);
 
-                        lastSampleRef.current = newSamples[newSamples.length - 1];
+                        // Process buffer if it has enough points
+                        if (sampleBufferRef.current.length > 2) {
+                            // Sort buffer by timestamp to ensure order
+                            sampleBufferRef.current.sort((a, b) => a.t - b.t);
+
+                            const timestamps = sampleBufferRef.current.map(s => s.t);
+                            const azValues = sampleBufferRef.current.map(s => s.az);
+
+                            const spline = new Spline(timestamps, azValues);
+                            
+                            const first = sampleBufferRef.current[0].t;
+                            const last = sampleBufferRef.current[sampleBufferRef.current.length - 1].t;
+                            const interval = 1000 / INTERPOLATION_RATE;
+
+                            const interpolatedT: number[] = [];
+                            const interpolatedAz: number[] = [];
+
+                            for (let t = first; t <= last; t += interval) {
+                                interpolatedT.push(t);
+                                interpolatedAz.push(spline.at(t));
+                            }
+
+                            setFullData(prevData => ({
+                                t: [...prevData.t, ...interpolatedT],
+                                az: [...prevData.az, ...interpolatedAz],
+                            }));
+
+                            // Keep the last few samples for the next batch to ensure continuity
+                            sampleBufferRef.current = sampleBufferRef.current.slice(-2);
+                        }
                     }
                 } else if (message.type === 'session_ended') {
                     setStatus('Ended');
