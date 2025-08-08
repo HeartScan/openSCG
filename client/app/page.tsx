@@ -30,34 +30,34 @@ export default function Home() {
   const [showCopyConfirmation, setShowCopyConfirmation] = useState(false);
   
   const dataBufferRef = useRef<AccelerometerDataPoint[]>([]);
-  const initialize = useRef<() => Promise<void> | null>(null);
   const latestAzRef = useRef<number>(0);
   const socketRef = useRef<WebSocket | null>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
   const lastTimestampRef = useRef<number>(0);
   const duplicateTimestampBufferRef = useRef<number[]>([]);
 
-  useEffect(() => {
-    initialize.current = async () => {
-      setIsLoading(true);
-      setError(null);
-      try {
-        const url = await getApiBaseUrl(process.env.NEXT_PUBLIC_API_URL);
-        setApiBaseUrl(url);
+  const initialize = useCallback(async () => {
+    setIsLoading(true);
+    setError(null);
+    try {
+      const url = await getApiBaseUrl(process.env.NEXT_PUBLIC_API_URL);
+      setApiBaseUrl(url);
 
-        const response = await fetch(`${url}/api/v1/sessions`, { method: "POST" });
-        if (!response.ok) throw new Error("Failed to create session");
-        const data: SessionData = await response.json();
-        setSession(data);
-      } catch (error) {
-        console.error("Error initializing session:", error);
-        setError("Failed to connect to the backend. Please check the server.");
-      } finally {
-        setIsLoading(false);
-      }
-    };
-    initialize.current();
+      const response = await fetch(`${url}/api/v1/sessions`, { method: "POST" });
+      if (!response.ok) throw new Error("Failed to create session");
+      const data: SessionData = await response.json();
+      setSession(data);
+    } catch (error) {
+      console.error("Error initializing session:", error);
+      setError("Failed to connect to the backend. Please check the server.");
+    } finally {
+      setIsLoading(false);
+    }
   }, []);
+
+  useEffect(() => {
+    initialize();
+  }, [initialize]);
 
   const startMeasurement = () => {
     if (!apiBaseUrl || !session) return;
@@ -143,9 +143,7 @@ export default function Home() {
                 setChartData([]);
                 setCountdown(3);
                 // Fetch a new session
-                if(initialize.current) {
-                    await initialize.current();
-                }
+                await initialize();
             } else {
                 throw new Error("Failed to end session");
             }
