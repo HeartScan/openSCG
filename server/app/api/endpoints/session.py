@@ -113,13 +113,19 @@ def get_session_data(request: Request, session_id: uuid.UUID, db: Connection = D
     """
     try:
         with db.cursor() as cursor:
+            # First, check the session status
+            cursor.execute("SELECT status FROM sessions WHERE id = %s", (session_id,))
+            session_row = cursor.fetchone()
+
+            if not session_row:
+                raise HTTPException(status_code=404, detail="Session not found")
+            
+            if session_row['status'] != 'ended':
+                raise HTTPException(status_code=404, detail="Session is not complete")
+
+            # If session is ended, fetch the data
             cursor.execute("SELECT t, ax, ay, az FROM scg_raw_data WHERE session_id = %s ORDER BY t", (session_id,))
             data_rows = cursor.fetchall()
-            if not data_rows:
-                # Check if session exists at all to give a proper 404
-                cursor.execute("SELECT id FROM sessions WHERE id = %s", (session_id,))
-                if not cursor.fetchone():
-                    raise HTTPException(status_code=404, detail="Session not found")
             
             return {"samples": [Sample(t=row['t'], ax=row['ax'], ay=row['ay'], az=row['az']) for row in data_rows]}
     except HTTPException:
