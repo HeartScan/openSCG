@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import Spline from 'cubic-spline';
+const Spline = require('cubic-spline');
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 const INTERPOLATION_RATE = 100; // Hz
