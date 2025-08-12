@@ -20,6 +20,9 @@ importers:
       plotly.js:
         specifier: ^3.0.1
         version: 3.0.1(mapbox-gl@1.13.3)(webpack@5.100.2)
+      qrcode.react:
+        specifier: ^3.1.0
+        version: 3.2.0(react@18.3.1)
       react:
         specifier: ^18
         version: 18.3.1
@@ -33,6 +36,9 @@ importers:
       '@types/node':
         specifier: ^20.19.9
         version: 20.19.9
+      '@types/qrcode.react':
+        specifier: ^1.0.5
+        version: 1.0.5
       '@types/react':
         specifier: ^18.3.23
         version: 18.3.23
@@ -425,6 +431,9 @@ packages:
 
   '@types/prop-types@15.7.15':
     resolution: {integrity: sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw==}
+
+  '@types/qrcode.react@1.0.5':
+    resolution: {integrity: sha512-BghPtnlwvrvq8QkGa1H25YnN+5OIgCKFuQruncGWLGJYOzeSKiix/4+B9BtfKF2wf5ja8yfyWYA3OXju995G8w==}
 
   '@types/react-dom@18.3.7':
     resolution: {integrity: sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==}
@@ -2338,6 +2347,11 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
+  qrcode.react@3.2.0:
+    resolution: {integrity: sha512-YietHHltOHA4+l5na1srdaMx4sVSOjV9tamHs+mwiLWAMr6QVACRUw1Neax5CptFILcNoITctJY0Ipyn5enQ8g==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
@@ -3334,6 +3348,10 @@ snapshots:
   '@types/plotly.js@3.0.2': {}
 
   '@types/prop-types@15.7.15': {}
+
+  '@types/qrcode.react@1.0.5':
+    dependencies:
+      '@types/react': 18.3.23
 
   '@types/react-dom@18.3.7(@types/react@18.3.23)':
     dependencies:
@@ -5574,6 +5592,10 @@ snapshots:
   protocol-buffers-schema@3.6.0: {}
 
   punycode@2.3.1: {}
+
+  qrcode.react@3.2.0(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
   queue-microtask@1.2.3: {}
 
