@@ -18,17 +18,17 @@ Turn any smartphone into a live seismocardiography (SCG) sensor that doctors can
 
 ## 📑 Table of Contents
 
-1. [Why It Matters](#why-it-matters)
-2. [User Workflows](#user-workflows)
-3. [System Overview](#system-overview)
-4. [Architecture Snapshot](#architecture-snapshot)
-5. [Feature Roadmap](#feature-roadmap)
-6. [Tech Stack](#tech-stack)
-7. [Getting Started (Development)](#getting-started-development)
-8. [Data Format – OpenSCG JSON v0.1](#data-format--openscg-json-v01)
-9. [Licensing & Commercial Use](#licensing--commercial-use)
-10. [Contributing](#contributing)
-11. [Screenshots](#-screenshots)
+1. [Why It Matters](#1-why-it-matters)
+2. [User Workflows](#2-user-workflows)
+3. [System Overview](#3-system-overview)
+4. [Architecture Snapshot](#4-architecture-snapshot)
+5. [Feature Roadmap](#5-feature-roadmap)
+6. [Tech Stack](#6-tech-stack)
+7. [Getting Started (Development)](#7-getting-started-development)
+8. [Data Format – OpenSCG JSON v0.1](#8-data-format--openscg-json-v01)
+9. [Licensing & Commercial Use](#9-licensing--commercial-use)
+10. [Contributing](#10-contributing)
+11. [Screenshots](#%EF%B8%8F-screenshots)
 12. [Testing / CI](#-testing--ci)
 13. [Roadmap / Issues](#-roadmap--issues)
 14. [Contact](#contact)
@@ -36,7 +36,6 @@ Turn any smartphone into a live seismocardiography (SCG) sensor that doctors can
 ---
 
 ## 1. Why It Matters
-
 - **Zero hardware barrier.** SCG uses the phone you already own.
 - **True vital sign.** Waveform shows mechanical heart motion – something video chat cannot.
 - **Fills the telehealth gap.** Adds objective data before expensive RPM devices arrive.
