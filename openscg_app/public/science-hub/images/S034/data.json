@@ -1,0 +1,44 @@
+[
+  {
+    "id": "S034_3_1",
+    "filename": "S034_p3_i1.png",
+    "path": "/science-hub/images/S034/S034_p3_i1.png",
+    "caption": "Figure 1.  Concept overview. Study design showing wearable biosensor placement when supine and asynchronous reference cardiovascular magnetic resonance  imaging (CMR) measurement. Seismocardiogram (SCG) mechanistic overview detailing modulation due to cardiac physiology,  acquisition with an accelerometer, and sensing axes for ECG (negative, positive, and right-­leg-­drive [RLD] electrodes), and triaxial  SCG signals. Analysis pipeline, from sensor input to model estimation of stroke volume, for wearable (blue), demographic (green), and  CMR (purple) data. H indicates the transfer function between the input internal sources of cardiomechanical vibration and the output  SCG waveform measured on the surface of the torso; MRI, magnetic resonance imaging; and SCGdv, dorso-­ventral SCG.",
+    "page": 3
+  },
+  {
+    "id": "S034_5_1",
+    "filename": "S034_p5_i1.jpeg",
+    "path": "/science-hub/images/S034/S034_p5_i1.jpeg",
+    "caption": "Figure 2.  Wearable multimodal hardware engineering mechanics. A, Pertinent multimodal hardware diagram. Final wearable biosensor iteration with exploded view detailing photoplethysmogram (PPG)  components, gel-­electrode ECG connectors, lithium-­polymer battery, and printed circuit boards (PCBs). Main PCB with ATSAM4LS8  microcontroller (μC), BMG250 triaxial gyroscope and BME280 environmental sensor, micro secure digital card (μSD), and BQ24232  battery charger. Sensor PCB, connected to main PCB via flexible connector, with ADXL355 accelerometer, ADS1291 analog front end,  and magnetic wire connections to separate PCB containing SFH7016 multichip light-­emitting diode (LED) and SFH 2703 photodiode  (PD) used to acquire triaxial seismocardiogram (SCG), single-­lead ECG, and multiwavelength sternum PPG signals, respectively. B,  Sample 5 seconds of filtered wearable signal data from a single-­ventricle patient with corresponding amplitudes are shown. In order from  top to bottom: ECG, lateral SCG (SCGlat), head-­to-­foot SCG (SCGhf), dorso-­ventral SCG (SCGdv), green PPG (PPGg), red PPG (PPGr), and  infrared PPG (PPGi) signals. The darker blue ECG and SCGdv signals are those used in this work. USB indicates universal serial bus.",
+    "page": 5
+  },
+  {
+    "id": "S034_7_1",
+    "filename": "S034_p7_i1.png",
+    "path": "/science-hub/images/S034/S034_p7_i1.png",
+    "caption": "Figure 4.  Importance of features for stroke volume  estimation model. Importance of features for wearable system from magnitude of  ridge regression weights ranked in order from top to bottom  and color-­coded by wearable sensing modality, ECG and  seismocardiogram (SCG) signals. AC indicates aortic valve  closure; CMR, cardiovascular magnetic resonance imaging; HR,  heart rate; PEP, pre-­ejection period; RMS, root-­mean-­square;  and VET, ventricular ejection time.",
+    "page": 7
+  },
+  {
+    "id": "S034_7_2",
+    "filename": "S034_p7_i2.png",
+    "path": "/science-hub/images/S034/S034_p7_i2.png",
+    "caption": "Figure 3.  Wearable stroke volume (SV) estimation results. Correlation and Bland-­Altman plots between wearable signal estimated SV and the cardiovsacular magnetic resonance imaging  (CMR) imaging SV for held-­out test set of 9 patients. The coefficient of determination (R2, 0.76) and root-­mean-­square error (RMSE,  11.48 mL) are shown.",
+    "page": 7
+  },
+  {
+    "id": "S034_19_1",
+    "filename": "S034_p19_i1.png",
+    "path": "/science-hub/images/S034/S034_p19_i1.png",
+    "caption": "Figure S1. Signal processing pipeline. Block diagram of signal processing overview showing",
+    "page": 19
+  },
+  {
+    "id": "S034_20_1",
+    "filename": "S034_p20_i1.png",
+    "path": "/science-hub/images/S034/S034_p20_i1.png",
+    "caption": "Figure S2. Permutation feature importances for stroke volume (SV) estimation model.",
+    "page": 20
+  }
+]

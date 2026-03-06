@@ -1,0 +1,79 @@
+[
+  {
+    "id": "S045_3_1",
+    "filename": "S045_p3_i1.png",
+    "path": "/science-hub/images/S045/S045_p3_i1.png",
+    "caption": "Fig. 1  Age distribution of the FOSTER dataset population.",
+    "page": 3
+  },
+  {
+    "id": "S045_3_2",
+    "filename": "S045_p3_i2.png",
+    "path": "/science-hub/images/S045/S045_p3_i2.png",
+    "caption": "Fig. 2  Measurement setup used in data acquisition of the FOSTER dataset.",
+    "page": 3
+  },
+  {
+    "id": "S045_4_1",
+    "filename": "S045_p4_i1.png",
+    "path": "/science-hub/images/S045/S045_p4_i1.png",
+    "caption": "Fig. 3  An excerpt of signals acquired from subject #018. The six recorded signals represented from top to  bottom are: ECG (blue); FCGPZT (red); FCGPVDF (orange); SCG (violet); Respiration (green); PCG (grey).   (a) a 200-seconds segment including quiet breathing and apnea phases; the graph area with green background  corresponds to the inspiratory apnea, while the graph area with red background corresponds to the expiratory  apnea; (b) a 14-seconds segment including 20 heartbeats and 4 respiratory cycles during quiet breathing.",
+    "page": 4
+  },
+  {
+    "id": "S045_5_1",
+    "filename": "S045_p5_i1.png",
+    "path": "/science-hub/images/S045/S045_p5_i1.png",
+    "caption": "Fig. 4  Amplitude spectrum of ECG signal of subject #006. The shaded region (1–5 kHz) represents the  frequency band used to estimate the power spectral density (PSD) of the noise. This range is assumed to contain  only noise components, ensuring a reliable estimation of the noise floor.",
+    "page": 5
+  },
+  {
+    "id": "S045_6_1",
+    "filename": "S045_p6_i1.png",
+    "path": "/science-hub/images/S045/S045_p6_i1.png",
+    "caption": "Fig. 5  Excerpt of cardiac components extracted from FCG raw signals, with FRG, and ECG signals from  subject #018: (a) PVDF sensor signals; (b) PZT sensor signals.",
+    "page": 6
+  },
+  {
+    "id": "S045_8_1",
+    "filename": "S045_p8_i1.png",
+    "path": "/science-hub/images/S045/S045_p8_i1.png",
+    "caption": "Fig. 6  Statistical analyses on the inter-beat intervals (IBIs) obtained from dHF-FCG signals (extracted from  the PVDF and PZT sensor signal) and reference ECG signals: (a) results of regression and correlation analysis  achieved from dHF-FCGPVDF signal; (b) results of Bland–Altman analysis achieved from dHF-FCGPVDF signal;  (c) results of regression and correlation analysis achieved from dHF-FCGPZT signal; (d) results of Bland–Altman  analysis achieved from dHF-FCGPZT signal.",
+    "page": 8
+  },
+  {
+    "id": "S045_9_1",
+    "filename": "S045_p9_i1.png",
+    "path": "/science-hub/images/S045/S045_p9_i1.png",
+    "caption": "Fig. 7  Statistical analyses on the inter-beat intervals (IBIs) obtained from HS-FCG signals (extracted from  the PVDF and PZT sensor signal) and reference ECG signals: (a) results of regression and correlation analysis  achieved from HS-FCGPVDF signal; (b) results of Bland–Altman analysis achieved from HS-FCGPVDF signal;  (c) results of regression and correlation analysis achieved from HS-FCGPZT signal; (d) results of Bland–Altman  analysis achieved from HS-FCGPZT signal.",
+    "page": 9
+  },
+  {
+    "id": "S045_10_1",
+    "filename": "S045_p10_i1.png",
+    "path": "/science-hub/images/S045/S045_p10_i1.png",
+    "caption": "Fig. 8  Histograms of the errors on the IBI estimates between the reference ECG signal and the FCG signal  components: (a) histogram of errors on IBIs between ECG and dHF-FCGPVDF; (b) histogram of errors on IBIs  between ECG and dHF-FCGPZT; (c) histogram of errors on IBIs between ECG and HS-FCGPVDF; (d) histogram  of errors on IBIs between ECG and HS-FCGPZT.",
+    "page": 10
+  },
+  {
+    "id": "S045_11_1",
+    "filename": "S045_p11_i1.png",
+    "path": "/science-hub/images/S045/S045_p11_i1.png",
+    "caption": "Fig. 9  Statistical analyses on the inter-breath intervals (IBrIs) obtained from ERB and FRGPVDF signals:   (a) results of regression and correlation analyses; (b) results of Bland–Altman analysis.",
+    "page": 11
+  },
+  {
+    "id": "S045_12_1",
+    "filename": "S045_p12_i1.png",
+    "path": "/science-hub/images/S045/S045_p12_i1.png",
+    "caption": "Fig. 10  Statistical analyses on the inter-breath intervals (IBrIs) obtained from ERB and FRGPZT signals:   (a) results of regression and correlation analyses; (b) results of Bland–Altman analysis.",
+    "page": 12
+  },
+  {
+    "id": "S045_12_2",
+    "filename": "S045_p12_i2.png",
+    "path": "/science-hub/images/S045/S045_p12_i2.png",
+    "caption": "Fig. 11  Histograms of the errors on the IBrI estimates between the reference ERB signal and the FRG signal  component: (a) histogram of errors on IBrIs between ERB and FRGPVDF; (b) histogram of errors on IBrIs  between ECG and FRGPZT.",
+    "page": 12
+  }
+]

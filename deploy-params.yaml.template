@@ -1,0 +1,4 @@
+project_id: "your-gcp-project-id"
+region: "your-gcp-region"
+service_name: "openscg-app"
+container_image: "gcr.io/your-gcp-project-id/openscg-app"

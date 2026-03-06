@@ -1,0 +1,23 @@
+[
+  {
+    "id": "S026_6_1",
+    "filename": "S026_p6_i1.jpeg",
+    "path": "/science-hub/images/S026/S026_p6_i1.jpeg",
+    "caption": "Fig. 1. Overall diagram of the machine learning part of the AFib detection application. The acquired signal in this example consists of 50 seconds of artifact free data, which is further divided into ﬁve 10 seconds segments. For each segment feature extraction is applied. The lower right corner represents how the feature vector is formed by row-wise concatenation of features speciﬁc to each axis. The upper right corner shows the majority voting, which selects the ﬁnal class for each of the six test persons based on the feature vectors and classiﬁcation result from each of the 10 second segments.",
+    "page": 6
+  },
+  {
+    "id": "S026_6_2",
+    "filename": "S026_p6_i2.jpeg",
+    "path": "/science-hub/images/S026/S026_p6_i2.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 6
+  },
+  {
+    "id": "S026_9_1",
+    "filename": "S026_p9_i1.jpeg",
+    "path": "/science-hub/images/S026/S026_p9_i1.jpeg",
+    "caption": "Fig. 6. Two screenshots from the AFib detection application running in Sony Xperia Z3. On the left a normal subject, and on the right an AFib subject. The data is shown only in (ACCZ and GYROY) axes. Before starting the measurement, the information of the user is ﬁlled in, and after the measurement the application informs the user whether he/she has AFib. The patient in this case suffered from chronic AFib, where the heart rate is made lower by medication and therefore the heart rate of the AFib patient is relatively low.",
+    "page": 9
+  }
+]

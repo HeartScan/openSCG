@@ -1,0 +1,198 @@
+[
+  {
+    "id": "S037_1_1",
+    "filename": "S037_p1_i1.png",
+    "path": "/science-hub/images/S037/S037_p1_i1.png",
+    "caption": "No caption found automatically.",
+    "page": 1
+  },
+  {
+    "id": "S037_1_2",
+    "filename": "S037_p1_i2.png",
+    "path": "/science-hub/images/S037/S037_p1_i2.png",
+    "caption": "No caption found automatically.",
+    "page": 1
+  },
+  {
+    "id": "S037_1_3",
+    "filename": "S037_p1_i3.png",
+    "path": "/science-hub/images/S037/S037_p1_i3.png",
+    "caption": "No caption found automatically.",
+    "page": 1
+  },
+  {
+    "id": "S037_1_4",
+    "filename": "S037_p1_i4.png",
+    "path": "/science-hub/images/S037/S037_p1_i4.png",
+    "caption": "No caption found automatically.",
+    "page": 1
+  },
+  {
+    "id": "S037_1_5",
+    "filename": "S037_p1_i5.png",
+    "path": "/science-hub/images/S037/S037_p1_i5.png",
+    "caption": "No caption found automatically.",
+    "page": 1
+  },
+  {
+    "id": "S037_5_1",
+    "filename": "S037_p5_i1.jpeg",
+    "path": "/science-hub/images/S037/S037_p5_i1.jpeg",
+    "caption": "Figure 1. An excerpt ofthe pre-processed SCG (black line) and ECG (blue line) signals from subject #UP-21. The blue points mark the locations of the R-peaks.",
+    "page": 5
+  },
+  {
+    "id": "S037_6_1",
+    "filename": "S037_p6_i1.jpeg",
+    "path": "/science-hub/images/S037/S037_p6_i1.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 6
+  },
+  {
+    "id": "S037_6_2",
+    "filename": "S037_p6_i2.jpeg",
+    "path": "/science-hub/images/S037/S037_p6_i2.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 6
+  },
+  {
+    "id": "S037_6_3",
+    "filename": "S037_p6_i3.jpeg",
+    "path": "/science-hub/images/S037/S037_p6_i3.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 6
+  },
+  {
+    "id": "S037_6_4",
+    "filename": "S037_p6_i4.jpeg",
+    "path": "/science-hub/images/S037/S037_p6_i4.jpeg",
+    "caption": "Figure 2. Some examples of the ECG signals (blue lines), SCG signals (black lines), and the selected templates (red lines) from: (a) subject #UP-21; (b) subject #UP-11. The template in panel (a) comprises both the systolic and diastolic complexes in the cardiac cycle, while the one in panel (b) includes only the systolic complex.",
+    "page": 6
+  },
+  {
+    "id": "S037_7_1",
+    "filename": "S037_p7_i1.png",
+    "path": "/science-hub/images/S037/S037_p7_i1.png",
+    "caption": "Table 2. Template selection criteria. The templates depicted in the table correspond to those high- lighted in red in Figure 2.",
+    "page": 7
+  },
+  {
+    "id": "S037_7_2",
+    "filename": "S037_p7_i2.png",
+    "path": "/science-hub/images/S037/S037_p7_i2.png",
+    "caption": "Table 2. Template selection criteria. The templates depicted in the table correspond to those high- lighted in red in Figure 2.",
+    "page": 7
+  },
+  {
+    "id": "S037_8_1",
+    "filename": "S037_p8_i1.jpeg",
+    "path": "/science-hub/images/S037/S037_p8_i1.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 8
+  },
+  {
+    "id": "S037_8_2",
+    "filename": "S037_p8_i2.jpeg",
+    "path": "/science-hub/images/S037/S037_p8_i2.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 8
+  },
+  {
+    "id": "S037_8_3",
+    "filename": "S037_p8_i3.jpeg",
+    "path": "/science-hub/images/S037/S037_p8_i3.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 8
+  },
+  {
+    "id": "S037_8_4",
+    "filename": "S037_p8_i4.png",
+    "path": "/science-hub/images/S037/S037_p8_i4.png",
+    "caption": "Figure 3. Some excerpts of the ECG (blue line), SCG (black line), and NCC (orange line) signals from: (a) subject #UP-21; (b) subject #UP-11. The blue and black points mark the locations of the R-peaks and NCC peaks, respectively. The NCC signal in panel (a) was obtained by considering the template depicted in Figure 2a, which comprised both the systolic and diastolic complexes in the selected cardiac cycle. The NCC signal in panel (b), instead, was obtained by considering the template in Figure 2b, which consisted only of the systolic complex of the selected heartbeat.",
+    "page": 8
+  },
+  {
+    "id": "S037_9_1",
+    "filename": "S037_p9_i1.png",
+    "path": "/science-hub/images/S037/S037_p9_i1.png",
+    "caption": "No caption found automatically.",
+    "page": 9
+  },
+  {
+    "id": "S037_9_2",
+    "filename": "S037_p9_i2.png",
+    "path": "/science-hub/images/S037/S037_p9_i2.png",
+    "caption": "Figure 4. Cont.",
+    "page": 9
+  },
+  {
+    "id": "S037_10_1",
+    "filename": "S037_p10_i1.png",
+    "path": "/science-hub/images/S037/S037_p10_i1.png",
+    "caption": "Figure 4. An example of the NCC peak detection from subject #CP-36: (a) false positive; (b) false negative; (c) detection error.",
+    "page": 10
+  },
+  {
+    "id": "S037_10_2",
+    "filename": "S037_p10_i2.jpeg",
+    "path": "/science-hub/images/S037/S037_p10_i2.jpeg",
+    "caption": "Figure 4. An example of the NCC peak detection from subject #CP-36: (a) false positive; (b) false negative; (c) detection error.",
+    "page": 10
+  },
+  {
+    "id": "S037_10_3",
+    "filename": "S037_p10_i3.jpeg",
+    "path": "/science-hub/images/S037/S037_p10_i3.jpeg",
+    "caption": "Figure 5. An example of the ECG (blue line), SCG (black line), and NCC (orange line) signals from subject #UP-21. The blue and black points mark the locations of the R-peaks and NCC peaks, respectively. The temporal distance between two NCC peaks (double arrow green line) is referred to as the inter-beat interval.",
+    "page": 10
+  },
+  {
+    "id": "S037_10_4",
+    "filename": "S037_p10_i4.png",
+    "path": "/science-hub/images/S037/S037_p10_i4.png",
+    "caption": "Figure 4. An example of the NCC peak detection from subject #CP-36: (a) false positive; (b) false negative; (c) detection error.",
+    "page": 10
+  },
+  {
+    "id": "S037_10_5",
+    "filename": "S037_p10_i5.jpeg",
+    "path": "/science-hub/images/S037/S037_p10_i5.jpeg",
+    "caption": "Figure 4. An example of the NCC peak detection from subject #CP-36: (a) false positive; (b) false negative; (c) detection error.",
+    "page": 10
+  },
+  {
+    "id": "S037_10_6",
+    "filename": "S037_p10_i6.jpeg",
+    "path": "/science-hub/images/S037/S037_p10_i6.jpeg",
+    "caption": "Figure 5. An example of the ECG (blue line), SCG (black line), and NCC (orange line) signals from subject #UP-21. The blue and black points mark the locations of the R-peaks and NCC peaks, respectively. The temporal distance between two NCC peaks (double arrow green line) is referred to as the inter-beat interval.",
+    "page": 10
+  },
+  {
+    "id": "S037_13_1",
+    "filename": "S037_p13_i1.jpeg",
+    "path": "/science-hub/images/S037/S037_p13_i1.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 13
+  },
+  {
+    "id": "S037_13_2",
+    "filename": "S037_p13_i2.jpeg",
+    "path": "/science-hub/images/S037/S037_p13_i2.jpeg",
+    "caption": "Figure 6. Statistical analyses on the inter-beat intervals: (a) results of regression and correlation analyses; (b) results of Bland–Altman analysis for the NCC signals with case 1 templates.",
+    "page": 13
+  },
+  {
+    "id": "S037_15_1",
+    "filename": "S037_p15_i1.jpeg",
+    "path": "/science-hub/images/S037/S037_p15_i1.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 15
+  },
+  {
+    "id": "S037_15_2",
+    "filename": "S037_p15_i2.jpeg",
+    "path": "/science-hub/images/S037/S037_p15_i2.jpeg",
+    "caption": "Figure 7. Statistical analyses on the inter-beat intervals: (a) results of regression and correlation analyses; (b) results of Bland–Altman analysis for the NCC signals with case 2 templates.",
+    "page": 15
+  }
+]

@@ -1,0 +1,25 @@
+# .dockerignore for OpenSCG
+# Directories to ignore
+deprecated/
+docs/
+factory/
+# images/  <-- REMOVED to allow public/images
+.git/
+node_modules/
+openscg_app/node_modules/
+.next/
+openscg_app/.next/
+
+# Files to ignore
+.clinerules/
+pnpm-lock.yaml
+pytest.ini
+README.md
+LICENSE
+NOTICE
+cloudbuild.yaml
+deploy.ps1
+deploy-params.yaml
+.gitignore
+.dockerignore
+.gcloudignore

@@ -45,3 +45,20 @@ Thumbs.db
 
 # Proprietary Code
 old code for reference/
+
+# Code Factory v2
+.clinerules/
+factory/
+labeling_reference_code/
+
+# Local Research & Web Content
+web_content/
+_staging_debug/
+deprecated/
+pytest.ini
+reports/
+
+# Sensitive or internal documents
+deploy-params.yaml
+docs/PROJECT_STRATEGY.md
+docs/HANDOVER-2026-03-02.md

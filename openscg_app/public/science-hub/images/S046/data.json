@@ -1,0 +1,37 @@
+[
+  {
+    "id": "S046_4_1",
+    "filename": "S046_p4_i1.png",
+    "path": "/science-hub/images/S046/S046_p4_i1.png",
+    "caption": "Figure 1: Overview of the dataset statistics: (a) distribution of mobile device vendors and (b) distribution of accelerom- eter sampling frequencies.",
+    "page": 4
+  },
+  {
+    "id": "S046_4_2",
+    "filename": "S046_p4_i2.png",
+    "path": "/science-hub/images/S046/S046_p4_i2.png",
+    "caption": "Figure 1: Overview of the dataset statistics: (a) distribution of mobile device vendors and (b) distribution of accelerom- eter sampling frequencies.",
+    "page": 4
+  },
+  {
+    "id": "S046_4_3",
+    "filename": "S046_p4_i3.png",
+    "path": "/science-hub/images/S046/S046_p4_i3.png",
+    "caption": "Figure 2: Labeled SCG.",
+    "page": 4
+  },
+  {
+    "id": "S046_10_1",
+    "filename": "S046_p10_i1.png",
+    "path": "/science-hub/images/S046/S046_p10_i1.png",
+    "caption": "No caption found automatically.",
+    "page": 10
+  },
+  {
+    "id": "S046_10_2",
+    "filename": "S046_p10_i2.png",
+    "path": "/science-hub/images/S046/S046_p10_i2.png",
+    "caption": "Figure 4: Interpretability analysis of the best-performing model (U-Net v3 + Dice+BCE) on smartphone SCG recordings.",
+    "page": 10
+  }
+]

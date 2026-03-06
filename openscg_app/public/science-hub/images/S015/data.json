@@ -1,0 +1,170 @@
+[
+  {
+    "id": "S015_4_221",
+    "filename": "S015_p4_i221.png",
+    "path": "/science-hub/images/S015/S015_p4_i221.png",
+    "caption": "No caption found automatically.",
+    "page": 4
+  },
+  {
+    "id": "S015_4_252",
+    "filename": "S015_p4_i252.jpeg",
+    "path": "/science-hub/images/S015/S015_p4_i252.jpeg",
+    "caption": "Figure 1. (a) Measurement setup: the subject lies supine on a bed in horizontal position while breathing at a natural pace. The smartphone is placed onto the subject’s chest along the sternum. The ERB is secured around the upper abdomen of the subject. ECG electrodes are positioned on the subject to record the ECG lead II via an ECG monitor. Triaxial ACC and GYR signals are acquired by the smartphone and, simultaneously, ECG and ERB signals are acquired via a separate data acquisition board. Examples of acquired signals are also depicted. (b) Two photos: on the left, a top view, and on the right, a side view of an actual subject equipped with the measurement setup.",
+    "page": 4
+  },
+  {
+    "id": "S015_4_253",
+    "filename": "S015_p4_i253.jpeg",
+    "path": "/science-hub/images/S015/S015_p4_i253.jpeg",
+    "caption": "Figure 1. (a) Measurement setup: the subject lies supine on a bed in horizontal position while breathing at a natural pace. The smartphone is placed onto the subject’s chest along the sternum. The ERB is secured around the upper abdomen of the subject. ECG electrodes are positioned on the subject to record the ECG lead II via an ECG monitor. Triaxial ACC and GYR signals are acquired by the smartphone and, simultaneously, ECG and ERB signals are acquired via a separate data acquisition board. Examples of acquired signals are also depicted. (b) Two photos: on the left, a top view, and on the right, a side view of an actual subject equipped with the measurement setup.",
+    "page": 4
+  },
+  {
+    "id": "S015_5_1",
+    "filename": "S015_p5_i1.jpeg",
+    "path": "/science-hub/images/S015/S015_p5_i1.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 5
+  },
+  {
+    "id": "S015_5_2",
+    "filename": "S015_p5_i2.png",
+    "path": "/science-hub/images/S015/S015_p5_i2.png",
+    "caption": "Figure 2. Cont.",
+    "page": 5
+  },
+  {
+    "id": "S015_6_1",
+    "filename": "S015_p6_i1.jpeg",
+    "path": "/science-hub/images/S015/S015_p6_i1.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 6
+  },
+  {
+    "id": "S015_6_2",
+    "filename": "S015_p6_i2.png",
+    "path": "/science-hub/images/S015/S015_p6_i2.png",
+    "caption": "Figure 2. Some excerpts of ECG (blue line), NCC (light green line), and (a) SCG signal (orange line), (b) GCG signal (green line) from subject #5. Red and black points mark the locations of R-peaks and NCC-peaks, respectively.",
+    "page": 6
+  },
+  {
+    "id": "S015_6_3",
+    "filename": "S015_p6_i3.jpeg",
+    "path": "/science-hub/images/S015/S015_p6_i3.jpeg",
+    "caption": "Figure 3. An example of IBI estimation in ECG and SCG signals of subject #5. For the ECG sig- nal, the IBI is estimated as the temporal distance between two consecutive R-peaks (violet double arrow), while the same IBI is estimated for the NCC signal as the temporal distance between the two corresponding successive NCC-peaks (blue double arrow).",
+    "page": 6
+  },
+  {
+    "id": "S015_6_4",
+    "filename": "S015_p6_i4.jpeg",
+    "path": "/science-hub/images/S015/S015_p6_i4.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 6
+  },
+  {
+    "id": "S015_6_5",
+    "filename": "S015_p6_i5.png",
+    "path": "/science-hub/images/S015/S015_p6_i5.png",
+    "caption": "Figure 2. Some excerpts of ECG (blue line), NCC (light green line), and (a) SCG signal (orange line), (b) GCG signal (green line) from subject #5. Red and black points mark the locations of R-peaks and NCC-peaks, respectively.",
+    "page": 6
+  },
+  {
+    "id": "S015_6_6",
+    "filename": "S015_p6_i6.jpeg",
+    "path": "/science-hub/images/S015/S015_p6_i6.jpeg",
+    "caption": "Figure 3. An example of IBI estimation in ECG and SCG signals of subject #5. For the ECG sig- nal, the IBI is estimated as the temporal distance between two consecutive R-peaks (violet double arrow), while the same IBI is estimated for the NCC signal as the temporal distance between the two corresponding successive NCC-peaks (blue double arrow).",
+    "page": 6
+  },
+  {
+    "id": "S015_7_1",
+    "filename": "S015_p7_i1.png",
+    "path": "/science-hub/images/S015/S015_p7_i1.png",
+    "caption": "No caption found automatically.",
+    "page": 7
+  },
+  {
+    "id": "S015_7_2",
+    "filename": "S015_p7_i2.png",
+    "path": "/science-hub/images/S015/S015_p7_i2.png",
+    "caption": "No caption found automatically.",
+    "page": 7
+  },
+  {
+    "id": "S015_7_3",
+    "filename": "S015_p7_i3.png",
+    "path": "/science-hub/images/S015/S015_p7_i3.png",
+    "caption": "No caption found automatically.",
+    "page": 7
+  },
+  {
+    "id": "S015_7_4",
+    "filename": "S015_p7_i4.png",
+    "path": "/science-hub/images/S015/S015_p7_i4.png",
+    "caption": "Figure 4. Some excerpts of ERB (purple line) signal and (a) ARG signal (black line), (b) GRG signal (green line) from subject #5. Blue points mark the locations of respiratory peaks on ERB/ARG signals, while red points mark the locations of respiratory peaks on ERB/GRG signals.",
+    "page": 7
+  },
+  {
+    "id": "S015_8_1",
+    "filename": "S015_p8_i1.jpeg",
+    "path": "/science-hub/images/S015/S015_p8_i1.jpeg",
+    "caption": "Figure 5. An example of IBrI estimation in ERB and ARG signals of subject #5. For the ERB signal, the IBrI is estimated as the temporal distance between two consecutive respiratory peaks (violet double arrow), while the same IBrI is estimated for the ARG signal as the temporal distance between the two corresponding successive respiratory peaks (blue double arrow).",
+    "page": 8
+  },
+  {
+    "id": "S015_9_1",
+    "filename": "S015_p9_i1.jpeg",
+    "path": "/science-hub/images/S015/S015_p9_i1.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 9
+  },
+  {
+    "id": "S015_9_2",
+    "filename": "S015_p9_i2.jpeg",
+    "path": "/science-hub/images/S015/S015_p9_i2.jpeg",
+    "caption": "Figure 6. Results of statistical analyses on IBIs obtained from SCG signals: (a) correlation and linear regression plot; (b) Bland–Altman plot.",
+    "page": 9
+  },
+  {
+    "id": "S015_10_1",
+    "filename": "S015_p10_i1.jpeg",
+    "path": "/science-hub/images/S015/S015_p10_i1.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 10
+  },
+  {
+    "id": "S015_10_2",
+    "filename": "S015_p10_i2.jpeg",
+    "path": "/science-hub/images/S015/S015_p10_i2.jpeg",
+    "caption": "Figure 7. Results of statistical analyses on IBIs obtained from GCG signals: (a) correlation and linear regression plot; (b) Bland–Altman plot.",
+    "page": 10
+  },
+  {
+    "id": "S015_11_1",
+    "filename": "S015_p11_i1.jpeg",
+    "path": "/science-hub/images/S015/S015_p11_i1.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 11
+  },
+  {
+    "id": "S015_11_2",
+    "filename": "S015_p11_i2.jpeg",
+    "path": "/science-hub/images/S015/S015_p11_i2.jpeg",
+    "caption": "Figure 8. Results of statistical analyses on IBrIs obtained from ARG signals: (a) correlation and linear regression plot; (b) Bland–Altman plot.",
+    "page": 11
+  },
+  {
+    "id": "S015_12_1",
+    "filename": "S015_p12_i1.jpeg",
+    "path": "/science-hub/images/S015/S015_p12_i1.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 12
+  },
+  {
+    "id": "S015_12_2",
+    "filename": "S015_p12_i2.jpeg",
+    "path": "/science-hub/images/S015/S015_p12_i2.jpeg",
+    "caption": "Figure 9. Results of statistical analyses on IBrIs obtained from GRG signals: (a) correlation and linear regression plot; (b) Bland–Altman plot.",
+    "page": 12
+  }
+]

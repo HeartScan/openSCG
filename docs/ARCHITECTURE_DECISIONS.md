@@ -1,56 +1,78 @@
-# Architecture Decision Record: Hosting and Inference
+# OpenSCG Architecture & Technical Decisions
 
-**Date:** 2025-07-21
+**Last Updated:** 2025-03-01
+**Status:** Active
 
-**Status:** Decided
+## 1. High-Level Architecture
 
-## Context
+OpenSCG utilizes a **Monolithic Architecture** built on **Next.js 16 (App Router)** with a custom Node.js server. This design prioritizes simplicity, ease of deployment, and real-time performance for handling Seismocardiography (SCG) signal data.
 
-We need to select the optimal hosting and deployment strategy for the OpenSCG platform. The platform consists of two main components:
-1.  **Frontend (`/client`):** A Next.js application serving the patient and physician UI.
-2.  **Backend (`/server`):** A real-time ingestion and streaming server (FastAPI) that must handle persistent WebSocket connections.
+### Core Components
 
-The choice must balance performance, cost, scalability, and ease of deployment for an open-source community.
+1.  **Application Server (Monolith):**
+    *   **Framework:** Next.js 16 (App Router) for Frontend UI and REST API.
+    *   **Custom Server:** A custom `server.js` (using `http` and `next`) wraps the Next.js app to support a WebSocket server on the same port.
+    *   **WebSocket Engine:** `socket.io` or `ws` is used for bidirectional real-time communication (telemetry).
+    *   **Location:** `/openscg_app` directory.
 
-## The Decision: A Hybrid, Best-of-Breed Approach
+2.  **Data Store:**
+    *   **Technology:** **Redis**.
+    *   **Role:** Acts as the *sole* backend database for both transient and persistent data.
+    *   **Usage:**
+        *   **Pub/Sub:** Broadcasts live signal data from patient -> server -> physician viewers.
+        *   **Session Metadata:** Stores session state (`sessionId`, status, start/end times).
+        *   **Persistence:** Stores completed session data as serialized JSON strings with a TTL (e.g., 30 days).
 
-We will adopt a hybrid deployment strategy, using the best platform for each component:
+3.  **Client-Side Storage:**
+    *   **Technology:** **IndexedDB** (via `localforage` or similar).
+    *   **Role:** Provides "offline-first" reliability.
+    *   **Usage:**
+        *   Buffers raw accelerometer samples on the patient's device immediately.
+        *   Ensures no data loss if the network drops during recording.
+        *   Syncs data to the server upon reconnection or session completion.
 
-1.  **Frontend (`/client`):** Deploy to **Vercel**.
-2.  **Backend (`/server`):** Deploy as a **Docker container to Fly.io or Render**.
+## 2. Key Technical Decisions (ADRs)
 
-## Rationale
+### ADR-001: Next.js + Redis Monolith
+*   **Decision:** Move from a split FastAPI/Next.js architecture to a single Next.js + Redis container.
 
-### 1. Frontend on Vercel
+### ADR-002: Optimized Data Format & Late-Binding Sync
+*   **Decision:** Transition to a Tuple-Based Data Standard `[t, ax, ay, az]` and implement "Sync-on-Share" logic.
 
-Vercel is the creator of Next.js and provides a platform that is purpose-built for it.
+### ADR-003: Science Hub Content Integration via SSG
+*   **Decision:** Integrate external scientific content using Static Site Generation (SSG).
+*   **Rationale:** Maximizes SEO and performance while maintaining a clear separation between technical UI development and scientific content creation.
+>>>>+++ REPLACE
 
--   **Unmatched Performance:** Global CDN, automatic image optimization, and serverless functions for API routes give the best possible user experience.
--   **Seamless CI/CD:** Deployment is as simple as `git push`. Vercel automatically builds, deploys, and provides preview URLs for every pull request.
--   **Cost-Effective:** The free tier is generous and more than sufficient for the initial stages of the project.
+*   **Rationale:**
+    *   **Simplicity:** Deployment requires only one application container and one Redis instance.
+    *   **Performance:** Redis offers sub-millisecond latency crucial for real-time signal streaming.
+    *   **Privacy:** Redis TTL features allow for automatic data expiration (Privacy by Design).
+    *   **Deployment:** Eliminates the complexity of coordinating separate frontend and backend deployments across different providers.
 
-### 2. Backend on a Container Platform (Fly.io / Render)
+## 3. Deployment Strategy
 
-The backend's primary requirement is to maintain **long-running, stateful WebSocket connections**. This makes it fundamentally incompatible with serverless function platforms like Vercel's backend offering, which have short execution time limits.
+The application is containerized using Docker and is designed to run on any platform that supports long-running containers (e.g., Fly.io, Google Cloud Run, DigitalOcean App Platform, or a VPS).
 
-We need a platform that runs persistent processes. A container-based approach is ideal.
+*   **Docker:** The `openscg_app/Dockerfile` builds a production-ready image.
+*   **Orchestration:** `docker-compose.yml` is provided for local development and simple single-host production setups (orchestrating `app` + `redis`).
+*   **Limitations:** This architecture *cannot* be deployed to standard Serverless Function platforms (like standard Vercel hosting) because of the requirement for a long-running custom WebSocket server. It requires a container runtime.
 
--   **Why Containers?**
-    -   **Portability:** A Docker container runs the same way on a developer's laptop as it does in production. This is essential for an open-source project.
-    -   **Scalability:** Platforms like Fly.io and Render can scale containers based on demand.
-    -   **Control:** We have full control over the environment inside the container.
+## 4. Data Flow
 
--   **Why Fly.io or Render?**
-    -   **Developer Experience:** These platforms are designed for simplicity. You can often deploy directly from a `Dockerfile` in your repository with minimal configuration.
-    -   **Cost-Effectiveness:** They have excellent free tiers and a "scale-to-zero" or "scale-to-one" model, meaning you are not paying for significant idle capacity.
-    -   **Global Distribution:** Fly.io, in particular, makes it easy to deploy your container in multiple regions close to your users, which is excellent for reducing latency in a real-time application.
+1.  **Session Creation:**
+    *   Patient opens app -> Generates `sessionId` and `deviceCode` -> Saved to Redis.
+2.  **Live Streaming:**
+    *   Patient connects WebSocket -> Sends batch of accelerometer samples.
+    *   Server receives batch -> Publishes to Redis Channel `session:{id}:stream`.
+    *   Subscribed Viewers receive update -> Render on chart.
+3.  **Persistence:**
+    *   Client accumulates samples in `IndexedDB`.
+    *   On "Stop", client uploads full dataset to `POST /api/sessions/{id}/data`.
+    *   Server saves full dataset to Redis Key `session:{id}:data` with TTL.
 
-## Rejected Alternatives
+## 5. Security Model
 
--   **Azure VM / GCP Compute Engine:** Rejected due to high operational overhead. We would be responsible for managing the OS, security, and patching, which is overkill for this stage.
--   **Azure App Service / GCP App Engine:** Viable, but more complex and potentially more expensive than container-specific platforms like Fly.io or Render. They are better suited for larger, more complex enterprise applications.
--   **Backend on Vercel:** Rejected because its serverless function architecture cannot support the persistent WebSocket connections required for our real-time backend.
-
-## Conclusion
-
-This hybrid strategy allows us to use the absolute best tool for each job without compromise. Vercel will provide a world-class experience for our frontend users, while a container on Fly.io or Render will give us the robust, scalable, and cost-effective real-time backend we need.
+*   **Anonymous Access:** No user accounts required.
+*   **Device Code:** A secure, random token stored in an HttpOnly cookie authenticates the patient's device to the session it created.
+*   **Shareable Links:** Access to view a session is granted by possession of the unique `sessionId` URL.

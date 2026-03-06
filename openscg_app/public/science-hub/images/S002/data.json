@@ -1,0 +1,16 @@
+[
+  {
+    "id": "S002_3_1",
+    "filename": "S002_p3_i1.jpeg",
+    "path": "/science-hub/images/S002/S002_p3_i1.jpeg",
+    "caption": "Figure 1.  A seismocardiographic signal from one subject aligned to the ECG R-peak (systolic complex) and to  the diastolic complex respectively. Individual beats are plotted in grey, the mean beats are plotted in black.",
+    "page": 3
+  },
+  {
+    "id": "S002_9_1",
+    "filename": "S002_p9_i1.jpeg",
+    "path": "/science-hub/images/S002/S002_p9_i1.jpeg",
+    "caption": "Figure 4.  Overall mean electrocardiogram and seismocardiogram signal from 34 subjects. The circles indicate  the mean location of the following physiologic events found in ultrasound images, from left: Atrial systole (AS),  peak atrial inflow (PAI), mitral valve closure (MC), aortic valve opening (AO), peak systolic outflow (PSO),  aortic valve closing (AC), mitral valve opening (MO), early ventricular filling (EVF). The grey areas indicate the  95% confidence intervals of the means for the physiologic events found in the ultrasound images.",
+    "page": 9
+  }
+]

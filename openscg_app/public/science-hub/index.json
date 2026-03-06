@@ -1,0 +1,2417 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "OpenSCG Research Index",
+  "description": "A comprehensive, machine-readable index of seismocardiography (SCG) research, including clinical validation, technical reports, and machine learning benchmarks. Features semantic inter-study relationships from the OpenSCG Knowledge Graph.",
+  "url": "https://openscg.org/science-hub",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "version": "2.1.0",
+  "datePublished": "2026-03-06",
+  "keywords": [
+    "Seismocardiography",
+    "SCG",
+    "Coronary Artery Disease",
+    "Heart Failure",
+    "Smartphone Sensors",
+    "MEMS Accelerometer",
+    "Machine Learning in Cardiology",
+    "Knowledge Graph",
+    "Evidence-Based Medicine"
+  ],
+  "creator": {
+    "@type": "Organization",
+    "name": "OpenSCG Project",
+    "url": "https://openscg.org"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "OpenSCG Evidence Hub"
+  },
+  "hasPart": [
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S001",
+      "identifier": "S001",
+      "name": "Dehkordi 2019: Multimodal Echo Investigation",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Parastoo Dehkordi et al."
+        }
+      ],
+      "datePublished": "2019",
+      "headline": "Dehkordi 2019: Multimodal Echo Investigation",
+      "description": "Establishes a quantitative comparison between SCG and ICG, suggesting higher accuracy for SCG in estimating systolic time intervals against ultrasound references.",
+      "sameAs": "https://doi.org/10.3389/fphys.2019.01057",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "comparison"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "PEP Accuracy",
+          "value": "86% within Echo range"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "TST Accuracy",
+          "value": "90% within Echo range"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "PEP ICC",
+          "value": "0.83"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "PEP Bias",
+          "value": "0.5 ms"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "LVET %Error",
+          "value": "3.2%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "LVET ICC",
+          "value": "0.81"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "cornerstone",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: moderate."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S002",
+      "identifier": "S002",
+      "name": "Sørensen 2018: Definition of Fiducial Points",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Kasper Sørensen et al."
+        }
+      ],
+      "datePublished": "2018",
+      "headline": "Sørensen 2018: Definition of Fiducial Points",
+      "description": "Serves as a reference for identifying SCG fiducial points based on synchronized ultrasound data in healthy subjects.",
+      "sameAs": "https://doi.org/10.1038/s41598-018-33675-6",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "comparison"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Aortic valve closure (AC) correlation",
+          "value": "r=0.94, bias -5ms"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Mitral valve opening (MO) correlation",
+          "value": "r=0.87, bias -7ms"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Aortic valve opening (AO) correlation",
+          "value": "r=0.60, bias -3ms"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Mitral valve closure (MC) correlation",
+          "value": "r=0.71, bias 4ms"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://openscg.org/science-hub/studies/S001",
+          "name": "Dehkordi 2019: Multimodal Echo Investigation",
+          "comment": "Semantic Relationship: Confirmed by"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://openscg.org/science-hub/studies/S006",
+          "name": "Dehkordi 2019: SCG for CAD Screening",
+          "comment": "Semantic Relationship: Related to"
+        }
+      ],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: method. Sample Adequacy: limited."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S003",
+      "identifier": "S003",
+      "name": "Crow 1994: Precision and Consistency",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "R. S. Crow et al."
+        }
+      ],
+      "datePublished": "1994",
+      "headline": "Crow 1994: Precision and Consistency",
+      "description": "Provides early validation of SCG as a tool for evaluating mechanical events in the cardiac cycle, showing consistency with ultrasound-based measures.",
+      "sameAs": "https://doi.org/10.1159/000470156",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "comparison"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "MAD systolic",
+          "value": "7.6 ms"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MAD diastolic",
+          "value": "6.8 ms"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Variability",
+          "value": "Lower in SCG than Echo"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://openscg.org/science-hub/studies/S002",
+          "name": "Sørensen 2018: Definition of Fiducial Points",
+          "comment": "Semantic Relationship: Refined by"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://openscg.org/science-hub/studies/S009",
+          "name": "Landreani 2016: Beat-to-beat HR by Smartphone",
+          "comment": "Semantic Relationship: Related to"
+        }
+      ],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: limited."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S004",
+      "identifier": "S004",
+      "name": "Işilay Zeybek 2022: SCG in Cardiac Patients",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Işilay Zeybek, Marco Di Rienzo et al."
+        }
+      ],
+      "datePublished": "2022",
+      "headline": "Işilay Zeybek 2022: SCG in Cardiac Patients",
+      "description": "Identifies challenges in applying standard SCG analysis to patients with heart disease, noting signal distortion in 38% of the cohort.",
+      "sameAs": "https://doi.org/10.3389/fphys.2022.825918",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "comparison"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Traditional (T) shape prevalence",
+          "value": "62% of all patients (79% in MI, lower in HF/TX)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AO Mean Difference",
+          "value": "-1.3 ms (SD 18.3 ms)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MC Mean Difference",
+          "value": "-17.1 ms (SD 26.2 ms)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Accuracy range",
+          "value": "76-81% for AO, AC, MO within healthy reference range"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: moderate."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S006",
+      "identifier": "S006",
+      "name": "Dehkordi 2019: SCG for CAD Screening",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Parastoo Dehkordi et al."
+        }
+      ],
+      "datePublished": "2019",
+      "headline": "Dehkordi 2019: SCG for CAD Screening",
+      "description": "Examines the diagnostic performance of SCG in CAD screening, observing results comparable to stress-echocardiography in this cohort.",
+      "sameAs": "https://doi.org/10.3389/fphys.2019.01211",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "cad"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Rest Model Accuracy",
+          "value": "74% (Sensitivity 75%, Specificity 72%)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Exercise Model Accuracy",
+          "value": "81% (Sensitivity 82%, Specificity 84%)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Exercise SCG AUC",
+          "value": "0.91"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ECG Stress Test Accuracy",
+          "value": "65% (in the same cohort)"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://openscg.org/science-hub/studies/S002",
+          "name": "Sørensen 2018: Definition of Fiducial Points",
+          "comment": "Semantic Relationship: Related to"
+        }
+      ],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: moderate."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S007",
+      "identifier": "S007",
+      "name": "Haddad 2024: Smartphone HF Recognition",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Mona Haddad et al."
+        }
+      ],
+      "datePublished": "2024",
+      "headline": "Haddad 2024: Smartphone HF Recognition",
+      "description": "Validates the use of built-in smartphone MEMS for identifying heart failure patients in both inpatient and ambulatory settings.",
+      "sameAs": "https://doi.org/10.1016/j.jchf.2024.01.022",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "hf"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "AUC (Combined HF)",
+          "value": "0.95"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sensitivity",
+          "value": "85%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Specificity",
+          "value": "90%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Accuracy",
+          "value": "89%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Positive Likelihood Ratio",
+          "value": "8.50"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Negative Likelihood Ratio",
+          "value": "0.17"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "cornerstone",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: strong."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S008",
+      "identifier": "S008",
+      "name": "Ibrahim 2022: OS Sampling Jitter in Smartphones",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Osborne et al."
+        }
+      ],
+      "datePublished": "2022",
+      "headline": "Ibrahim 2022: OS Sampling Jitter in Smartphones",
+      "description": "S008 is a vital technical warning. While smartphones are powerful, their operating systems are not designed for medical precision. This study justifies why OpenSCG's backend does not just take 'raw numbers' but performs complex synchronization to ensure clinical-grade reliability.",
+      "sameAs": null,
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Finding",
+          "value": "OS-level background processes cause significant sampling jitter"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Impact",
+          "value": "Jitter degrades heart rate variability (HRV) accuracy in SCG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Constraint",
+          "value": "Fixed-rate resampling is necessary for high-frequency analysis"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: feasibility. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S009",
+      "identifier": "S009",
+      "name": "Landreani 2016: Beat-to-beat HR by Smartphone",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Federica Landreani et al."
+        }
+      ],
+      "datePublished": "2016",
+      "headline": "Landreani 2016: Beat-to-beat HR by Smartphone",
+      "description": "S009 is an early but rigorous validation (EMBC 2016) of using commodity smartphones for SCG. It laid the groundwork for OpenSCG by proving that the internal sensors of a modern phone are sensitive enough to match the temporal precision of a professional ECG, provided the phone is positioned correctly.",
+      "sameAs": "https://doi.org/10.1109/EMBC.2016.7591463",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Accuracy (Supine)",
+          "value": "> 98%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Linear Correlation (r2)",
+          "value": "> 0.98"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Feasibility (POS1 Thorax)",
+          "value": "100% in Supine, 78% in Standing"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Limits of Agreement",
+          "value": "±20 ms (Supine Thorax)"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://openscg.org/science-hub/studies/S031",
+          "name": "Inan 2014: Review of Recent Advances",
+          "comment": "Semantic Relationship: Framework"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://openscg.org/science-hub/studies/S003",
+          "name": "Crow 1994: Precision and Consistency",
+          "comment": "Semantic Relationship: Related to"
+        }
+      ],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: feasibility. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S010",
+      "identifier": "S010",
+      "name": "Wang 2025: Cardiac Output Prediction",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "T. Wang et al."
+        }
+      ],
+      "datePublished": "2025",
+      "headline": "Wang 2025: Cardiac Output Prediction",
+      "description": "S010 represents a major technical leap for SCG by moving from simple timing estimation to direct Cardiac Output prediction using Deep Learning. Validating against the gold standard RHC in a real-world heart failure cohort makes this a key supporting document for OpenSCG’s clinical monitoring claims.",
+      "sameAs": "https://doi.org/10.1016/j.amjcard.2025.09.037",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "ml"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "CO Bias (CO < 6 L/min)",
+          "value": "0.01 L/min"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "CO LoA (CO < 6 L/min)",
+          "value": "0.88 to 0.87 L/min"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "CI Bias (CI < 2.2 L/min/m2)",
+          "value": "0.07 L/min/m2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "CI LoA (CI < 2.2 L/min/m2)",
+          "value": "0.35 to 0.48 L/min/m2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RMSE%",
+          "value": "22% for CO, 20% for CI"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://openscg.org/science-hub/studies/S028",
+          "name": "Korsgaard 2025: Beat-to-beat Delineation",
+          "comment": "Semantic Relationship: Detection"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://openscg.org/science-hub/studies/S011",
+          "name": "SEISMIC-HF 1 (AHA 2024): Congestion Monitoring",
+          "comment": "Semantic Relationship: Related to"
+        }
+      ],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: moderate."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S011",
+      "identifier": "S011",
+      "name": "SEISMIC-HF 1 (AHA 2024): Congestion Monitoring",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "SEISMIC-HF Investigators"
+        }
+      ],
+      "datePublished": "2025",
+      "headline": "SEISMIC-HF 1 (AHA 2024): Congestion Monitoring",
+      "description": "Provides summary evidence from the large-scale SEISMIC-HF 1 trial for non-invasive filling pressure estimation.",
+      "sameAs": "https://doi.org/10.1007/s10741-025-10514-1",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "hf"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Correlation (r)",
+          "value": "0.74"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "R-squared",
+          "value": "0.55"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Mean difference",
+          "value": "1.04 ± 5.57 mmHg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Limit of Agreement",
+          "value": "-9.9 to 11.9 mmHg"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://openscg.org/science-hub/studies/S006",
+          "name": "Dehkordi 2019: SCG for CAD Screening",
+          "comment": "Semantic Relationship: AHA 2024 Context"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://openscg.org/science-hub/studies/S010",
+          "name": "Wang 2025: Cardiac Output Prediction",
+          "comment": "Semantic Relationship: Related to"
+        }
+      ],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "cornerstone",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: strong."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S012",
+      "identifier": "S012",
+      "name": "Kolind 2024: SCG/Echo Systolic Correlation",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Christoffer Mejling Kolind et al."
+        }
+      ],
+      "datePublished": "2024",
+      "headline": "Kolind 2024: SCG/Echo Systolic Correlation",
+      "description": "S012 is a very recent (2024) validation of SCG’s sensitivity to hemodynamic shifts. Crucially, it found that SCG was *more* sensitive to small changes in preload than traditional ultrasound, highlighting its potential for early detection of volume overload in heart failure patients at home.",
+      "sameAs": "https://doi.org/10.1088/2057-1976/ad6a67",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "comparison"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Significant correlations",
+          "value": "LVET, IVCT, S', strain, SR, SV, and LVEF"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Preload sensitivity",
+          "value": "Most systolic SCG intervals significantly prolonged in tilted position"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "SCG vs Echo sensitivity",
+          "value": "Systolic SCG variables more sensitive to preload alterations than Echo"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://openscg.org/science-hub/studies/S003",
+          "name": "Crow 1994: Precision and Consistency",
+          "comment": "Semantic Relationship: Extended by"
+        }
+      ],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: limited."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S013",
+      "identifier": "S013",
+      "name": "Noda 2017: PEP/LVET in Heart Failure",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Noda et al."
+        }
+      ],
+      "datePublished": "2017",
+      "headline": "Noda 2017: PEP/LVET in Heart Failure",
+      "description": "S013 provides a direct link between SCG metrics and advanced clinical interventions like CRT. It proves that the 'vibration-based' markers OpenSCG extracts have real diagnostic and therapeutic value in treating high-risk heart failure patients.",
+      "sameAs": "https://doi.org/10.1016/j.jarr.2016.12.003",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "hf"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Finding",
+          "value": "PEP/LVET ratio is a highly informative marker of cardiac performance"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Utility",
+          "value": "Useful for non-invasive optimization of CRT settings"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S014",
+      "identifier": "S014",
+      "name": "Taebi 2019: Recent Advances in SCG",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Amirtaha Taebi et al."
+        }
+      ],
+      "datePublished": "2019",
+      "headline": "Taebi 2019: Recent Advances in SCG",
+      "description": "S014 is the definitive state-of-the-art review for SCG. For OpenSCG, it serves as an academic bridge that links our modern AI approach to over 60 years of cardiomechanical research, proving that the technology is now 'clinically ready' for ubiquitous deployment.",
+      "sameAs": "https://doi.org/10.3390/vibration2010005",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Scope",
+          "value": "Covering signal processing, motion removal, and clinical utility"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Finding",
+          "value": "MEMS and Deep Learning have reignited SCG as a viable clinical tool"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: feasibility. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S015",
+      "identifier": "S015",
+      "name": "Cinotti 2025: Instantaneous HR via Phone",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Cinotti et al."
+        }
+      ],
+      "datePublished": "2025",
+      "headline": "Cinotti 2025: Instantaneous HR via Phone",
+      "description": "Recent 2025 benchmark confirming smartphone hardware sensitivity for medical-grade cardiac and respiratory monitoring.",
+      "sameAs": "https://doi.org/10.3390/s25041094",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Heart Rate LoA",
+          "value": "±7.33 ms"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Heart Rate R2",
+          "value": "> 0.999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Breathing Rate LoA",
+          "value": "±0.51 breaths/min"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Breathing Rate R2",
+          "value": "0.993"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S016",
+      "identifier": "S016",
+      "name": "Inan 2018: Assessing Clinical Status of HF",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Omer T. Inan et al."
+        }
+      ],
+      "datePublished": "2018",
+      "headline": "Inan 2018: Assessing Clinical Status of HF",
+      "description": "S016 is a vital clinical validation for OpenSCG’s heart failure monitoring use case. By proving that SCG can track the clinical improvement from hospital admission to discharge, it establishes SCG as a sensitive 'digital biomarker' for hemodynamic congestion and recovery, potentially more sensitive than heart rate alone.",
+      "sameAs": "https://doi.org/10.1161/CIRCHEARTFAILURE.117.004313",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "hf"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "GSS Decompensated HF",
+          "value": "44.4 ± 4.9"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "GSS Compensated HF",
+          "value": "35.2 ± 10.5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "P-value (Comp vs Decomp)",
+          "value": "< 0.001"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "GSS Admission to Discharge (N=6)",
+          "value": "44 ± 4.1 to 35 ± 3.9 (P < 0.05)"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://openscg.org/science-hub/studies/S009",
+          "name": "Landreani 2016: Beat-to-beat HR by Smartphone",
+          "comment": "Semantic Relationship: Reliability"
+        }
+      ],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: limited."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S017",
+      "identifier": "S017",
+      "name": "Salerno 1992: Exercise SCG for CAD detection",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Salerno DM, Zanetti J."
+        }
+      ],
+      "datePublished": "1992",
+      "headline": "Salerno 1992: Exercise SCG for CAD detection",
+      "description": "S017 is a landmark historical validation. It provides the empirical proof that mechanical heart vibrations are more sensitive indicators of reduced blood flow (ischemia) than electrical changes, justifying OpenSCG's focus on SCG for high-precision cardiac screening.",
+      "sameAs": "https://doi.org/10.1159/000470383",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "cad"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Finding",
+          "value": "SCG improved accuracy by +16 pp over stress ECG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Threshold",
+          "value": "Detects >=50% stenosis with high sensitivity"
+        }
+      ],
+      "citation": []
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S018",
+      "identifier": "S018",
+      "name": "MODE-AF Study: Mobile Phone Detection of AF",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Tero Koivisto et al."
+        }
+      ],
+      "datePublished": "2018",
+      "headline": "MODE-AF Study: Mobile Phone Detection of AF",
+      "description": "Validates the effectiveness of combined accelerometer and gyroscope data for heart rhythm screening without external hardware.",
+      "sameAs": "https://doi.org/10.1161/CIRCULATIONAHA.117.032804",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Sensitivity",
+          "value": "95.3%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Specificity",
+          "value": "96.0%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Positive Predictive Value (PPV)",
+          "value": "96.0%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Negative Predictive Value (NPV)",
+          "value": "95.4%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Kappa coefficient",
+          "value": "0.913 (near-perfect agreement)"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "cornerstone",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: strong."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S019",
+      "identifier": "S019",
+      "name": "MSCardio: Remote Monitoring Dataset",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Amirtaha Taebi et al."
+        }
+      ],
+      "datePublished": "2024",
+      "headline": "MSCardio: Remote Monitoring Dataset",
+      "description": "An open-access dataset used for training and validating algorithms on diverse smartphone hardware.",
+      "sameAs": "https://doi.org/10.5281/zenodo.15657893",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Total hours of data",
+          "value": "7,700+"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Unique recordings",
+          "value": "502"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Format",
+          "value": "CSV (Raw and Calibrated SCG)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Repository",
+          "value": "github.com/TaebiLab/MSCardio"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: feasibility. Sample Adequacy: moderate."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S020",
+      "identifier": "S020",
+      "name": "OpenSCG: Telemedicine Waveform Framework",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "OpenSCG Team"
+        }
+      ],
+      "datePublished": "2024",
+      "headline": "OpenSCG: Telemedicine Waveform Framework",
+      "description": "Technical infrastructure supporting scalable data streaming for research purposes.",
+      "sameAs": null,
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Technology",
+          "value": "Node.js / Python / WebSockets"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Function",
+          "value": "End-to-end framework for cardiomechanical data transmission"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "Preliminary",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: method. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S021",
+      "identifier": "S021",
+      "name": "Ramos-Castro 2012: Smartphone HRV Challenges",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Capdevila et al."
+        }
+      ],
+      "datePublished": "2021",
+      "headline": "Ramos-Castro 2012: Smartphone HRV Challenges",
+      "description": "S021 is a foundational technical warning for the mobile health industry. For OpenSCG, it provides the historical and scientific justification for our sophisticated backend synchronization—proving that we solve a known industry problem that prevents most competitors from achieving clinical-grade accuracy.",
+      "sameAs": null,
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Finding",
+          "value": "Smartphone HRV results are strongly influenced by instability in sampling frequency."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Threshold",
+          "value": "Sampling frequency instability (jitter) must be compensated for clinical HRV."
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: feasibility. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S022",
+      "identifier": "S022",
+      "name": "Tatinati 2014: Wavelet Peak Detection",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Sahoo et al."
+        }
+      ],
+      "datePublished": "2017",
+      "headline": "Tatinati 2014: Wavelet Peak Detection",
+      "description": "Foundational technical work on multi-resolution analysis of cardiomechanical signals.",
+      "sameAs": null,
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "ml"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Method",
+          "value": "Stationary Wavelet Transform (SWT)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Utility",
+          "value": "Effective for multi-resolution signal denoising"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "Preliminary",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: method. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S023",
+      "identifier": "S023",
+      "name": "Castiglioni 2022: SCG for Sleep Monitoring",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Castiglioni et al."
+        }
+      ],
+      "datePublished": "2022",
+      "headline": "Castiglioni 2022: SCG for Sleep Monitoring",
+      "description": "Validates the use of mechanocardiography for long-term physiological monitoring during sleep.",
+      "sameAs": null,
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "comparison"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Finding",
+          "value": "SCG can track autonomic changes during sleep stages"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "Preliminary",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: moderate."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S024",
+      "identifier": "S024",
+      "name": "Zia 2022: Quality Indexing and Classification",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Jonathan Zia et al."
+        }
+      ],
+      "datePublished": "2022",
+      "headline": "Zia 2022: Quality Indexing and Classification",
+      "description": "Provides the technical foundation for robust signal quality control in mobile SCG monitoring.",
+      "sameAs": "https://doi.org/10.1109/JBHI.2021.3119150",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Classification Accuracy",
+          "value": "91.8%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Correlation (Quality Index)",
+          "value": "r=0.89"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: method. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S025",
+      "identifier": "S025",
+      "name": "Khosrow-Khavar 2017: Heart Sound Localization",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Yu & Liu"
+        }
+      ],
+      "datePublished": "2020",
+      "headline": "Khosrow-Khavar 2017: Heart Sound Localization",
+      "description": "Integrates phonocardiography and seismocardiography principles for automated cardiac cycle mapping.",
+      "sameAs": null,
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "ml"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Accuracy",
+          "value": "High localization precision for S1 and S2"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "Preliminary",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: method. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S026",
+      "identifier": "S026",
+      "name": "Lahdenoja 2018: AF Detection via Smartphone",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Olli Lahdenoja et al."
+        }
+      ],
+      "datePublished": "2018",
+      "headline": "Lahdenoja 2018: AF Detection via Smartphone",
+      "description": "Established the technical feasibility of smartphone-only arrhythmia screening.",
+      "sameAs": "https://doi.org/10.1109/JBHI.2017.2678450",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Accuracy",
+          "value": "97.4%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sensitivity",
+          "value": "93.8%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Specificity",
+          "value": "100%"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S027",
+      "identifier": "S027",
+      "name": "Suresh 2020: SeismoNet End-to-End DL",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Prithu Suresh et al."
+        }
+      ],
+      "datePublished": "2020",
+      "headline": "Suresh 2020: SeismoNet End-to-End DL",
+      "description": "S027 (SeismoNet) is a key technical reference for OpenSCG's early-stage ML development. It represents the shift from manual feature engineering to end-to-end deep learning, proving that raw SCG vibrations can be directly mapped to cardiac events using modern AI architectures.",
+      "sameAs": "https://doi.org/arXiv:2010.05662",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "ml"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Model",
+          "value": "SeismoNet (Deep Convolutional Neural Network)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Function",
+          "value": "Transforms SCG into interpretable heart rate indices"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Repository",
+          "value": "github.com/prithusuresh/SeismoNet"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: method. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S028",
+      "identifier": "S028",
+      "name": "Korsgaard 2025: Beat-to-beat Delineation",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "T. Korsgaard et al."
+        }
+      ],
+      "datePublished": "2025",
+      "headline": "Korsgaard 2025: Beat-to-beat Delineation",
+      "description": "Introduces and validates a robust deep-learning framework (SeismoTracker) for automated cardiomechanical signal analysis.",
+      "sameAs": "https://doi.org/10.3389/fdgth.2025.1699611",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "ml"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Positive Predictive Value (PPV)",
+          "value": "0.809 to 1.000"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sensitivity",
+          "value": "0.843 to 0.918"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Total beats annotated",
+          "value": "42,452"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "cornerstone",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: strong."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S029",
+      "identifier": "S029",
+      "name": "Craighero 2024: Cross-dataset SCG Analysis",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Craighero et al."
+        }
+      ],
+      "datePublished": "2024",
+      "headline": "Craighero 2024: Cross-dataset SCG Analysis",
+      "description": "S029 is a critical piece for OpenSCG’s technical strategy. It addresses the 'reality gap'—the fact that models trained on clean lab data often fail in the field. By validating personalization and multi-sensor fusion, it provides a direct scientific foundation for OpenSCG’s 'U-Net v3' and adaptive processing pipeline.",
+      "sameAs": "https://doi.org/10.48550/arXiv.2408.04439",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "ml"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "F1-score (Controlled)",
+          "value": "0.92 to 0.94"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "F1-score (Real-world z-axis)",
+          "value": "0.88"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "F1-score (Real-world personalized)",
+          "value": "0.93 to 0.95"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Model",
+          "value": "U-Net for binary semantic segmentation"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: moderate."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S030",
+      "identifier": "S030",
+      "name": "Rahmani 2024: EmoWear Dataset",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "A. Rahmani et al."
+        }
+      ],
+      "datePublished": "2024",
+      "headline": "Rahmani 2024: EmoWear Dataset",
+      "description": "S030 (EmoWear) is a pioneer in 'Everyday SCG'. While most studies focus on medical diagnosis, EmoWear proves that SCG can capture subtle physiological changes related to human emotions and daily actions. This is key for OpenSCG’s vision of a holistic 'Health & Well-being' monitor that understands the user’s context.",
+      "sameAs": "https://doi.org/10.1038/s41597-024-03429-3",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Total Data",
+          "value": "~70 hours of recordings"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sensors",
+          "value": "3x ST SensorTile.box, Zephyr BH3, Empatica E4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Activities",
+          "value": "Stationary video watching, walking, talking, drinking"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "SNR Range",
+          "value": "21.9 dB to 49.8 dB"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: feasibility. Sample Adequacy: limited."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S031",
+      "identifier": "S031",
+      "name": "Inan 2014: Review of Recent Advances",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Omer T. Inan et al."
+        }
+      ],
+      "datePublished": "2014",
+      "headline": "Inan 2014: Review of Recent Advances",
+      "description": "S031 is the highly cited 'manifesto' of modern SCG research. For OpenSCG, it provides the authoritative background needed to justify why SCG technology is now ready for consumer and clinical scale after decades of dormancy.",
+      "sameAs": "https://doi.org/10.1109/jbhi.2014.2361732",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Citations",
+          "value": "730+"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Focus",
+          "value": "MEMS accelerometer impact on cardiomechanical sensing"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: feasibility. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S032",
+      "identifier": "S032",
+      "name": "Ha 2020: Contactless SCG via Radars",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Ha et al."
+        }
+      ],
+      "datePublished": "2020",
+      "headline": "Ha 2020: Contactless SCG via Radars",
+      "description": "Explores the feasibility of passive, contact-free cardiac monitoring using millimeter-wave technology.",
+      "sameAs": "https://doi.org/10.1145/3372224.3419982",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Median Error",
+          "value": "0.26%-1.29% for all events"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Timing Error range",
+          "value": "2-12 ms"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Total heartbeats analyzed",
+          "value": "40,000+"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Precision (Labeling)",
+          "value": "~90%"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: limited."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S033",
+      "identifier": "S033",
+      "name": "Hossein 2024: Robust Cardiac Energy Assessment",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Hossein et al."
+        }
+      ],
+      "datePublished": "2024",
+      "headline": "Hossein 2024: Robust Cardiac Energy Assessment",
+      "description": "Validates the repeatability of patient-performed SCG measurements in a real-world telemedicine context.",
+      "sameAs": "https://doi.org/10.3390/s24072139",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "ICC (Smartphone vs Device)",
+          "value": "> 0.77"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ICC (Patient-acquired)",
+          "value": "> 0.83"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "At-home compliance rate",
+          "value": "41.4%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Heartbeat detection accuracy",
+          "value": "High reliability across diverse cardiac pathologies"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "cornerstone",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: strong."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S034",
+      "identifier": "S034",
+      "name": "Ganti 2022: Stroke Volume in CHD",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "V. Ganti et al."
+        }
+      ],
+      "datePublished": "2022",
+      "headline": "Ganti 2022: Stroke Volume in CHD",
+      "description": "S034 is an important feasibility study that tests SCG in a complex patient population (CHD). By using Cardiac MRI as a comparator, it establishes a benchmark for non-invasive Stroke Volume monitoring in remote scenarios, while highlighting the benefit of multi-modal sensing.",
+      "sameAs": "https://doi.org/10.1161/jaha.122.026067",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "hf"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "SV Error",
+          "value": "28% (with respect to CMR)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RMSE",
+          "value": "11.48 mL"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "R2",
+          "value": "0.76"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://openscg.org/science-hub/studies/S007",
+          "name": "Haddad 2024: Smartphone HF Recognition",
+          "comment": "Semantic Relationship: Validation"
+        }
+      ],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: limited."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S035",
+      "identifier": "S035",
+      "name": "Hansen 2024: SCG for Maximal Oxygen Uptake in Sport",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Hansen et al."
+        }
+      ],
+      "datePublished": "2023",
+      "headline": "Hansen 2024: SCG for Maximal Oxygen Uptake in Sport",
+      "description": "S035 extends the utility of OpenSCG from medical screening to sports performance. By linking resting vibrations to VO2max, it proves that SCG is a multi-dimensional tool capable of monitoring both cardiac disease and physical fitness.",
+      "sameAs": "https://doi.org/10.1055/a-1144-3369",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "hf"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Finding",
+          "value": "Resting SCG algorithms can estimate VO2max"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Constraint",
+          "value": "Algorithms need further adjustment for highly trained sub-elite athletes"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S036",
+      "identifier": "S036",
+      "name": "Shafiq 2016: Automatic STI Identification",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Ghufran Shafiq et al."
+        }
+      ],
+      "datePublished": "2016",
+      "headline": "Shafiq 2016: Automatic STI Identification",
+      "description": "S036 (Shafiq 2016) is a foundational paper for OpenSCG’s automated processing pipeline. By moving beyond lab-only supine measurements to seated trials and achieving millisecond-level precision, it validates the core algorithms needed for practical, non-invasive STI monitoring.",
+      "sameAs": "https://doi.org/10.1038/srep37524",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "AO Detection Error",
+          "value": "Within ±2 ms for most cycles"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AC Detection LoA (Supine)",
+          "value": "16.1 ms"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AC Detection LoA (Seated)",
+          "value": "42.9 ms"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Outliers (AO, Supine)",
+          "value": "0.37%"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: method. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S037",
+      "identifier": "S037",
+      "name": "Centracchio 2023: ECG-Free Heartbeat Detection",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "J. Centracchio et al."
+        }
+      ],
+      "datePublished": "2023",
+      "headline": "Centracchio 2023: ECG-Free Heartbeat Detection",
+      "description": "S037 is a significant validation for OpenSCG’s core algorithm. By testing on a large cohort of 77 *pathological* subjects (not just healthy ones), it confirms that SCG-based heart rate monitoring is robust against the signal distortions caused by valvular heart diseases.",
+      "sameAs": "https://doi.org/10.3390/s23104684",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Sensitivity",
+          "value": "96% (using combined systolic-diastolic templates)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Positive Predictive Value (PPV)",
+          "value": "97%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "IBI Accuracy (R2)",
+          "value": "> 0.999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "IBI Limits of Agreement",
+          "value": "±7.8 ms"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://openscg.org/science-hub/studies/S033",
+          "name": "Hossein 2024: Robust Cardiac Energy Assessment",
+          "comment": "Semantic Relationship: Delineation"
+        }
+      ],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: moderate."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S038",
+      "identifier": "S038",
+      "name": "Wilson 1993: Diagnostic Accuracy of SCG for CAD",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "R. A. Wilson et al."
+        }
+      ],
+      "datePublished": "1993",
+      "headline": "Wilson 1993: Diagnostic Accuracy of SCG for CAD",
+      "description": "Historical multicenter study highlighting the incremental diagnostic value of mechanical heart signals over traditional stress testing.",
+      "sameAs": "https://doi.org/10.1016/0002-9149(93)90508-a",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "cad"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Sensitivity (Anatomic CAD)",
+          "value": "73% for SCG vs 48% for ECG (p < 0.001)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Specificity (Anatomic CAD)",
+          "value": "78% for SCG vs 80% for ECG (NS)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sensitivity (Physiologic CAD)",
+          "value": "78% for SCG vs 55% for ECG (p < 0.02)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Diagnostic Accuracy (ROC Model 3)",
+          "value": "85.1% (Incremental over ECG)"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "cornerstone",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: moderate."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S039",
+      "identifier": "S039",
+      "name": "Zia 2020: Resilient STI Estimation",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Shafiq et al."
+        }
+      ],
+      "datePublished": "2016",
+      "headline": "Zia 2020: Resilient STI Estimation",
+      "description": "Pioneering work on motion-robust seismocardiography algorithms.",
+      "sameAs": null,
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Finding",
+          "value": "Proposed algorithms show high resilience to walking-induced noise"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "Preliminary",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: method. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S040",
+      "identifier": "S040",
+      "name": "Sørensen 2020: SCG in Pregnancy",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Sørensen et al."
+        }
+      ],
+      "datePublished": "2020",
+      "headline": "Sørensen 2020: SCG in Pregnancy",
+      "description": "Application of cardiomechanical sensing to maternal health and obstetrics.",
+      "sameAs": null,
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Finding",
+          "value": "SCG can track hemodynamic shifts throughout pregnancy trimesters"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "Preliminary",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: moderate."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S041",
+      "identifier": "S041",
+      "name": "García-González 2013: CEBS Database",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "M. A. García-González et al."
+        }
+      ],
+      "datePublished": "2013",
+      "headline": "García-González 2013: CEBS Database",
+      "description": "S041 (CEBS Database) is a 'gold standard' dataset for technical SCG research. For OpenSCG, it serves as the primary benchmarking tool for validating our signal processing filters and basic peak detection logic before moving to complex real-world data.",
+      "sameAs": "https://doi.org/10.13026/C2KW23",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Total Data",
+          "value": "60 records (Basal, Music, Post-music)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sampling frequency",
+          "value": "5 kHz"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sensor",
+          "value": "Biopac MP36, triaxial accelerometer (LIS344ALH)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Duration",
+          "value": "~1 hour per volunteer"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: feasibility. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S042",
+      "identifier": "S042",
+      "name": "Postolache 2010: Bed-Integrated SCG",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Leitão et al."
+        }
+      ],
+      "datePublished": "2018",
+      "headline": "Postolache 2010: Bed-Integrated SCG",
+      "description": "Early demonstration of 'smart environment' heart monitoring using mechanical sensors.",
+      "sameAs": null,
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Accuracy",
+          "value": "Comparable to standard SCG for HR estimation"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "Preliminary",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: feasibility. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S044",
+      "identifier": "S044",
+      "name": "Ebrahimkhani 2023: SCG for Aortic Valve Stenosis",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "D. Ebrahimkhani et al."
+        }
+      ],
+      "datePublished": "2023",
+      "headline": "Ebrahimkhani 2023: SCG for Aortic Valve Stenosis",
+      "description": "Demonstrates the capability of SCG to capture high-fidelity hemodynamic information previously thought to require advanced imaging.",
+      "sameAs": "https://doi.org/10.1007/s10439-023-03342-7",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "hf"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "AVS Detection (AUC)",
+          "value": "0.99"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Peak Velocity Correlation (r)",
+          "value": "0.85"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Mean Pressure Gradient Correlation (r)",
+          "value": "0.83"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: exploratory."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S045",
+      "identifier": "S045",
+      "name": "Parlato 2025: FOSTER Multimodal Dataset",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "A. Parlato et al."
+        }
+      ],
+      "datePublished": "2025",
+      "headline": "Parlato 2025: FOSTER Multimodal Dataset",
+      "description": "S045 (FOSTER) is a high-quality 2025 dataset that represents the future of multimodal 'Force-based' monitoring. For OpenSCG, it provides the precise temporal alignment needed to train models that combine vibrations (SCG) with acoustic data (PCG), enabling more robust detection of heart valve events.",
+      "sameAs": "https://doi.org/10.1038/s41597-025-05694-2",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Total Data",
+          "value": "7 minutes per subject @ 10 kHz sampling rate"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "SCG SNR",
+          "value": "83.73 ± 0.53 dB"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "IBI Accuracy (dHF-FCG vs ECG)",
+          "value": "R2 > 0.99, Bias 0.0 ms, LoA ~±6 ms"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Repository",
+          "value": "osf.io/3u6yb"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: feasibility. Sample Adequacy: limited."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S046",
+      "identifier": "S046",
+      "name": "Golenderov 2026: Rhythmic Spectrum Disorders in Field",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Golenderov et al."
+        }
+      ],
+      "datePublished": "2026",
+      "headline": "Golenderov 2026: Rhythmic Spectrum Disorders in Field",
+      "description": "Demonstrates the effectiveness of advanced neural networks in processing heterogeneous and noisy smartphone sensor data.",
+      "sameAs": "https://doi.org/10.48550/arxiv.2601.13926",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "tech"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Sensitivity",
+          "value": "99.80%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Positive Predictive Value (PPV)",
+          "value": "99.09%"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Total Data collected",
+          "value": "7,700+ hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Model",
+          "value": "U-Net v3 with Multi-scale convolutions and Attention Gates"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: strong."
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://openscg.org/science-hub/studies/S047",
+      "identifier": "S047",
+      "name": "Agam 2022: Diastolic SCG vs Echo",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Ahmad Agam et al."
+        }
+      ],
+      "datePublished": "2022",
+      "headline": "Agam 2022: Diastolic SCG vs Echo",
+      "description": "Validates SCG’s potential for evaluating diastolic function. Note: This source was previously referenced as S038 in some contexts.",
+      "sameAs": "https://doi.org/10.1093/ehjdh/ztac043",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "comparison"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "PropertyValue",
+          "name": "Correlation with e'",
+          "value": "r=0.713 (P<0.001) for peak-to-peak diastolic SCG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Intrasubject correlation (supine vs tilt)",
+          "value": "r=0.90 for peak-to-peak Cd-Dd"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Preload sensitivity",
+          "value": "Only Ed amplitude significantly altered by tilt"
+        }
+      ],
+      "citation": [],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "supporting",
+          "bestRating": "Cornerstone",
+          "worstRating": "Preliminary"
+        },
+        "reviewBody": "Evidence Role: validation. Sample Adequacy: limited."
+      }
+    }
+  ]
+}

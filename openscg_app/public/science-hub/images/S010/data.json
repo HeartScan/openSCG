@@ -1,0 +1,44 @@
+[
+  {
+    "id": "S010_1_1",
+    "filename": "S010_p1_i1.jpeg",
+    "path": "/science-hub/images/S010/S010_p1_i1.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 1
+  },
+  {
+    "id": "S010_2_1",
+    "filename": "S010_p2_i1.jpeg",
+    "path": "/science-hub/images/S010/S010_p2_i1.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 2
+  },
+  {
+    "id": "S010_4_1",
+    "filename": "S010_p4_i1.jpeg",
+    "path": "/science-hub/images/S010/S010_p4_i1.jpeg",
+    "caption": "Figure 1. Distribution of CO and CI for all baseline RHC encounters. (A) Histogram of CO values as average of Fick and TD obtained during RHC. (B) Histogram of CI values calculated as average CO by Fick and TD normalized to BSA. (C) Correlation between Fick CO and TD CO. An outlier with Fick CO of 9.4 L/min and TD CO of 17.8 L/min was omitted for visual clarity. BSA = body surface area; CO = cardiac output; CI = cardiac index; CInt = conﬁdence interval; PCC = Pearson correlation coefﬁcient; RHC = right heart catheterization; TD = thermodilution.",
+    "page": 4
+  },
+  {
+    "id": "S010_5_1",
+    "filename": "S010_p5_i1.jpeg",
+    "path": "/science-hub/images/S010/S010_p5_i1.jpeg",
+    "caption": "Figure 2. Schematic overview of the deep learning model for CO prediction. Tri-axial SCG and single-lead ECG serve as inputs to parallel convolutional subnetworks (FeatureCNN). A linear layer refers to a fully connected layer that maps a speciﬁed number of inputs to a speciﬁed number of output units. Dropout, with a given probability p, randomly sets a pro- portion of activations to zero during training to limit overﬁtting. A 1D convolutional layer (Conv1D) applies a set number of ﬁlters of speciﬁed kernel size along the temporal axis, with conﬁgurable dilation and padding settings to control the receptive ﬁeld and output size. Adaptive average pooling (AdapAvgPool1D) performs averaging over the temporal axis to produce a ﬁxed-length output, regardless of the input size. BMI = body mass index; CO = cardiac output; ECG = electrocardiogram; SCG = seismocardiogram.",
+    "page": 5
+  },
+  {
+    "id": "S010_6_1",
+    "filename": "S010_p6_i1.jpeg",
+    "path": "/science-hub/images/S010/S010_p6_i1.jpeg",
+    "caption": "Figure 3. Performance of SCG-based deep learning model for CO prediction. Correlation of predicted CO by SCG versus reference CO by RHC for the validation-test set of 64 patients, color-coded by (A) CO and (B) cardiac rhythm. Each point represents the averaged predicted CO for all 30-second segments in a catheterization encounter. Error bars were omitted for visual clarity. Maximum width of 95% conﬁdence intervals for all points was 0.156 L/min. Bland-Altman plot between predicted and reference CO values color-coded by (C) car- diac output and (D) cardiac rhythm. Middle dashed line denotes the mean bias. Upper and lower dashed lines represent the 95% LoA. CInt = conﬁdence interval; CO = cardiac output; LoA = limits of agreement; PCC = Pearson correlation coefﬁcient; RHC = right heart catheterization; RMSE = root mean squared error; SCG = seismocardiogram.",
+    "page": 6
+  },
+  {
+    "id": "S010_7_1",
+    "filename": "S010_p7_i1.jpeg",
+    "path": "/science-hub/images/S010/S010_p7_i1.jpeg",
+    "caption": "Figure 4. Performance of SCG-based deep learning model for CI prediction. Correlation of predicted CI by SCG versus reference CI by RHC for validation-test set of 64 patients color- coded by (A) CO and (B) cardiac rhythm. Each point represents the averaged predicted CI for all 30-second segments in a catheterization recording. Error bars were omitted for visual clarity. Maximum width of 95% conﬁdence intervals for all points was 0.062 L/min/m2. Bland-Altman plot between predicted and reference CI values color-coded by (C) CO and (D) cardiac rhythm. Middle dashed line denotes the mean bias. Upper and lower dashed lines represent the 95% LoA. CI = cardiac index; LoA = limits of agreement; PCC = Pearson correlation coefﬁcient; RHC = right heart catheterization; RMSE = root mean squared error; SCG = seismocardiogram.",
+    "page": 7
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "S018_2_1",
+    "filename": "S018_p2_i1.png",
+    "path": "/science-hub/images/S018/S018_p2_i1.png",
+    "caption": "Figure. Visual presentation of mechanocardiography data.   A, Electrocardiographic, accelerometer, and gyroscope signals are presented in sinus rhythm (top) and atrial fibrillation (bot- tom). The corresponding heartbeats can be located in both the mechanical and the electrocardiographic signals during sinus  rhythm and atrial fibrillation. Because the different axes of the accelerometer and gyroscope signals appear to vary in quality,  our algorithm takes advantage of combining the information from various axes to provide a reliable estimate of the heart  rhythm. B, Mechanocardiography signal periodicity is represented visually in sinus rhythm (top), sinus rhythm converting to  atrial fibrillation (middle), and atrial fibrillation (bottom). The vertical axis represents time in seconds, and the horizontal axis  represents the instant period of the signal converted into beats per minute to denote heart rate. A continuous signal shape is  observed during a regular heart rhythm such as sinus rhythm (top), whereas a scattered pattern is observed during an irregular  rhythm such as atrial fibrillation (bottom). Middle, Sinus rhythm abruptly converts to atrial fibrillation at ≈140 seconds.",
+    "page": 2
+  }
+]

@@ -1,17 +1,16 @@
 # OpenSCG Development Setup
 
-This guide provides step-by-step instructions for setting up a local development environment for the OpenSCG project.
+This guide provides instructions for setting up a local development environment for the OpenSCG project.
 
 ## 1. Prerequisites
 
 Before you begin, ensure you have the following installed on your system:
 
 - **Git:** For version control.
-- **Docker:** For containerizing the application services.
+- **Docker:** For running the Redis database and containerized application.
 - **Docker Compose:** For orchestrating the multi-container setup. (Usually included with Docker Desktop).
-- **Node.js:** (v18 or later) For frontend development.
-- **Python:** (v3.9 or later) For backend development.
-- **ngrok:** For exposing the local development environment to the internet.
+- **Node.js:** (v20 or later) For local development without Docker.
+- **pnpm:** (Recommended) or `npm` / `yarn`.
 
 ## 2. Cloning the Repository
 
@@ -24,77 +23,81 @@ cd openSCG
 
 ## 3. Project Structure
 
-The project is organized into a monorepo structure:
+The project has been consolidated into a monolithic structure:
 
-- **`/client`:** The patient-facing Next.js web application.
-- **`/server`:** The FastAPI backend server for real-time ingestion and streaming.
-- **`/docs`:** Project documentation.
-- **`docker-compose.yml`:** The configuration file for running the services together.
-
-*(Note: These directories will be created in the next phase of development).*
+- **`openscg_app/`**: The main Next.js application (Frontend + Backend API + WebSocket Server).
+- **`docs/`**: Project documentation.
+- **`docker-compose.yml`**: configuration for running the `app` and `redis` services.
 
 ## 4. Environment Variables
 
-Each service may require its own environment variables. Create a `.env` file in the root of the `/client` and `/server` directories as needed.
+The `openscg_app` service requires environment variables. Create a `.env.local` file in `openscg_app/` if running locally without Docker, or rely on `docker-compose.yml` defaults.
 
-Example for `/server/.env`:
+Key variables:
+- `REDIS_URL`: Connection string for Redis (default: `redis://redis:6379` in Docker, `redis://localhost:6379` locally).
+- `NO_REDIS`: Set to `true` to run the application without a Redis connection (In-Memory mode).
+
+## 5. Running with Docker Compose (Recommended)
+
+This is the simplest way to get the full stack running.
+
+```sh
+docker-compose up --build
 ```
-DATABASE_URL=postgresql://user:password@db:5432/openscg
-```
 
-## 5. Running the Application with Docker (Recommended)
+- The app will be available at `http://localhost:3000`.
+- By default, it runs in **In-Memory Mode** (No Redis) for simplified local development.
+- To enable Redis, uncomment the `redis` service in `docker-compose.yml` and remove `NO_REDIS=true`.
 
-The easiest and most reliable way to get all services running for development (especially for mobile testing) is to use the provided automation script.
+## 6. Manual Setup (Local Node.js Dev)
 
-### One-Time Setup
+If you prefer to run the Next.js app directly on your host machine (e.g., for faster HMR):
 
-1.  **Install ngrok:**
+1.  **Start Redis:**
+    You can use Docker just for Redis:
     ```sh
-    npm install -g ngrok
+    docker run -p 6379:6379 redis:alpine
     ```
-2.  **Authenticate ngrok:**
-    *   Get your authtoken from [https://dashboard.ngrok.com/get-started/your-authtoken](https://dashboard.ngrok.com/get-started/your-authtoken)
-    *   Run the following command:
-        ```sh
-        ngrok config add-authtoken <YOUR_AUTHTOKEN>
-        ```
 
-### Running the Development Environment
+2.  **Install Dependencies:**
+    ```sh
+    cd openscg_app
+    pnpm install
+    ```
 
-From the root of the project directory, run the following command:
+3.  **Run the Development Server:**
+    The recommended way is to use the PowerShell helper script in the root:
+    ```powershell
+    .\dev.ps1
+    ```
 
-```sh
-./start-dev.sh
-```
+    Alternatively, run manually from the `openscg_app` directory:
+    ```sh
+    pnpm run dev
+    ```
+    
+    *Note: This starts the custom server (`server.js`) which handles both Next.js pages and WebSockets.*
 
-This script will:
-1.  Start all the Docker containers.
-2.  Create secure public URLs for the frontend and backend using ngrok.
-3.  Automatically configure the frontend to connect to the backend.
-4.  Print the public frontend URL to the console.
+4.  **Open Browser:**
+    Navigate to `http://localhost:3000`.
 
-You can then open this URL on your mobile device to test the application with full functionality.
+## 7. Mobile Testing (Local Network)
 
-## 6. Manual Setup (Without Docker)
+To test on a mobile device (essential for accelerometer access):
 
-For more granular control or for developers who prefer not to use Docker, each service can be run manually.
+1.  Ensure your computer and mobile device are on the same Wi-Fi network.
+2.  Find your computer's local IP address (e.g., `192.168.1.50`).
+3.  On your mobile device, navigate to `http://192.168.1.50:3000`.
 
-### Backend Server
+**CRITICAL NOTE ON SENSORS:**
+Modern mobile browsers (iOS Safari, Android Chrome) **require a secure HTTPS context** to access the accelerometer.
+- For local testing, you can use a tunneling service like `ngrok`.
+- For a production-like test, the easiest way is to deploy to **Google Cloud Run**, which provides HTTPS out of the box. See [docs/DEPLOY_GCP.md](DEPLOY_GCP.md).
 
-```sh
-cd server
-pip install -r requirements.txt
-uvicorn app.main:app --reload --port 8000
-```
+## 8. Deployment
 
-### Frontend Client
+For detailed instructions on deploying the application to Google Cloud Platform, see [docs/DEPLOY_GCP.md](DEPLOY_GCP.md).
 
-```sh
-cd client
-npm install
-npm run dev
-```
+## 9. Contributing
 
-## 7. Contributing
-
-Once your environment is set up, you can start making changes. Please refer to the [CONTRIBUTING.md](../CONTRIBUTING.md) guide for details on our development process and how to submit your contributions.
+Please refer to `CONTRIBUTING.md` for details on our development process and pull request workflow.

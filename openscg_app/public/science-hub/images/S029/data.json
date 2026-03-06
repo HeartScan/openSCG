@@ -1,0 +1,16 @@
+[
+  {
+    "id": "S029_2_1",
+    "filename": "S029_p2_i1.png",
+    "path": "/science-hub/images/S029/S029_p2_i1.png",
+    "caption": "Fig. 1. AO fiducial points and systolic complexes in a clean portion of SCG signal. Note that the bounding boxes are centered in the AO points.",
+    "page": 2
+  },
+  {
+    "id": "S029_3_1",
+    "filename": "S029_p3_i1.png",
+    "path": "/science-hub/images/S029/S029_p3_i1.png",
+    "caption": "Fig. 2. Example of Input (SCG signal), Output (probability prediction) and Ground Truth (Systolic complex) for our DL model. The SCG portion reported here is from BioPoli dataset, thus recorded in uncontrolled conditions.",
+    "page": 3
+  }
+]

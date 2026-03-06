@@ -1,0 +1,23 @@
+[
+  {
+    "id": "S009_2_1",
+    "filename": "S009_p2_i1.jpeg",
+    "path": "/science-hub/images/S009/S009_p2_i1.jpeg",
+    "caption": "Fig. 1. Schematization of the acquisition settings in standing position:  ECG and BCG (from the force platform) are synchronized by a SYNC  signal, while BCG and SCG (from the mobile phone) are synchronized  by an impulsive force F applied laterally to the subject shoulder.",
+    "page": 2
+  },
+  {
+    "id": "S009_2_2",
+    "filename": "S009_p2_i2.jpeg",
+    "path": "/science-hub/images/S009/S009_p2_i2.jpeg",
+    "caption": "Fig. 2. Schematization of the two positions and orientation of the mobile  devices used during acquisition: in supine, two smartphones were  simultaneously placed in POS1 and POS2; in standing, the smartphone  was kept by the subject in POS1.",
+    "page": 2
+  },
+  {
+    "id": "S009_4_1",
+    "filename": "S009_p4_i1.jpeg",
+    "path": "/science-hub/images/S009/S009_p4_i1.jpeg",
+    "caption": "Fig. 5. Linear correlation and Bland-Altman between the gold standard RR measures from the ECG and the IVC-IVC or J-J measures from the SCG  signal, in supine posture for POS1 and POS2, and in standing for POS1.",
+    "page": 4
+  }
+]

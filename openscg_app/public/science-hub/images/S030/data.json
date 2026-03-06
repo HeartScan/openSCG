@@ -1,0 +1,16 @@
+[
+  {
+    "id": "S030_5_1",
+    "filename": "S030_p5_i1.jpeg",
+    "path": "/science-hub/images/S030/S030_p5_i1.jpeg",
+    "caption": "Fig. 1  (a) Sensor setup used in the dataset. Wearable hardware included: two ST SensorTile.boxes secured  with elastic strap, Zephyr BioHarness 3 strap worn on left body side, and Empatica E4 wristband, all having  contact with the body skin. An additional ST SensorTile.box was connected to a cup of water. Arrows indicate  the positive direction of the Cartesian coordinate system for each sensor, based on which acceleration data is  reported in the mat and csv packages. Reprinted with permission from IEEE55, slightly modified afterwards.  (b) An author demonstrates the complete experimental setup in action.",
+    "page": 5
+  },
+  {
+    "id": "S030_15_1",
+    "filename": "S030_p15_i1.png",
+    "path": "/science-hub/images/S030/S030_p15_i1.png",
+    "caption": "Fig. 6  Pearson correlation heat maps, computed separately for sitting intervals (from the beginning of progress  indicator presentation to self-assessment form submission) and moving intervals (from self-assessment form  submission to the beginning of the progress indicator for the subsequent experiment) and averaged over the  entire dataset. Compared signals (referred to as listed in Table 2) are noted in the matrix rows and are assigned  letters that are reused wherever the same source is used. Note 1: Signals from the heartbeat set and the breathing  set undergo preprocessing using bandpass filters and the calculation of their autocorrelation sequences. Note 2:   Filter cut-offs applied to the heartbeat set and the breathing set differ, even though identical letters may be  found.",
+    "page": 15
+  }
+]

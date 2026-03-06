@@ -1,0 +1,79 @@
+[
+  {
+    "id": "S014_1_1",
+    "filename": "S014_p1_i1.png",
+    "path": "/science-hub/images/S014/S014_p1_i1.png",
+    "caption": "No caption found automatically.",
+    "page": 1
+  },
+  {
+    "id": "S014_1_2",
+    "filename": "S014_p1_i2.png",
+    "path": "/science-hub/images/S014/S014_p1_i2.png",
+    "caption": "No caption found automatically.",
+    "page": 1
+  },
+  {
+    "id": "S014_1_3",
+    "filename": "S014_p1_i3.png",
+    "path": "/science-hub/images/S014/S014_p1_i3.png",
+    "caption": "No caption found automatically.",
+    "page": 1
+  },
+  {
+    "id": "S014_1_4",
+    "filename": "S014_p1_i4.png",
+    "path": "/science-hub/images/S014/S014_p1_i4.png",
+    "caption": "No caption found automatically.",
+    "page": 1
+  },
+  {
+    "id": "S014_3_1",
+    "filename": "S014_p3_i1.jpeg",
+    "path": "/science-hub/images/S014/S014_p3_i1.jpeg",
+    "caption": "Figure 1. Modiﬁed Wiggers diagram. A sample axial seismocardiography (SCG) signal (acceleration in the dorso-ventral direction) is shown alongside other cardiovascular signals such as the aortic pressure, atrial pressure, ventricular volume, electrocardiogram, and phonocardiogram. The mitral valve closure (MC) and opening (MO), and aortic valve closure (AC) and opening (AO) are labeled based on the pressure signals.",
+    "page": 3
+  },
+  {
+    "id": "S014_6_1",
+    "filename": "S014_p6_i1.jpeg",
+    "path": "/science-hub/images/S014/S014_p6_i1.jpeg",
+    "caption": "Figure 2. Sensor location distribution in recent SCG studies.",
+    "page": 6
+  },
+  {
+    "id": "S014_8_1",
+    "filename": "S014_p8_i1.jpeg",
+    "path": "/science-hub/images/S014/S014_p8_i1.jpeg",
+    "caption": "Figure 3. Map of root-mean-square (RMS) amplitude of SCG waves at the chest surface using scanning laser vibrometry. There were local amplitude maxima that coincided with the aortic, pulmonary, tricuspid, and mitral auscultation areas. These data suggest that sensor location and size need to be chosen with care and that the effects of sensor misplacement need to be quantiﬁed.",
+    "page": 8
+  },
+  {
+    "id": "S014_8_2",
+    "filename": "S014_p8_i2.jpeg",
+    "path": "/science-hub/images/S014/S014_p8_i2.jpeg",
+    "caption": "Figure 4. SCG signal processing steps.",
+    "page": 8
+  },
+  {
+    "id": "S014_8_3",
+    "filename": "S014_p8_i3.jpeg",
+    "path": "/science-hub/images/S014/S014_p8_i3.jpeg",
+    "caption": "Figure 3. Map of root-mean-square (RMS) amplitude of SCG waves at the chest surface using scanning laser vibrometry. There were local amplitude maxima that coincided with the aortic, pulmonary, tricuspid, and mitral auscultation areas. These data suggest that sensor location and size need to be chosen with care and that the effects of sensor misplacement need to be quantiﬁed.",
+    "page": 8
+  },
+  {
+    "id": "S014_8_4",
+    "filename": "S014_p8_i4.jpeg",
+    "path": "/science-hub/images/S014/S014_p8_i4.jpeg",
+    "caption": "Figure 4. SCG signal processing steps.",
+    "page": 8
+  },
+  {
+    "id": "S014_23_1",
+    "filename": "S014_p23_i1.png",
+    "path": "/science-hub/images/S014/S014_p23_i1.png",
+    "caption": "No caption found automatically.",
+    "page": 23
+  }
+]

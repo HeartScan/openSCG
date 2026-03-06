@@ -11,7 +11,6 @@ First off, thank you for considering contributing to OpenSCG! It's people like y
   - [Pull Requests](#pull-requests)
 - [Styleguides](#styleguides)
   - [Git Commit Messages](#git-commit-messages)
-  - [Python Styleguide](#python-styleguide)
   - [TypeScript/React Styleguide](#typescriptreact-styleguide)
 - [Development Setup](#development-setup)
 
@@ -59,15 +58,10 @@ Unsure where to begin contributing to OpenSCG? You can start by looking through 
 - Limit the first line to 72 characters or less.
 - Reference issues and pull requests liberally after the first line.
 
-### Python Styleguide
-
-- We follow [PEP 8](https://www.python.org/dev/peps/pep-0008/).
-- We use `black` for code formatting and `isort` for import sorting. Please run these tools before committing your code.
-
 ### TypeScript/React Styleguide
 
 - We use `prettier` for code formatting.
-- Follow the standard conventions used in the existing codebase.
+- Follow the standard conventions used in the existing codebase (Next.js, Tailwind CSS).
 
 ## Development Setup
 

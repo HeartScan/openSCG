@@ -1,0 +1,37 @@
+[
+  {
+    "id": "S016_3_1",
+    "filename": "S016_p3_i1.png",
+    "path": "/science-hub/images/S016/S016_p3_i1.png",
+    "caption": "Figure 1. Seismocardiogram (SCG) and ECG sensing  patch.   A, The SCG signal represents the vibrations of the chest wall  in response to the movement of the heart and blood with  each heartbeat. SCG is measured using a miniature, 3-axis  accelerometer, typically positioned on the midsternum. B,  The SCG signal consists of vibrations in 3 axes: head-to-foot,  dorso-ventral, and lateral. C, A custom, small, wearable  patch for measuring SCG and ECG signals was designed.  The patch is placed on the chest using 3 gel adhesive  electrodes and stores data locally on a micro secure digital  card. The low power design allows for >50 h of continuous  recording and use without recharging the battery.",
+    "page": 3
+  },
+  {
+    "id": "S016_5_1",
+    "filename": "S016_p5_i1.png",
+    "path": "/science-hub/images/S016/S016_p5_i1.png",
+    "caption": "Figure 2. General overview of the proposed method.   A, The seismocardiogram (SCG) signals (3 axes [dorso-ventral, DV, head-to-foot, HF, and lateral, LAT]) of heart are measured  using the custom, wearable patch. Filtering is applied and SCG3D (a point-by-point average of the 3 axes) is calculated. Then,  SCG3D of rest and recovery segments are windowed and generate NRES and NREC. B, The L frequency domain feature sets (X   and Y) are computed from NRES and NREC. C, Two k-nearest neighbor graphs (GX and GY) are constructed from frequency  feature vectors X  and Y , and GSS is calculated to measure similarity in between rest and recovery states. D, An example of  graph similarity score (GSS) calculation between 2 illustrative graphs. 6MWT indicates 6-minute walk test.",
+    "page": 5
+  },
+  {
+    "id": "S016_6_1",
+    "filename": "S016_p6_i1.jpeg",
+    "path": "/science-hub/images/S016/S016_p6_i1.jpeg",
+    "caption": "Figure 3. Calculated graph similarity score (GSS) for representative decompensated and compensated patients.   Representative seismocardiogram (SCG) time traces from rest and recovery after the 6-minute walk test (6MWT) and associ- ated GX and GY graphs of a compensated patient with heart failure (top) and a decompensated patient (bottom). For the  decompensated patient, the GSS value is 55 and for the compensated patient, the corresponding value is 24. This result dem- onstrates the higher similarity in SCG waveform structure between rest and recovery phases of the decompensated patient in  comparison with compensated patient. The graphs also demonstrate the higher similarity for decompensated versus compen- sated states visually.",
+    "page": 6
+  },
+  {
+    "id": "S016_7_1",
+    "filename": "S016_p7_i1.png",
+    "path": "/science-hub/images/S016/S016_p7_i1.png",
+    "caption": "Figure 5. Graph similarity score (GSS) for heart failure inpatients decreases from admit to discharge.   Longitudinal results from a subset of the inpatient population for which the 6-minute walk test data were obtained when the  subjects were admitted (left) and on discharge (right) after treatment. For all patients, GSS decreased at discharge as com- pared with when first admitted. Thus, as the decompensated patients were treated, longitudinal changes in the physiological  response to exercise were observed in a consistent manner with the cross-sectional data from the overall cohort of subjects.  One patient had a third visit as well and showed markedly increased GSS because of readmission due to acute kidney injury  and volume overload.",
+    "page": 7
+  },
+  {
+    "id": "S016_7_2",
+    "filename": "S016_p7_i2.png",
+    "path": "/science-hub/images/S016/S016_p7_i2.png",
+    "caption": "Figure 4. Overall statistical analysis of the graph simi- larity score (GSS) metric from all patients grouped by  clinical state (compensated vs decompensated).   The GSS between rest and recovery phases was significantly  higher for the decompensated patients as compared with  compensated; n=45 subjects (P<0.001).",
+    "page": 7
+  }
+]

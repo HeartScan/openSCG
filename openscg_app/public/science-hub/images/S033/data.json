@@ -1,0 +1,240 @@
+[
+  {
+    "id": "S033_1_1",
+    "filename": "S033_p1_i1.png",
+    "path": "/science-hub/images/S033/S033_p1_i1.png",
+    "caption": "No caption found automatically.",
+    "page": 1
+  },
+  {
+    "id": "S033_3_1",
+    "filename": "S033_p3_i1.png",
+    "path": "/science-hub/images/S033/S033_p3_i1.png",
+    "caption": "No caption found automatically.",
+    "page": 3
+  },
+  {
+    "id": "S033_3_2",
+    "filename": "S033_p3_i2.jpeg",
+    "path": "/science-hub/images/S033/S033_p3_i2.jpeg",
+    "caption": "Figure 1. General overview of the study. The patients are instrumented with the kinocardiograph [16] and a reference Apple smartphone (iPhone SE 2020 with an application acquiring accelerations and angular rates at a sampling rate of 100 Hz). A mobile application was also installed on the patient’s personal smartphone. The smartphone was placed on the manubrium of the sternum, below the clavicle of the patient, who was asked to rest in the supine position for 5 min and to breathe normally before the start of the acquisitions. Then, the investigator performed an acquisition with the kinocardiograph and the reference smartphone synchronously (A), followed by a similar recording with the patient’s personal smartphone; thereafter, this recording was repeated less than 15 min later by the patient themselves (B). The patient was then instructed to perform measurements at home with their own smartphone three times a week for three months (C).",
+    "page": 3
+  },
+  {
+    "id": "S033_4_1",
+    "filename": "S033_p4_i1.jpeg",
+    "path": "/science-hub/images/S033/S033_p4_i1.jpeg",
+    "caption": "Figure 2. Schematic representation of simultaneous acquisition using a kinocardiograph and a commercial smartphone.",
+    "page": 4
+  },
+  {
+    "id": "S033_4_2",
+    "filename": "S033_p4_i2.jpeg",
+    "path": "/science-hub/images/S033/S033_p4_i2.jpeg",
+    "caption": "Figure 2. Schematic representation of simultaneous acquisition using a kinocardiograph and a commercial smartphone.",
+    "page": 4
+  },
+  {
+    "id": "S033_6_1",
+    "filename": "S033_p6_i1.png",
+    "path": "/science-hub/images/S033/S033_p6_i1.png",
+    "caption": "No caption found automatically.",
+    "page": 6
+  },
+  {
+    "id": "S033_6_2",
+    "filename": "S033_p6_i2.png",
+    "path": "/science-hub/images/S033/S033_p6_i2.png",
+    "caption": "Figure 3. Schematic representation of the kinetic energy computation based on seismocardiography. (a) The 6 channels of the SCG signal, 3 linear axes, and 3 rotational axes. (b) The Kinetic Energy signal computed from the 6 channels of SCG. (c) The Kinetic Energy signal and the segmented phases of the cardiac cycle.",
+    "page": 6
+  },
+  {
+    "id": "S033_9_1",
+    "filename": "S033_p9_i1.jpeg",
+    "path": "/science-hub/images/S033/S033_p9_i1.jpeg",
+    "caption": "Figure 4. Bland–Altman plot of the difference between (a) iKSys, (b) iKLate dia, (c) iKEarly dia, and (d) heart rate (HR) for each subject for the simultaneous kinocardiograph measurement and the smartphone measurement.",
+    "page": 9
+  },
+  {
+    "id": "S033_9_2",
+    "filename": "S033_p9_i2.png",
+    "path": "/science-hub/images/S033/S033_p9_i2.png",
+    "caption": "Figure 5. Bland–Altman plot of the difference between (a) iKSys, (b) iKLate dia, (c) iKEarly dia, and (d) heart rate (HR) for each subject for the clinician and patient measurements performed both with the patient’s smartphone.",
+    "page": 9
+  },
+  {
+    "id": "S033_9_3",
+    "filename": "S033_p9_i3.png",
+    "path": "/science-hub/images/S033/S033_p9_i3.png",
+    "caption": "No caption found automatically.",
+    "page": 9
+  },
+  {
+    "id": "S033_9_4",
+    "filename": "S033_p9_i4.png",
+    "path": "/science-hub/images/S033/S033_p9_i4.png",
+    "caption": "No caption found automatically.",
+    "page": 9
+  },
+  {
+    "id": "S033_9_5",
+    "filename": "S033_p9_i5.png",
+    "path": "/science-hub/images/S033/S033_p9_i5.png",
+    "caption": "No caption found automatically.",
+    "page": 9
+  },
+  {
+    "id": "S033_9_6",
+    "filename": "S033_p9_i6.png",
+    "path": "/science-hub/images/S033/S033_p9_i6.png",
+    "caption": "No caption found automatically.",
+    "page": 9
+  },
+  {
+    "id": "S033_9_7",
+    "filename": "S033_p9_i7.png",
+    "path": "/science-hub/images/S033/S033_p9_i7.png",
+    "caption": "No caption found automatically.",
+    "page": 9
+  },
+  {
+    "id": "S033_9_8",
+    "filename": "S033_p9_i8.png",
+    "path": "/science-hub/images/S033/S033_p9_i8.png",
+    "caption": "No caption found automatically.",
+    "page": 9
+  },
+  {
+    "id": "S033_9_9",
+    "filename": "S033_p9_i9.png",
+    "path": "/science-hub/images/S033/S033_p9_i9.png",
+    "caption": "No caption found automatically.",
+    "page": 9
+  },
+  {
+    "id": "S033_9_10",
+    "filename": "S033_p9_i10.png",
+    "path": "/science-hub/images/S033/S033_p9_i10.png",
+    "caption": "No caption found automatically.",
+    "page": 9
+  },
+  {
+    "id": "S033_9_11",
+    "filename": "S033_p9_i11.jpeg",
+    "path": "/science-hub/images/S033/S033_p9_i11.jpeg",
+    "caption": "Figure 4. Bland–Altman plot of the difference between (a) iKSys, (b) iKLate dia, (c) iKEarly dia, and (d) heart rate (HR) for each subject for the simultaneous kinocardiograph measurement and the smartphone measurement.",
+    "page": 9
+  },
+  {
+    "id": "S033_9_12",
+    "filename": "S033_p9_i12.png",
+    "path": "/science-hub/images/S033/S033_p9_i12.png",
+    "caption": "Figure 4. Bland–Altman plot of the difference between (a) iKSys, (b) iKLate dia, (c) iKEarly dia, and (d) heart rate (HR) for each subject for the simultaneous kinocardiograph measurement and the smartphone measurement.",
+    "page": 9
+  },
+  {
+    "id": "S033_10_1",
+    "filename": "S033_p10_i1.jpeg",
+    "path": "/science-hub/images/S033/S033_p10_i1.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 10
+  },
+  {
+    "id": "S033_10_2",
+    "filename": "S033_p10_i2.png",
+    "path": "/science-hub/images/S033/S033_p10_i2.png",
+    "caption": "No caption found automatically.",
+    "page": 10
+  },
+  {
+    "id": "S033_10_3",
+    "filename": "S033_p10_i3.png",
+    "path": "/science-hub/images/S033/S033_p10_i3.png",
+    "caption": "No caption found automatically.",
+    "page": 10
+  },
+  {
+    "id": "S033_10_4",
+    "filename": "S033_p10_i4.png",
+    "path": "/science-hub/images/S033/S033_p10_i4.png",
+    "caption": "No caption found automatically.",
+    "page": 10
+  },
+  {
+    "id": "S033_10_5",
+    "filename": "S033_p10_i5.png",
+    "path": "/science-hub/images/S033/S033_p10_i5.png",
+    "caption": "No caption found automatically.",
+    "page": 10
+  },
+  {
+    "id": "S033_10_6",
+    "filename": "S033_p10_i6.png",
+    "path": "/science-hub/images/S033/S033_p10_i6.png",
+    "caption": "No caption found automatically.",
+    "page": 10
+  },
+  {
+    "id": "S033_10_7",
+    "filename": "S033_p10_i7.png",
+    "path": "/science-hub/images/S033/S033_p10_i7.png",
+    "caption": "Figure 6. Age-related patient compliance and participation for 138 patients. The graph illustrates the percentage of protocol compliance (dark gray) and the proportion of patient numbers (light gray) across different age categories. Statistically signiﬁcant differences in compliance are indicated by asterisks (* p < 0.01), demonstrating lower adherence in the <46 and >75 age groups compared to the 46–75 age groups.",
+    "page": 10
+  },
+  {
+    "id": "S033_10_8",
+    "filename": "S033_p10_i8.png",
+    "path": "/science-hub/images/S033/S033_p10_i8.png",
+    "caption": "Figure 6. Age-related patient compliance and participation for 138 patients. The graph illustrates the percentage of protocol compliance (dark gray) and the proportion of patient numbers (light gray) across different age categories. Statistically signiﬁcant differences in compliance are indicated by asterisks (* p < 0.01), demonstrating lower adherence in the <46 and >75 age groups compared to the 46–75 age groups.",
+    "page": 10
+  },
+  {
+    "id": "S033_10_9",
+    "filename": "S033_p10_i9.png",
+    "path": "/science-hub/images/S033/S033_p10_i9.png",
+    "caption": "Figure 6. Age-related patient compliance and participation for 138 patients. The graph illustrates the percentage of protocol compliance (dark gray) and the proportion of patient numbers (light gray) across different age categories. Statistically signiﬁcant differences in compliance are indicated by asterisks (* p < 0.01), demonstrating lower adherence in the <46 and >75 age groups compared to the 46–75 age groups.",
+    "page": 10
+  },
+  {
+    "id": "S033_10_10",
+    "filename": "S033_p10_i10.png",
+    "path": "/science-hub/images/S033/S033_p10_i10.png",
+    "caption": "Figure 6. Age-related patient compliance and participation for 138 patients. The graph illustrates the percentage of protocol compliance (dark gray) and the proportion of patient numbers (light gray) across different age categories. Statistically signiﬁcant differences in compliance are indicated by asterisks (* p < 0.01), demonstrating lower adherence in the <46 and >75 age groups compared to the 46–75 age groups.",
+    "page": 10
+  },
+  {
+    "id": "S033_15_1",
+    "filename": "S033_p15_i1.jpeg",
+    "path": "/science-hub/images/S033/S033_p15_i1.jpeg",
+    "caption": "Figure A1. Patients recruited during the study with no signs of heart failure, hypertension, or valvular heart disease. The plots shown represent, from top to bottom, the ECG from the kinocardiograph, a combination of the linear and rotation low-frequency signals, namely the Slf, the RMS envelope of Slf, namely Elf, and ﬁnally, the kinetic energy signals in the linear and rotational dimensions, respectively KLin and KRot.",
+    "page": 15
+  },
+  {
+    "id": "S033_15_2",
+    "filename": "S033_p15_i2.jpeg",
+    "path": "/science-hub/images/S033/S033_p15_i2.jpeg",
+    "caption": "Figure A1. Patients recruited during the study with no signs of heart failure, hypertension, or valvular heart disease. The plots shown represent, from top to bottom, the ECG from the kinocardiograph, a combination of the linear and rotation low-frequency signals, namely the Slf, the RMS envelope of Slf, namely Elf, and ﬁnally, the kinetic energy signals in the linear and rotational dimensions, respectively KLin and KRot.",
+    "page": 15
+  },
+  {
+    "id": "S033_16_1",
+    "filename": "S033_p16_i1.jpeg",
+    "path": "/science-hub/images/S033/S033_p16_i1.jpeg",
+    "caption": "No caption found automatically.",
+    "page": 16
+  },
+  {
+    "id": "S033_16_2",
+    "filename": "S033_p16_i2.jpeg",
+    "path": "/science-hub/images/S033/S033_p16_i2.jpeg",
+    "caption": "Figure A2. Patients recruited during the study with hypertension and moderate aortic insufﬁciency. The plots shown represent, from top to bottom, the ECG from the kinocardiograph, a combination of the linear and rotation low-frequency signals, namely the Slf, the RMS envelope of Slf, namely Elf, and ﬁnally, the kinetic energy signals in the linear and rotational dimensions, respectively KLin and KRot.",
+    "page": 16
+  },
+  {
+    "id": "S033_16_3",
+    "filename": "S033_p16_i3.jpeg",
+    "path": "/science-hub/images/S033/S033_p16_i3.jpeg",
+    "caption": "Figure A3. Patients recruited during the study with heart failure. The plots shown represent, from top to bottom, the ECG from the kinocardiograph, a combination of the linear and rotation low-frequency signals, namely the Slf, the RMS envelope of Slf, namely Elf, and ﬁnally, the kinetic energy signals in the linear and rotational dimensions, respectively KLin and KRot.",
+    "page": 16
+  }
+]

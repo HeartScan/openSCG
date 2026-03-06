@@ -1,0 +1,149 @@
+[
+  {
+    "id": "S024_4_1",
+    "filename": "S024_p4_i1.png",
+    "path": "/science-hub/images/S024/S024_p4_i1.png",
+    "caption": "Fig. 2. (a) The traditional DTW algorithm, showing the warp path (blue), 1:1 correspondence path (gray), and required points (black). Blue dotted lines show features brought into alignment after warping. (b) The DTFM algorithm. Square shading indicates candidate points (black), prohibited points (crossed), locations of time-series features (gray), selected path (green), and path from normal DTW (blue). Valid warp paths are shown as solid lines, blue for sub-optimal and green for optimal. In this example, the third maximum in the signal is determined to be aberrant, and the third minimum in the signal is mapped to the second minimum in the template.",
+    "page": 4
+  },
+  {
+    "id": "S024_4_2",
+    "filename": "S024_p4_i2.png",
+    "path": "/science-hub/images/S024/S024_p4_i2.png",
+    "caption": "Fig. 2. (a) The traditional DTW algorithm, showing the warp path (blue), 1:1 correspondence path (gray), and required points (black). Blue dotted lines show features brought into alignment after warping. (b) The DTFM algorithm. Square shading indicates candidate points (black), prohibited points (crossed), locations of time-series features (gray), selected path (green), and path from normal DTW (blue). Valid warp paths are shown as solid lines, blue for sub-optimal and green for optimal. In this example, the third maximum in the signal is determined to be aberrant, and the third minimum in the signal is mapped to the second minimum in the template.",
+    "page": 4
+  },
+  {
+    "id": "S024_8_1",
+    "filename": "S024_p8_i1.png",
+    "path": "/science-hub/images/S024/S024_p8_i1.png",
+    "caption": "No caption found automatically.",
+    "page": 8
+  },
+  {
+    "id": "S024_8_2",
+    "filename": "S024_p8_i2.png",
+    "path": "/science-hub/images/S024/S024_p8_i2.png",
+    "caption": "No caption found automatically.",
+    "page": 8
+  },
+  {
+    "id": "S024_8_3",
+    "filename": "S024_p8_i3.png",
+    "path": "/science-hub/images/S024/S024_p8_i3.png",
+    "caption": "No caption found automatically.",
+    "page": 8
+  },
+  {
+    "id": "S024_8_4",
+    "filename": "S024_p8_i4.png",
+    "path": "/science-hub/images/S024/S024_p8_i4.png",
+    "caption": "No caption found automatically.",
+    "page": 8
+  },
+  {
+    "id": "S024_8_5",
+    "filename": "S024_p8_i5.png",
+    "path": "/science-hub/images/S024/S024_p8_i5.png",
+    "caption": "Fig. 4. (a) Template signal (black) and raw signal (red) before warping. Five peaks from each signal that likely correspond were chosen by visual inspection and are connected by dashed lines. (b) Warping paths from DTW (green) and DTFM (blue) plotted against 1:1 correspondence line (black, dashed). Sub-optimal (square, empty) and optimal (square, shaded) candidate points are indicated, with the candidate points corresponding to the ﬁve features in (a) being indicated by black circles. (c) Template signal (black) and raw signal (green) after DTW. The new locations of the ﬁve corresponding points from (a) are connected by dashed lines. (d) Template signal (black) and raw signal (blue) after DTFM. The new locations of the ﬁve corresponding points from (a) are connected by dashed lines. Peak mismatches caused by DTW are indicated by the dimension lines in (b) and (c). Relative importance of noise components in predicting distance estimation by DTW (e) and DTFM (f). Harmonic frequency refers to the number of periods per window of the sinusoidal noise.",
+    "page": 8
+  },
+  {
+    "id": "S024_8_6",
+    "filename": "S024_p8_i6.png",
+    "path": "/science-hub/images/S024/S024_p8_i6.png",
+    "caption": "Fig. 4. (a) Template signal (black) and raw signal (red) before warping. Five peaks from each signal that likely correspond were chosen by visual inspection and are connected by dashed lines. (b) Warping paths from DTW (green) and DTFM (blue) plotted against 1:1 correspondence line (black, dashed). Sub-optimal (square, empty) and optimal (square, shaded) candidate points are indicated, with the candidate points corresponding to the ﬁve features in (a) being indicated by black circles. (c) Template signal (black) and raw signal (green) after DTW. The new locations of the ﬁve corresponding points from (a) are connected by dashed lines. (d) Template signal (black) and raw signal (blue) after DTFM. The new locations of the ﬁve corresponding points from (a) are connected by dashed lines. Peak mismatches caused by DTW are indicated by the dimension lines in (b) and (c). Relative importance of noise components in predicting distance estimation by DTW (e) and DTFM (f). Harmonic frequency refers to the number of periods per window of the sinusoidal noise.",
+    "page": 8
+  },
+  {
+    "id": "S024_9_1",
+    "filename": "S024_p9_i1.png",
+    "path": "/science-hub/images/S024/S024_p9_i1.png",
+    "caption": "Fig. 5. (a) Stratiﬁcation of SCG signals using the DTFM-based SQI for a single subject. The columns from left to right show SCG intervals taken from rest, recovery, and exercise respectively. The top row corresponds to the top 2% of signals in each category based on their SQI; the middle rows correspond to the 50th percentile; and the bottom row corresponds to the bottom 2%. The correlation between scores assigned by manual annotation and the DTFM-based SQI are shown for the (b) rest, (c) recovery, (d) squatting, and (e) walking activity levels. The best-ﬁt line for these scores is shown (black, dotted), with the corresponding R2 of the ﬁt overlaid. For visual purposes, SQI scores were normalized to the range [0, 1].",
+    "page": 9
+  },
+  {
+    "id": "S024_9_2",
+    "filename": "S024_p9_i2.png",
+    "path": "/science-hub/images/S024/S024_p9_i2.png",
+    "caption": "No caption found automatically.",
+    "page": 9
+  },
+  {
+    "id": "S024_9_3",
+    "filename": "S024_p9_i3.png",
+    "path": "/science-hub/images/S024/S024_p9_i3.png",
+    "caption": "No caption found automatically.",
+    "page": 9
+  },
+  {
+    "id": "S024_9_4",
+    "filename": "S024_p9_i4.png",
+    "path": "/science-hub/images/S024/S024_p9_i4.png",
+    "caption": "Fig. 5. (a) Stratiﬁcation of SCG signals using the DTFM-based SQI for a single subject. The columns from left to right show SCG intervals taken from rest, recovery, and exercise respectively. The top row corresponds to the top 2% of signals in each category based on their SQI; the middle rows correspond to the 50th percentile; and the bottom row corresponds to the bottom 2%. The correlation between scores assigned by manual annotation and the DTFM-based SQI are shown for the (b) rest, (c) recovery, (d) squatting, and (e) walking activity levels. The best-ﬁt line for these scores is shown (black, dotted), with the corresponding R2 of the ﬁt overlaid. For visual purposes, SQI scores were normalized to the range [0, 1].",
+    "page": 9
+  },
+  {
+    "id": "S024_9_5",
+    "filename": "S024_p9_i5.png",
+    "path": "/science-hub/images/S024/S024_p9_i5.png",
+    "caption": "Fig. 5. (a) Stratiﬁcation of SCG signals using the DTFM-based SQI for a single subject. The columns from left to right show SCG intervals taken from rest, recovery, and exercise respectively. The top row corresponds to the top 2% of signals in each category based on their SQI; the middle rows correspond to the 50th percentile; and the bottom row corresponds to the bottom 2%. The correlation between scores assigned by manual annotation and the DTFM-based SQI are shown for the (b) rest, (c) recovery, (d) squatting, and (e) walking activity levels. The best-ﬁt line for these scores is shown (black, dotted), with the corresponding R2 of the ﬁt overlaid. For visual purposes, SQI scores were normalized to the range [0, 1].",
+    "page": 9
+  },
+  {
+    "id": "S024_10_1",
+    "filename": "S024_p10_i1.png",
+    "path": "/science-hub/images/S024/S024_p10_i1.png",
+    "caption": "Figure 5(b)-(d) show the relationship between DTFM-based SQI scores and those from visual manual annotation. Positive linear relationships are apparent at all activity levels, though this correlation is somewhat lower during walking. The results of this ﬁgure suggest that the heuristics by which human annotators scored the signal — including relative quality of features related to AO and AC — were reﬂected by the DTFM- based SQI. This follows intuition: since AO and AC generally yield high-energy features in the signal, distance minimization algorithms would incur a large penalty if these features were not identiﬁed and matched between the signal and template. The ability of the different quality indexing methods to distinguish signals from different activity levels is shown in Figure 6(a). As shown in the ﬁgure, DTFM more effectively stratiﬁes SCG segments taken during different activity levels based on their SQI compared to DTW. This is especially apparent between the rest and recovery periods, which DTW ranks as higher quality, in opposition to the visual scoring gold-standard. For this reason, the DTFM-based SQI produces a stratiﬁcation that is more congruent with visual scoring. These results are reﬂected in Figure 6(b). Notably, all scoring methods produce test statistics which are relatively high compared to the chi-square critical value of 7.82 for 3 degrees of freedom. Since the relative value of the test statistic is due to differences in variance and not necessarily the validity of the scores assigned by each method, Figure 6(b) does not suggest that one method is better than the other. Rather, the result of interest is that, for DTFM-based SQI, increasing the number of reference templates or annotators increases score stratiﬁcation. This suggests that, though there is no reference standard SCG, there are patterns on the population level which may be synthesized to effectively assess a signal. Furthermore, the relative separation when using DTFM increases compared to DTW as more templates are used, indicating that the addition of templates has a greater marginal beneﬁt for DTFM.",
+    "page": 10
+  },
+  {
+    "id": "S024_10_2",
+    "filename": "S024_p10_i2.png",
+    "path": "/science-hub/images/S024/S024_p10_i2.png",
+    "caption": "Figure 5(b)-(d) show the relationship between DTFM-based SQI scores and those from visual manual annotation. Positive linear relationships are apparent at all activity levels, though this correlation is somewhat lower during walking. The results of this ﬁgure suggest that the heuristics by which human annotators scored the signal — including relative quality of features related to AO and AC — were reﬂected by the DTFM- based SQI. This follows intuition: since AO and AC generally yield high-energy features in the signal, distance minimization algorithms would incur a large penalty if these features were not identiﬁed and matched between the signal and template. The ability of the different quality indexing methods to distinguish signals from different activity levels is shown in Figure 6(a). As shown in the ﬁgure, DTFM more effectively stratiﬁes SCG segments taken during different activity levels based on their SQI compared to DTW. This is especially apparent between the rest and recovery periods, which DTW ranks as higher quality, in opposition to the visual scoring gold-standard. For this reason, the DTFM-based SQI produces a stratiﬁcation that is more congruent with visual scoring. These results are reﬂected in Figure 6(b). Notably, all scoring methods produce test statistics which are relatively high compared to the chi-square critical value of 7.82 for 3 degrees of freedom. Since the relative value of the test statistic is due to differences in variance and not necessarily the validity of the scores assigned by each method, Figure 6(b) does not suggest that one method is better than the other. Rather, the result of interest is that, for DTFM-based SQI, increasing the number of reference templates or annotators increases score stratiﬁcation. This suggests that, though there is no reference standard SCG, there are patterns on the population level which may be synthesized to effectively assess a signal. Furthermore, the relative separation when using DTFM increases compared to DTW as more templates are used, indicating that the addition of templates has a greater marginal beneﬁt for DTFM.",
+    "page": 10
+  },
+  {
+    "id": "S024_10_3",
+    "filename": "S024_p10_i3.png",
+    "path": "/science-hub/images/S024/S024_p10_i3.png",
+    "caption": "Figure 5(b)-(d) show the relationship between DTFM-based SQI scores and those from visual manual annotation. Positive linear relationships are apparent at all activity levels, though this correlation is somewhat lower during walking. The results of this ﬁgure suggest that the heuristics by which human annotators scored the signal — including relative quality of features related to AO and AC — were reﬂected by the DTFM- based SQI. This follows intuition: since AO and AC generally yield high-energy features in the signal, distance minimization algorithms would incur a large penalty if these features were not identiﬁed and matched between the signal and template. The ability of the different quality indexing methods to distinguish signals from different activity levels is shown in Figure 6(a). As shown in the ﬁgure, DTFM more effectively stratiﬁes SCG segments taken during different activity levels based on their SQI compared to DTW. This is especially apparent between the rest and recovery periods, which DTW ranks as higher quality, in opposition to the visual scoring gold-standard. For this reason, the DTFM-based SQI produces a stratiﬁcation that is more congruent with visual scoring. These results are reﬂected in Figure 6(b). Notably, all scoring methods produce test statistics which are relatively high compared to the chi-square critical value of 7.82 for 3 degrees of freedom. Since the relative value of the test statistic is due to differences in variance and not necessarily the validity of the scores assigned by each method, Figure 6(b) does not suggest that one method is better than the other. Rather, the result of interest is that, for DTFM-based SQI, increasing the number of reference templates or annotators increases score stratiﬁcation. This suggests that, though there is no reference standard SCG, there are patterns on the population level which may be synthesized to effectively assess a signal. Furthermore, the relative separation when using DTFM increases compared to DTW as more templates are used, indicating that the addition of templates has a greater marginal beneﬁt for DTFM.",
+    "page": 10
+  },
+  {
+    "id": "S024_11_1",
+    "filename": "S024_p11_i1.png",
+    "path": "/science-hub/images/S024/S024_p11_i1.png",
+    "caption": "Fig. 8. Probability of prediction error given the confusion matrices in Figure 7 (a) and (b). The error probability using the DTW distance metric is shown in green, with the shaded area representing the error range across all sensor locations and green lines representing the error for individual locations. The error probability using DTFM is shown in blue, with the shaded area representing the error range and blue lines showing location-speciﬁc error. The black dotted lines correspond to the mean error probability across locations. The outlier green line is associated with detection of correct sensor placement.",
+    "page": 11
+  },
+  {
+    "id": "S024_11_2",
+    "filename": "S024_p11_i2.png",
+    "path": "/science-hub/images/S024/S024_p11_i2.png",
+    "caption": "Fig. 8. Probability of prediction error given the confusion matrices in Figure 7 (a) and (b). The error probability using the DTW distance metric is shown in green, with the shaded area representing the error range across all sensor locations and green lines representing the error for individual locations. The error probability using DTFM is shown in blue, with the shaded area representing the error range and blue lines showing location-speciﬁc error. The black dotted lines correspond to the mean error probability across locations. The outlier green line is associated with detection of correct sensor placement.",
+    "page": 11
+  },
+  {
+    "id": "S024_11_3",
+    "filename": "S024_p11_i3.png",
+    "path": "/science-hub/images/S024/S024_p11_i3.png",
+    "caption": "Fig. 8. Probability of prediction error given the confusion matrices in Figure 7 (a) and (b). The error probability using the DTW distance metric is shown in green, with the shaded area representing the error range across all sensor locations and green lines representing the error for individual locations. The error probability using DTFM is shown in blue, with the shaded area representing the error range and blue lines showing location-speciﬁc error. The black dotted lines correspond to the mean error probability across locations. The outlier green line is associated with detection of correct sensor placement.",
+    "page": 11
+  },
+  {
+    "id": "S024_11_4",
+    "filename": "S024_p11_i4.png",
+    "path": "/science-hub/images/S024/S024_p11_i4.png",
+    "caption": "Fig. 8. Probability of prediction error given the confusion matrices in Figure 7 (a) and (b). The error probability using the DTW distance metric is shown in green, with the shaded area representing the error range across all sensor locations and green lines representing the error for individual locations. The error probability using DTFM is shown in blue, with the shaded area representing the error range and blue lines showing location-speciﬁc error. The black dotted lines correspond to the mean error probability across locations. The outlier green line is associated with detection of correct sensor placement.",
+    "page": 11
+  },
+  {
+    "id": "S024_11_5",
+    "filename": "S024_p11_i5.png",
+    "path": "/science-hub/images/S024/S024_p11_i5.png",
+    "caption": "Fig. 8. Probability of prediction error given the confusion matrices in Figure 7 (a) and (b). The error probability using the DTW distance metric is shown in green, with the shaded area representing the error range across all sensor locations and green lines representing the error for individual locations. The error probability using DTFM is shown in blue, with the shaded area representing the error range and blue lines showing location-speciﬁc error. The black dotted lines correspond to the mean error probability across locations. The outlier green line is associated with detection of correct sensor placement.",
+    "page": 11
+  }
+]

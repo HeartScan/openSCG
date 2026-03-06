@@ -1,0 +1,44 @@
+[
+  {
+    "id": "S012_1_2",
+    "filename": "S012_p1_i2.png",
+    "path": "/science-hub/images/S012/S012_p1_i2.png",
+    "caption": "No caption found automatically.",
+    "page": 1
+  },
+  {
+    "id": "S012_1_3",
+    "filename": "S012_p1_i3.png",
+    "path": "/science-hub/images/S012/S012_p1_i3.png",
+    "caption": "No caption found automatically.",
+    "page": 1
+  },
+  {
+    "id": "S012_3_1",
+    "filename": "S012_p3_i1.jpeg",
+    "path": "/science-hub/images/S012/S012_p3_i1.jpeg",
+    "caption": "Figure 1. SCG data were recorded in a supine- and a tilted position. The seismocardiograms display the mean curve from subject number nine. Fiducial points of SCG were placed by an algorithm, representing cardiac events as seen in the right column.",
+    "page": 3
+  },
+  {
+    "id": "S012_4_1",
+    "filename": "S012_p4_i1.jpeg",
+    "path": "/science-hub/images/S012/S012_p4_i1.jpeg",
+    "caption": "Figure 2. Illustration of the experimental setup including the placement of the SCG accelerometers and the ECG electrodes.",
+    "page": 4
+  },
+  {
+    "id": "S012_7_1",
+    "filename": "S012_p7_i1.jpeg",
+    "path": "/science-hub/images/S012/S012_p7_i1.jpeg",
+    "caption": "Figure 3. Correlation maps illustrating the correlation between the systolic SCG- and echo variables represented by either Pearson’s Correlation Coefﬁcient or Spearman’s Rho Correlation Coefﬁcient. The maps illustrate respectively supine-, tilted-, and the change between the positions. The coloured cells mark the correlations which are higher than r > ± 0.3 and statistically signiﬁcant (p < 0.05). Bold r-values are signiﬁcant correlations (p < 0.05). Exact p-values are seen in Supplementary Material 1.",
+    "page": 7
+  },
+  {
+    "id": "S012_9_1",
+    "filename": "S012_p9_i1.jpeg",
+    "path": "/science-hub/images/S012/S012_p9_i1.jpeg",
+    "caption": "Figure 4. Correlation plots for certain SCG- and echo variables in respectively supine- and tilted position and the difference between the two positions.",
+    "page": 9
+  }
+]

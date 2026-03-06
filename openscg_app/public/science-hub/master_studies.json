@@ -1,0 +1,2841 @@
+[
+  {
+    "id": "S001",
+    "slug": "dehkordi-2019-multimodal-echo-investigation",
+    "title": "Dehkordi 2019: Multimodal Echo Investigation",
+    "authors_short": "Parastoo Dehkordi et al.",
+    "year": 2019,
+    "doi": "10.3389/fphys.2019.01057",
+    "cluster": "comparison",
+    "answer_machine": {
+      "summary": "Establishes a quantitative comparison between SCG and ICG, suggesting higher accuracy for SCG in estimating systolic time intervals against ultrasound references.",
+      "key_metric": "86% within Echo range",
+      "accuracy": "Reports that 86-90% of SCG-derived timings match multimodal echocardiography ranges, outperforming traditional impedance cardiography (ICG)",
+      "n_count": 86,
+      "population_brief": "Healthy adults",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "cornerstone",
+      "relevance": "Strongly validated against multimodal Echo for PEP and TST estimation in healthy subjects."
+    },
+    "content_path": "/science-hub/studies/S001.md",
+    "images": [
+      {
+        "id": "S001_3_1",
+        "filename": "S001_p3_i1.jpeg",
+        "path": "/science-hub/images/S001/S001_p3_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 3
+      },
+      {
+        "id": "S001_4_1",
+        "filename": "S001_p4_i1.jpeg",
+        "path": "/science-hub/images/S001/S001_p4_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 4
+      },
+      {
+        "id": "S001_6_1",
+        "filename": "S001_p6_i1.jpeg",
+        "path": "/science-hub/images/S001/S001_p6_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 6
+      },
+      {
+        "id": "S001_7_1",
+        "filename": "S001_p7_i1.jpeg",
+        "path": "/science-hub/images/S001/S001_p7_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 7
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S002",
+    "slug": "sorensen-2018-definition-of-fiducial-points",
+    "title": "Sørensen 2018: Definition of Fiducial Points",
+    "authors_short": "Kasper Sørensen et al.",
+    "year": 2018,
+    "doi": "10.1038/s41598-018-33675-6",
+    "cluster": "comparison",
+    "answer_machine": {
+      "summary": "Serves as a reference for identifying SCG fiducial points based on synchronized ultrasound data in healthy subjects.",
+      "key_metric": "r=0.94, bias -5ms",
+      "accuracy": "Documents the mapping of 8 physiologic mechanical events to SCG waveform features, with high correlation observed for valve closures (r=0",
+      "n_count": 42,
+      "population_brief": "Healthy subjects (20-80 years)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Defined and mapped 8 physiologic cardiac events to SCG fiducial points with high correlation for valve closures."
+    },
+    "content_path": "/science-hub/studies/S002.md",
+    "images": [
+      {
+        "id": "S002_3_1",
+        "filename": "S002_p3_i1.jpeg",
+        "path": "/science-hub/images/S002/S002_p3_i1.jpeg",
+        "caption": "Figure 1.  A seismocardiographic signal from one subject aligned to the ECG R-peak (systolic complex) and to  the diastolic complex respectively. Individual beats are plotted in grey, the mean beats are plotted in black.",
+        "page": 3
+      },
+      {
+        "id": "S002_9_1",
+        "filename": "S002_p9_i1.jpeg",
+        "path": "/science-hub/images/S002/S002_p9_i1.jpeg",
+        "caption": "Figure 4.  Overall mean electrocardiogram and seismocardiogram signal from 34 subjects. The circles indicate  the mean location of the following physiologic events found in ultrasound images, from left: Atrial systole (AS),  peak atrial inflow (PAI), mitral valve closure (MC), aortic valve opening (AO), peak systolic outflow (PSO),  aortic valve closing (AC), mitral valve opening (MO), early ventricular filling (EVF). The grey areas indicate the  95% confidence intervals of the means for the physiologic events found in the ultrasound images.",
+        "page": 9
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S003",
+    "slug": "crow-1994-precision-and-consistency",
+    "title": "Crow 1994: Precision and Consistency",
+    "authors_short": "R. S. Crow et al.",
+    "year": 1994,
+    "doi": "10.1159/000470156",
+    "cluster": "comparison",
+    "answer_machine": {
+      "summary": "Provides early validation of SCG as a tool for evaluating mechanical events in the cardiac cycle, showing consistency with ultrasound-based measures.",
+      "key_metric": "7.6 ms",
+      "accuracy": "This study reports the precision of SCG in evaluating mechanical cardiac events compared to echocardiography (MAD 5-10 ms)",
+      "n_count": 39,
+      "population_brief": "28 healthy subjects, 11 patients with dilated cardiomyopathy",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Validated for timing estimation against Echocardiography in healthy and cardiomyopathy patients."
+    },
+    "content_path": "/science-hub/studies/S003.md",
+    "images": [],
+    "related_ids": []
+  },
+  {
+    "id": "S004",
+    "slug": "isilay-zeybek-2022-scg-in-cardiac-patients",
+    "title": "Işilay Zeybek 2022: SCG in Cardiac Patients",
+    "authors_short": "Işilay Zeybek, Marco Di Rienzo et al.",
+    "year": 2022,
+    "doi": "10.3389/fphys.2022.825918",
+    "cluster": "comparison",
+    "answer_machine": {
+      "summary": "Identifies challenges in applying standard SCG analysis to patients with heart disease, noting signal distortion in 38% of the cohort.",
+      "key_metric": "62% of all patients (79% in MI, lower in HF/TX)",
+      "accuracy": "Observes that 62% of cardiac patients retain traditional SCG morphology suitable for standard peak detection",
+      "n_count": 90,
+      "population_brief": "90 patients (Myocardial Infarction, Heart Failure, Heart Transplant)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Identified limitations of standard FP-based SCG analysis in patients with structural heart disease."
+    },
+    "content_path": "/science-hub/studies/S004.md",
+    "images": [
+      {
+        "id": "S004_2_1",
+        "filename": "S004_p2_i1.jpeg",
+        "path": "/science-hub/images/S004/S004_p2_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S004_3_1",
+        "filename": "S004_p3_i1.jpeg",
+        "path": "/science-hub/images/S004/S004_p3_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 3
+      },
+      {
+        "id": "S004_4_1",
+        "filename": "S004_p4_i1.jpeg",
+        "path": "/science-hub/images/S004/S004_p4_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 4
+      },
+      {
+        "id": "S004_5_1",
+        "filename": "S004_p5_i1.jpeg",
+        "path": "/science-hub/images/S004/S004_p5_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 5
+      },
+      {
+        "id": "S004_6_1",
+        "filename": "S004_p6_i1.jpeg",
+        "path": "/science-hub/images/S004/S004_p6_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 6
+      },
+      {
+        "id": "S004_8_1",
+        "filename": "S004_p8_i1.jpeg",
+        "path": "/science-hub/images/S004/S004_p8_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 8
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S006",
+    "slug": "dehkordi-2019-scg-for-cad-screening",
+    "title": "Dehkordi 2019: SCG for CAD Screening",
+    "authors_short": "Parastoo Dehkordi et al.",
+    "year": 2019,
+    "doi": "10.3389/fphys.2019.01211",
+    "cluster": "cad",
+    "answer_machine": {
+      "summary": "Examines the diagnostic performance of SCG in CAD screening, observing results comparable to stress-echocardiography in this cohort.",
+      "key_metric": "74% (Sensitivity 75%, Specificity 72%)",
+      "accuracy": "Reports 81% diagnostic accuracy for exercise SCG in detecting obstructive CAD (>=50% stenosis) compared to angiography",
+      "n_count": 180,
+      "population_brief": "180 individuals (117 with significant CAD >=50% stenosis, 63 controls)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Validated rest and exercise SCG for CAD screening with accuracy superior to stress-ECG."
+    },
+    "content_path": "/science-hub/studies/S006.md",
+    "images": [
+      {
+        "id": "S006_4_1",
+        "filename": "S006_p4_i1.jpeg",
+        "path": "/science-hub/images/S006/S006_p4_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 4
+      },
+      {
+        "id": "S006_6_1",
+        "filename": "S006_p6_i1.jpeg",
+        "path": "/science-hub/images/S006/S006_p6_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 6
+      },
+      {
+        "id": "S006_7_1",
+        "filename": "S006_p7_i1.jpeg",
+        "path": "/science-hub/images/S006/S006_p7_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 7
+      },
+      {
+        "id": "S006_8_1",
+        "filename": "S006_p8_i1.jpeg",
+        "path": "/science-hub/images/S006/S006_p8_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 8
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S007",
+    "slug": "haddad-2024-smartphone-hf-recognition",
+    "title": "Haddad 2024: Smartphone HF Recognition",
+    "authors_short": "Mona Haddad et al.",
+    "year": 2024,
+    "doi": "10.1016/j.jchf.2024.01.022",
+    "cluster": "hf",
+    "answer_machine": {
+      "summary": "Validates the use of built-in smartphone MEMS for identifying heart failure patients in both inpatient and ambulatory settings.",
+      "key_metric": "0.95",
+      "accuracy": "Reports an AUC of 0",
+      "n_count": 1003,
+      "population_brief": "217 participants with HF (174 inpatients, 172 outpatients - pooled), 786 control subjects",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "cornerstone",
+      "relevance": "Clinically useful diagnostic accuracy for Heart Failure detection using standard smartphone MEMS sensors."
+    },
+    "content_path": "/science-hub/studies/S007.md",
+    "images": [
+      {
+        "id": "S007_3_1",
+        "filename": "S007_p3_i1.jpeg",
+        "path": "/science-hub/images/S007/S007_p3_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 3
+      },
+      {
+        "id": "S007_4_1",
+        "filename": "S007_p4_i1.jpeg",
+        "path": "/science-hub/images/S007/S007_p4_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 4
+      },
+      {
+        "id": "S007_5_1",
+        "filename": "S007_p5_i1.jpeg",
+        "path": "/science-hub/images/S007/S007_p5_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 5
+      },
+      {
+        "id": "S007_7_1",
+        "filename": "S007_p7_i1.jpeg",
+        "path": "/science-hub/images/S007/S007_p7_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 7
+      },
+      {
+        "id": "S007_8_1",
+        "filename": "S007_p8_i1.jpeg",
+        "path": "/science-hub/images/S007/S007_p8_i1.jpeg",
+        "caption": "Figure 2.",
+        "page": 8
+      },
+      {
+        "id": "S007_9_1",
+        "filename": "S007_p9_i1.jpeg",
+        "path": "/science-hub/images/S007/S007_p9_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 9
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S008",
+    "slug": "ibrahim-2022-os-sampling-jitter-in-smartphones",
+    "title": "Ibrahim 2022: OS Sampling Jitter in Smartphones",
+    "authors_short": "Osborne et al.",
+    "year": 2022,
+    "doi": "",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "S008 is a vital technical warning. While smartphones are powerful, their operating systems are not designed for medical precision. This study justifies why OpenSCG's backend does not just take 'raw numbers' but performs complex synchronization to ensure clinical-grade reliability.",
+      "key_metric": "OS-level background processes cause significant sampling jitter",
+      "accuracy": "The study supports the necessity of advanced software-level signal stabilization when using smartphones for medical-grade monitoring",
+      "n_count": 3,
+      "population_brief": "Various consumer smartphones (Android and iOS)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Identified critical technical constraints for high-precision smartphone SCG acquisition."
+    },
+    "content_path": "/science-hub/studies/S008.md",
+    "images": [],
+    "related_ids": []
+  },
+  {
+    "id": "S009",
+    "slug": "landreani-2016-beat-to-beat-hr-by-smartphone",
+    "title": "Landreani 2016: Beat-to-beat HR by Smartphone",
+    "authors_short": "Federica Landreani et al.",
+    "year": 2016,
+    "doi": "10.1109/EMBC.2016.7591463",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "S009 is an early but rigorous validation (EMBC 2016) of using commodity smartphones for SCG. It laid the groundwork for OpenSCG by proving that the internal sensors of a modern phone are sensitive enough to match the temporal precision of a professional ECG, provided the phone is positioned correctly.",
+      "key_metric": "> 98%",
+      "accuracy": "The study supports the use of standard smartphone accelerometers (specifically iPhone 6) to measure heart rate with 98%+ accuracy",
+      "n_count": 9,
+      "population_brief": "9 healthy male volunteers (Age 25 ± 2)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Proven feasibility of high-accuracy beat-to-beat heart rate extraction using consumer smartphone accelerometers in resting supine position."
+    },
+    "content_path": "/science-hub/studies/S009.md",
+    "images": [
+      {
+        "id": "S009_2_1",
+        "filename": "S009_p2_i1.jpeg",
+        "path": "/science-hub/images/S009/S009_p2_i1.jpeg",
+        "caption": "Fig. 1. Schematization of the acquisition settings in standing position:  ECG and BCG (from the force platform) are synchronized by a SYNC  signal, while BCG and SCG (from the mobile phone) are synchronized  by an impulsive force F applied laterally to the subject shoulder.",
+        "page": 2
+      },
+      {
+        "id": "S009_2_2",
+        "filename": "S009_p2_i2.jpeg",
+        "path": "/science-hub/images/S009/S009_p2_i2.jpeg",
+        "caption": "Fig. 2. Schematization of the two positions and orientation of the mobile  devices used during acquisition: in supine, two smartphones were  simultaneously placed in POS1 and POS2; in standing, the smartphone  was kept by the subject in POS1.",
+        "page": 2
+      },
+      {
+        "id": "S009_4_1",
+        "filename": "S009_p4_i1.jpeg",
+        "path": "/science-hub/images/S009/S009_p4_i1.jpeg",
+        "caption": "Fig. 5. Linear correlation and Bland-Altman between the gold standard RR measures from the ECG and the IVC-IVC or J-J measures from the SCG  signal, in supine posture for POS1 and POS2, and in standing for POS1.",
+        "page": 4
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S010",
+    "slug": "wang-2025-cardiac-output-prediction",
+    "title": "Wang 2025: Cardiac Output Prediction",
+    "authors_short": "T. Wang et al.",
+    "year": 2025,
+    "doi": "10.1016/j.amjcard.2025.09.037",
+    "cluster": "ml",
+    "answer_machine": {
+      "summary": "S010 represents a major technical leap for SCG by moving from simple timing estimation to direct Cardiac Output prediction using Deep Learning. Validating against the gold standard RHC in a real-world heart failure cohort makes this a key supporting document for OpenSCG’s clinical monitoring claims.",
+      "key_metric": "0.01 L/min",
+      "accuracy": "The study supports the use of Deep Learning and triaxial SCG (combined with ECG and BMI) to non-invasively estimate Cardiac Output in adult heart failure patients",
+      "n_count": 73,
+      "population_brief": "Heart failure patients (NYHA class II-IV, predominantly HFrEF)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Demonstrated feasibility of non-invasive Cardiac Output estimation in heart failure patients using Deep Learning on SCG/ECG signals."
+    },
+    "content_path": "/science-hub/studies/S010.md",
+    "images": [
+      {
+        "id": "S010_1_1",
+        "filename": "S010_p1_i1.jpeg",
+        "path": "/science-hub/images/S010/S010_p1_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S010_2_1",
+        "filename": "S010_p2_i1.jpeg",
+        "path": "/science-hub/images/S010/S010_p2_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S010_4_1",
+        "filename": "S010_p4_i1.jpeg",
+        "path": "/science-hub/images/S010/S010_p4_i1.jpeg",
+        "caption": "Figure 1. Distribution of CO and CI for all baseline RHC encounters. (A) Histogram of CO values as average of Fick and TD obtained during RHC. (B) Histogram of CI values calculated as average CO by Fick and TD normalized to BSA. (C) Correlation between Fick CO and TD CO. An outlier with Fick CO of 9.4 L/min and TD CO of 17.8 L/min was omitted for visual clarity. BSA = body surface area; CO = cardiac output; CI = cardiac index; CInt = conﬁdence interval; PCC = Pearson correlation coefﬁcient; RHC = right heart catheterization; TD = thermodilution.",
+        "page": 4
+      },
+      {
+        "id": "S010_5_1",
+        "filename": "S010_p5_i1.jpeg",
+        "path": "/science-hub/images/S010/S010_p5_i1.jpeg",
+        "caption": "Figure 2. Schematic overview of the deep learning model for CO prediction. Tri-axial SCG and single-lead ECG serve as inputs to parallel convolutional subnetworks (FeatureCNN). A linear layer refers to a fully connected layer that maps a speciﬁed number of inputs to a speciﬁed number of output units. Dropout, with a given probability p, randomly sets a pro- portion of activations to zero during training to limit overﬁtting. A 1D convolutional layer (Conv1D) applies a set number of ﬁlters of speciﬁed kernel size along the temporal axis, with conﬁgurable dilation and padding settings to control the receptive ﬁeld and output size. Adaptive average pooling (AdapAvgPool1D) performs averaging over the temporal axis to produce a ﬁxed-length output, regardless of the input size. BMI = body mass index; CO = cardiac output; ECG = electrocardiogram; SCG = seismocardiogram.",
+        "page": 5
+      },
+      {
+        "id": "S010_6_1",
+        "filename": "S010_p6_i1.jpeg",
+        "path": "/science-hub/images/S010/S010_p6_i1.jpeg",
+        "caption": "Figure 3. Performance of SCG-based deep learning model for CO prediction. Correlation of predicted CO by SCG versus reference CO by RHC for the validation-test set of 64 patients, color-coded by (A) CO and (B) cardiac rhythm. Each point represents the averaged predicted CO for all 30-second segments in a catheterization encounter. Error bars were omitted for visual clarity. Maximum width of 95% conﬁdence intervals for all points was 0.156 L/min. Bland-Altman plot between predicted and reference CO values color-coded by (C) car- diac output and (D) cardiac rhythm. Middle dashed line denotes the mean bias. Upper and lower dashed lines represent the 95% LoA. CInt = conﬁdence interval; CO = cardiac output; LoA = limits of agreement; PCC = Pearson correlation coefﬁcient; RHC = right heart catheterization; RMSE = root mean squared error; SCG = seismocardiogram.",
+        "page": 6
+      },
+      {
+        "id": "S010_7_1",
+        "filename": "S010_p7_i1.jpeg",
+        "path": "/science-hub/images/S010/S010_p7_i1.jpeg",
+        "caption": "Figure 4. Performance of SCG-based deep learning model for CI prediction. Correlation of predicted CI by SCG versus reference CI by RHC for validation-test set of 64 patients color- coded by (A) CO and (B) cardiac rhythm. Each point represents the averaged predicted CI for all 30-second segments in a catheterization recording. Error bars were omitted for visual clarity. Maximum width of 95% conﬁdence intervals for all points was 0.062 L/min/m2. Bland-Altman plot between predicted and reference CI values color-coded by (C) CO and (D) cardiac rhythm. Middle dashed line denotes the mean bias. Upper and lower dashed lines represent the 95% LoA. CI = cardiac index; LoA = limits of agreement; PCC = Pearson correlation coefﬁcient; RHC = right heart catheterization; RMSE = root mean squared error; SCG = seismocardiogram.",
+        "page": 7
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S011",
+    "slug": "seismic-hf-1-aha-2024-congestion-monitoring",
+    "title": "SEISMIC-HF 1 (AHA 2024): Congestion Monitoring",
+    "authors_short": "SEISMIC-HF Investigators et al.",
+    "year": 2025,
+    "doi": "10.1007/s10741-025-10514-1",
+    "cluster": "hf",
+    "answer_machine": {
+      "summary": "Provides summary evidence from the large-scale SEISMIC-HF 1 trial for non-invasive filling pressure estimation.",
+      "key_metric": "0.74",
+      "accuracy": "Reviews trial data showing a correlation (r=0",
+      "n_count": 943,
+      "population_brief": "943 patients (Analysis focused on 233 HFrEF patients)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "cornerstone",
+      "relevance": "Mini-review confirming accurate estimation of intracardiac filling pressures (PCWP) in HFrEF patients from the SEISMIC-HF 1 trial."
+    },
+    "content_path": "/science-hub/studies/S011.md",
+    "images": [
+      {
+        "id": "S011_2_1",
+        "filename": "S011_p2_i1.jpeg",
+        "path": "/science-hub/images/S011/S011_p2_i1.jpeg",
+        "caption": "Fig. 1   Physiologic signals from non-invasive sensor for pulmonary  capillary wedge pressure estimation. CardioTag (Cardiosense, Inc.,  Chicago, IL) is a wearable sensor patch capable of capturing seis- mocardiography, photoplethysmography, and electrocardiography",
+        "page": 2
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S012",
+    "slug": "kolind-2024-scgecho-systolic-correlation",
+    "title": "Kolind 2024: SCG/Echo Systolic Correlation",
+    "authors_short": "Christoffer Mejling Kolind et al.",
+    "year": 2024,
+    "doi": "10.1088/2057-1976/ad6a67",
+    "cluster": "comparison",
+    "answer_machine": {
+      "summary": "S012 is a very recent (2024) validation of SCG’s sensitivity to hemodynamic shifts. Crucially, it found that SCG was *more* sensitive to small changes in preload than traditional ultrasound, highlighting its potential for early detection of volume overload in heart failure patients at home.",
+      "key_metric": "LVET, IVCT, S', strain, SR, SV, and LVEF",
+      "accuracy": "The study supports the direct correlation between SCG systolic waveform features and gold-standard echocardiographic variables",
+      "n_count": 34,
+      "population_brief": "34 healthy subjects (equal sex distribution), Age 20-80",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Validated the potential of SCG as a clinical supplement for examining systolic mechanical heart function and preload sensitivity."
+    },
+    "content_path": "/science-hub/studies/S012.md",
+    "images": [
+      {
+        "id": "S012_1_2",
+        "filename": "S012_p1_i2.png",
+        "path": "/science-hub/images/S012/S012_p1_i2.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S012_1_3",
+        "filename": "S012_p1_i3.png",
+        "path": "/science-hub/images/S012/S012_p1_i3.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S012_3_1",
+        "filename": "S012_p3_i1.jpeg",
+        "path": "/science-hub/images/S012/S012_p3_i1.jpeg",
+        "caption": "Figure 1. SCG data were recorded in a supine- and a tilted position. The seismocardiograms display the mean curve from subject number nine. Fiducial points of SCG were placed by an algorithm, representing cardiac events as seen in the right column.",
+        "page": 3
+      },
+      {
+        "id": "S012_4_1",
+        "filename": "S012_p4_i1.jpeg",
+        "path": "/science-hub/images/S012/S012_p4_i1.jpeg",
+        "caption": "Figure 2. Illustration of the experimental setup including the placement of the SCG accelerometers and the ECG electrodes.",
+        "page": 4
+      },
+      {
+        "id": "S012_7_1",
+        "filename": "S012_p7_i1.jpeg",
+        "path": "/science-hub/images/S012/S012_p7_i1.jpeg",
+        "caption": "Figure 3. Correlation maps illustrating the correlation between the systolic SCG- and echo variables represented by either Pearson’s Correlation Coefﬁcient or Spearman’s Rho Correlation Coefﬁcient. The maps illustrate respectively supine-, tilted-, and the change between the positions. The coloured cells mark the correlations which are higher than r > ± 0.3 and statistically signiﬁcant (p < 0.05). Bold r-values are signiﬁcant correlations (p < 0.05). Exact p-values are seen in Supplementary Material 1.",
+        "page": 7
+      },
+      {
+        "id": "S012_9_1",
+        "filename": "S012_p9_i1.jpeg",
+        "path": "/science-hub/images/S012/S012_p9_i1.jpeg",
+        "caption": "Figure 4. Correlation plots for certain SCG- and echo variables in respectively supine- and tilted position and the difference between the two positions.",
+        "page": 9
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S013",
+    "slug": "noda-2017-peplvet-in-heart-failure",
+    "title": "Noda 2017: PEP/LVET in Heart Failure",
+    "authors_short": "Noda et al.",
+    "year": 2017,
+    "doi": "10.1016/j.jarr.2016.12.003",
+    "cluster": "hf",
+    "answer_machine": {
+      "summary": "S013 provides a direct link between SCG metrics and advanced clinical interventions like CRT. It proves that the 'vibration-based' markers OpenSCG extracts have real diagnostic and therapeutic value in treating high-risk heart failure patients.",
+      "key_metric": "PEP/LVET ratio is a highly informative marker of cardiac performance",
+      "accuracy": "The study supports the clinical value of measuring systolic time intervals (STI), specifically the ratio of pre-ejection period (PEP) to left ventricular ejection time (LVET), using non-invasive sensors",
+      "n_count": 27,
+      "population_brief": "Patients with Heart Failure / Cardiac Resynchronization Therapy (CRT)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Validated the use of SCG-derived systolic time intervals for heart failure management."
+    },
+    "content_path": "/science-hub/studies/S013.md",
+    "images": [
+      {
+        "id": "S013_1_1",
+        "filename": "S013_p1_i1.png",
+        "path": "/science-hub/images/S013/S013_p1_i1.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S014",
+    "slug": "taebi-2019-recent-advances-in-scg",
+    "title": "Taebi 2019: Recent Advances in SCG",
+    "authors_short": "Amirtaha Taebi et al.",
+    "year": 2019,
+    "doi": "10.3390/vibration2010005",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "S014 is the definitive state-of-the-art review for SCG. For OpenSCG, it serves as an academic bridge that links our modern AI approach to over 60 years of cardiomechanical research, proving that the technology is now 'clinically ready' for ubiquitous deployment.",
+      "key_metric": "Covering signal processing, motion removal, and clinical utility",
+      "accuracy": "The review supports the scientific legitimacy of SCG for monitoring heart rate variability, systolic time intervals, and detecting cardiovascular diseases",
+      "n_count": null,
+      "population_brief": "Review of 80+ studies",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Summarized the technological and clinical validation state of the SCG field as of 2019."
+    },
+    "content_path": "/science-hub/studies/S014.md",
+    "images": [
+      {
+        "id": "S014_1_1",
+        "filename": "S014_p1_i1.png",
+        "path": "/science-hub/images/S014/S014_p1_i1.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S014_1_2",
+        "filename": "S014_p1_i2.png",
+        "path": "/science-hub/images/S014/S014_p1_i2.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S014_1_3",
+        "filename": "S014_p1_i3.png",
+        "path": "/science-hub/images/S014/S014_p1_i3.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S014_1_4",
+        "filename": "S014_p1_i4.png",
+        "path": "/science-hub/images/S014/S014_p1_i4.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S014_3_1",
+        "filename": "S014_p3_i1.jpeg",
+        "path": "/science-hub/images/S014/S014_p3_i1.jpeg",
+        "caption": "Figure 1. Modiﬁed Wiggers diagram. A sample axial seismocardiography (SCG) signal (acceleration in the dorso-ventral direction) is shown alongside other cardiovascular signals such as the aortic pressure, atrial pressure, ventricular volume, electrocardiogram, and phonocardiogram. The mitral valve closure (MC) and opening (MO), and aortic valve closure (AC) and opening (AO) are labeled based on the pressure signals.",
+        "page": 3
+      },
+      {
+        "id": "S014_6_1",
+        "filename": "S014_p6_i1.jpeg",
+        "path": "/science-hub/images/S014/S014_p6_i1.jpeg",
+        "caption": "Figure 2. Sensor location distribution in recent SCG studies.",
+        "page": 6
+      },
+      {
+        "id": "S014_8_1",
+        "filename": "S014_p8_i1.jpeg",
+        "path": "/science-hub/images/S014/S014_p8_i1.jpeg",
+        "caption": "Figure 3. Map of root-mean-square (RMS) amplitude of SCG waves at the chest surface using scanning laser vibrometry. There were local amplitude maxima that coincided with the aortic, pulmonary, tricuspid, and mitral auscultation areas. These data suggest that sensor location and size need to be chosen with care and that the effects of sensor misplacement need to be quantiﬁed.",
+        "page": 8
+      },
+      {
+        "id": "S014_8_2",
+        "filename": "S014_p8_i2.jpeg",
+        "path": "/science-hub/images/S014/S014_p8_i2.jpeg",
+        "caption": "Figure 4. SCG signal processing steps.",
+        "page": 8
+      },
+      {
+        "id": "S014_8_3",
+        "filename": "S014_p8_i3.jpeg",
+        "path": "/science-hub/images/S014/S014_p8_i3.jpeg",
+        "caption": "Figure 3. Map of root-mean-square (RMS) amplitude of SCG waves at the chest surface using scanning laser vibrometry. There were local amplitude maxima that coincided with the aortic, pulmonary, tricuspid, and mitral auscultation areas. These data suggest that sensor location and size need to be chosen with care and that the effects of sensor misplacement need to be quantiﬁed.",
+        "page": 8
+      },
+      {
+        "id": "S014_8_4",
+        "filename": "S014_p8_i4.jpeg",
+        "path": "/science-hub/images/S014/S014_p8_i4.jpeg",
+        "caption": "Figure 4. SCG signal processing steps.",
+        "page": 8
+      },
+      {
+        "id": "S014_23_1",
+        "filename": "S014_p23_i1.png",
+        "path": "/science-hub/images/S014/S014_p23_i1.png",
+        "caption": "No caption found automatically.",
+        "page": 23
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S015",
+    "slug": "cinotti-2025-instantaneous-hr-via-phone",
+    "title": "Cinotti 2025: Instantaneous HR via Phone",
+    "authors_short": "Cinotti et al.",
+    "year": 2025,
+    "doi": "10.3390/s25041094",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "Recent 2025 benchmark confirming smartphone hardware sensitivity for medical-grade cardiac and respiratory monitoring.",
+      "key_metric": "±7.33 ms",
+      "accuracy": "The study supports the use of high-frequency smartphone sensors to extract heart rate variability (HRV) and breathing rates with extreme precision, achieving heart rate accuracy (±7",
+      "n_count": 24,
+      "population_brief": "24 healthy volunteers",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Achieved extreme precision in heart and breathing rate estimation via smartphone sensors."
+    },
+    "content_path": "/science-hub/studies/S015.md",
+    "images": [
+      {
+        "id": "S015_4_221",
+        "filename": "S015_p4_i221.png",
+        "path": "/science-hub/images/S015/S015_p4_i221.png",
+        "caption": "No caption found automatically.",
+        "page": 4
+      },
+      {
+        "id": "S015_4_252",
+        "filename": "S015_p4_i252.jpeg",
+        "path": "/science-hub/images/S015/S015_p4_i252.jpeg",
+        "caption": "Figure 1. (a) Measurement setup: the subject lies supine on a bed in horizontal position while breathing at a natural pace. The smartphone is placed onto the subject’s chest along the sternum. The ERB is secured around the upper abdomen of the subject. ECG electrodes are positioned on the subject to record the ECG lead II via an ECG monitor. Triaxial ACC and GYR signals are acquired by the smartphone and, simultaneously, ECG and ERB signals are acquired via a separate data acquisition board. Examples of acquired signals are also depicted. (b) Two photos: on the left, a top view, and on the right, a side view of an actual subject equipped with the measurement setup.",
+        "page": 4
+      },
+      {
+        "id": "S015_4_253",
+        "filename": "S015_p4_i253.jpeg",
+        "path": "/science-hub/images/S015/S015_p4_i253.jpeg",
+        "caption": "Figure 1. (a) Measurement setup: the subject lies supine on a bed in horizontal position while breathing at a natural pace. The smartphone is placed onto the subject’s chest along the sternum. The ERB is secured around the upper abdomen of the subject. ECG electrodes are positioned on the subject to record the ECG lead II via an ECG monitor. Triaxial ACC and GYR signals are acquired by the smartphone and, simultaneously, ECG and ERB signals are acquired via a separate data acquisition board. Examples of acquired signals are also depicted. (b) Two photos: on the left, a top view, and on the right, a side view of an actual subject equipped with the measurement setup.",
+        "page": 4
+      },
+      {
+        "id": "S015_5_1",
+        "filename": "S015_p5_i1.jpeg",
+        "path": "/science-hub/images/S015/S015_p5_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 5
+      },
+      {
+        "id": "S015_5_2",
+        "filename": "S015_p5_i2.png",
+        "path": "/science-hub/images/S015/S015_p5_i2.png",
+        "caption": "Figure 2. Cont.",
+        "page": 5
+      },
+      {
+        "id": "S015_6_1",
+        "filename": "S015_p6_i1.jpeg",
+        "path": "/science-hub/images/S015/S015_p6_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 6
+      },
+      {
+        "id": "S015_6_2",
+        "filename": "S015_p6_i2.png",
+        "path": "/science-hub/images/S015/S015_p6_i2.png",
+        "caption": "Figure 2. Some excerpts of ECG (blue line), NCC (light green line), and (a) SCG signal (orange line), (b) GCG signal (green line) from subject #5. Red and black points mark the locations of R-peaks and NCC-peaks, respectively.",
+        "page": 6
+      },
+      {
+        "id": "S015_6_3",
+        "filename": "S015_p6_i3.jpeg",
+        "path": "/science-hub/images/S015/S015_p6_i3.jpeg",
+        "caption": "Figure 3. An example of IBI estimation in ECG and SCG signals of subject #5. For the ECG sig- nal, the IBI is estimated as the temporal distance between two consecutive R-peaks (violet double arrow), while the same IBI is estimated for the NCC signal as the temporal distance between the two corresponding successive NCC-peaks (blue double arrow).",
+        "page": 6
+      },
+      {
+        "id": "S015_6_4",
+        "filename": "S015_p6_i4.jpeg",
+        "path": "/science-hub/images/S015/S015_p6_i4.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 6
+      },
+      {
+        "id": "S015_6_5",
+        "filename": "S015_p6_i5.png",
+        "path": "/science-hub/images/S015/S015_p6_i5.png",
+        "caption": "Figure 2. Some excerpts of ECG (blue line), NCC (light green line), and (a) SCG signal (orange line), (b) GCG signal (green line) from subject #5. Red and black points mark the locations of R-peaks and NCC-peaks, respectively.",
+        "page": 6
+      },
+      {
+        "id": "S015_6_6",
+        "filename": "S015_p6_i6.jpeg",
+        "path": "/science-hub/images/S015/S015_p6_i6.jpeg",
+        "caption": "Figure 3. An example of IBI estimation in ECG and SCG signals of subject #5. For the ECG sig- nal, the IBI is estimated as the temporal distance between two consecutive R-peaks (violet double arrow), while the same IBI is estimated for the NCC signal as the temporal distance between the two corresponding successive NCC-peaks (blue double arrow).",
+        "page": 6
+      },
+      {
+        "id": "S015_7_1",
+        "filename": "S015_p7_i1.png",
+        "path": "/science-hub/images/S015/S015_p7_i1.png",
+        "caption": "No caption found automatically.",
+        "page": 7
+      },
+      {
+        "id": "S015_7_2",
+        "filename": "S015_p7_i2.png",
+        "path": "/science-hub/images/S015/S015_p7_i2.png",
+        "caption": "No caption found automatically.",
+        "page": 7
+      },
+      {
+        "id": "S015_7_3",
+        "filename": "S015_p7_i3.png",
+        "path": "/science-hub/images/S015/S015_p7_i3.png",
+        "caption": "No caption found automatically.",
+        "page": 7
+      },
+      {
+        "id": "S015_7_4",
+        "filename": "S015_p7_i4.png",
+        "path": "/science-hub/images/S015/S015_p7_i4.png",
+        "caption": "Figure 4. Some excerpts of ERB (purple line) signal and (a) ARG signal (black line), (b) GRG signal (green line) from subject #5. Blue points mark the locations of respiratory peaks on ERB/ARG signals, while red points mark the locations of respiratory peaks on ERB/GRG signals.",
+        "page": 7
+      },
+      {
+        "id": "S015_8_1",
+        "filename": "S015_p8_i1.jpeg",
+        "path": "/science-hub/images/S015/S015_p8_i1.jpeg",
+        "caption": "Figure 5. An example of IBrI estimation in ERB and ARG signals of subject #5. For the ERB signal, the IBrI is estimated as the temporal distance between two consecutive respiratory peaks (violet double arrow), while the same IBrI is estimated for the ARG signal as the temporal distance between the two corresponding successive respiratory peaks (blue double arrow).",
+        "page": 8
+      },
+      {
+        "id": "S015_9_1",
+        "filename": "S015_p9_i1.jpeg",
+        "path": "/science-hub/images/S015/S015_p9_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 9
+      },
+      {
+        "id": "S015_9_2",
+        "filename": "S015_p9_i2.jpeg",
+        "path": "/science-hub/images/S015/S015_p9_i2.jpeg",
+        "caption": "Figure 6. Results of statistical analyses on IBIs obtained from SCG signals: (a) correlation and linear regression plot; (b) Bland–Altman plot.",
+        "page": 9
+      },
+      {
+        "id": "S015_10_1",
+        "filename": "S015_p10_i1.jpeg",
+        "path": "/science-hub/images/S015/S015_p10_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 10
+      },
+      {
+        "id": "S015_10_2",
+        "filename": "S015_p10_i2.jpeg",
+        "path": "/science-hub/images/S015/S015_p10_i2.jpeg",
+        "caption": "Figure 7. Results of statistical analyses on IBIs obtained from GCG signals: (a) correlation and linear regression plot; (b) Bland–Altman plot.",
+        "page": 10
+      },
+      {
+        "id": "S015_11_1",
+        "filename": "S015_p11_i1.jpeg",
+        "path": "/science-hub/images/S015/S015_p11_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 11
+      },
+      {
+        "id": "S015_11_2",
+        "filename": "S015_p11_i2.jpeg",
+        "path": "/science-hub/images/S015/S015_p11_i2.jpeg",
+        "caption": "Figure 8. Results of statistical analyses on IBrIs obtained from ARG signals: (a) correlation and linear regression plot; (b) Bland–Altman plot.",
+        "page": 11
+      },
+      {
+        "id": "S015_12_1",
+        "filename": "S015_p12_i1.jpeg",
+        "path": "/science-hub/images/S015/S015_p12_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 12
+      },
+      {
+        "id": "S015_12_2",
+        "filename": "S015_p12_i2.jpeg",
+        "path": "/science-hub/images/S015/S015_p12_i2.jpeg",
+        "caption": "Figure 9. Results of statistical analyses on IBrIs obtained from GRG signals: (a) correlation and linear regression plot; (b) Bland–Altman plot.",
+        "page": 12
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S016",
+    "slug": "inan-2018-assessing-clinical-status-of-hf",
+    "title": "Inan 2018: Assessing Clinical Status of HF",
+    "authors_short": "Omer T. Inan et al.",
+    "year": 2018,
+    "doi": "10.1161/CIRCHEARTFAILURE.117.004313",
+    "cluster": "hf",
+    "answer_machine": {
+      "summary": "S016 is a vital clinical validation for OpenSCG’s heart failure monitoring use case. By proving that SCG can track the clinical improvement from hospital admission to discharge, it establishes SCG as a sensitive 'digital biomarker' for hemodynamic congestion and recovery, potentially more sensitive than heart rate alone.",
+      "key_metric": "44.4 ± 4.9",
+      "accuracy": "The study supports using wearable SCG sensors to assess the physiological 'cardiovascular reserve' of heart failure patients",
+      "n_count": 45,
+      "population_brief": "Heart failure patients (Compensated N=32, Decompensated N=13)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Validated the use of SCG graph similarity to differentiate between compensated and decompensated heart failure states."
+    },
+    "content_path": "/science-hub/studies/S016.md",
+    "images": [
+      {
+        "id": "S016_3_1",
+        "filename": "S016_p3_i1.png",
+        "path": "/science-hub/images/S016/S016_p3_i1.png",
+        "caption": "Figure 1. Seismocardiogram (SCG) and ECG sensing  patch.   A, The SCG signal represents the vibrations of the chest wall  in response to the movement of the heart and blood with  each heartbeat. SCG is measured using a miniature, 3-axis  accelerometer, typically positioned on the midsternum. B,  The SCG signal consists of vibrations in 3 axes: head-to-foot,  dorso-ventral, and lateral. C, A custom, small, wearable  patch for measuring SCG and ECG signals was designed.  The patch is placed on the chest using 3 gel adhesive  electrodes and stores data locally on a micro secure digital  card. The low power design allows for >50 h of continuous  recording and use without recharging the battery.",
+        "page": 3
+      },
+      {
+        "id": "S016_5_1",
+        "filename": "S016_p5_i1.png",
+        "path": "/science-hub/images/S016/S016_p5_i1.png",
+        "caption": "Figure 2. General overview of the proposed method.   A, The seismocardiogram (SCG) signals (3 axes [dorso-ventral, DV, head-to-foot, HF, and lateral, LAT]) of heart are measured  using the custom, wearable patch. Filtering is applied and SCG3D (a point-by-point average of the 3 axes) is calculated. Then,  SCG3D of rest and recovery segments are windowed and generate NRES and NREC. B, The L frequency domain feature sets (X   and Y) are computed from NRES and NREC. C, Two k-nearest neighbor graphs (GX and GY) are constructed from frequency  feature vectors X  and Y , and GSS is calculated to measure similarity in between rest and recovery states. D, An example of  graph similarity score (GSS) calculation between 2 illustrative graphs. 6MWT indicates 6-minute walk test.",
+        "page": 5
+      },
+      {
+        "id": "S016_6_1",
+        "filename": "S016_p6_i1.jpeg",
+        "path": "/science-hub/images/S016/S016_p6_i1.jpeg",
+        "caption": "Figure 3. Calculated graph similarity score (GSS) for representative decompensated and compensated patients.   Representative seismocardiogram (SCG) time traces from rest and recovery after the 6-minute walk test (6MWT) and associ- ated GX and GY graphs of a compensated patient with heart failure (top) and a decompensated patient (bottom). For the  decompensated patient, the GSS value is 55 and for the compensated patient, the corresponding value is 24. This result dem- onstrates the higher similarity in SCG waveform structure between rest and recovery phases of the decompensated patient in  comparison with compensated patient. The graphs also demonstrate the higher similarity for decompensated versus compen- sated states visually.",
+        "page": 6
+      },
+      {
+        "id": "S016_7_1",
+        "filename": "S016_p7_i1.png",
+        "path": "/science-hub/images/S016/S016_p7_i1.png",
+        "caption": "Figure 5. Graph similarity score (GSS) for heart failure inpatients decreases from admit to discharge.   Longitudinal results from a subset of the inpatient population for which the 6-minute walk test data were obtained when the  subjects were admitted (left) and on discharge (right) after treatment. For all patients, GSS decreased at discharge as com- pared with when first admitted. Thus, as the decompensated patients were treated, longitudinal changes in the physiological  response to exercise were observed in a consistent manner with the cross-sectional data from the overall cohort of subjects.  One patient had a third visit as well and showed markedly increased GSS because of readmission due to acute kidney injury  and volume overload.",
+        "page": 7
+      },
+      {
+        "id": "S016_7_2",
+        "filename": "S016_p7_i2.png",
+        "path": "/science-hub/images/S016/S016_p7_i2.png",
+        "caption": "Figure 4. Overall statistical analysis of the graph simi- larity score (GSS) metric from all patients grouped by  clinical state (compensated vs decompensated).   The GSS between rest and recovery phases was significantly  higher for the decompensated patients as compared with  compensated; n=45 subjects (P<0.001).",
+        "page": 7
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S017",
+    "slug": "salerno-1992-exercise-scg-for-cad-detection",
+    "title": "Salerno 1992: Exercise SCG for CAD detection",
+    "authors_short": "Salerno DM, Zanetti J. et al.",
+    "year": 1992,
+    "doi": "10.1159/000470383",
+    "cluster": "cad",
+    "answer_machine": {
+      "summary": "S017 is a landmark historical validation. It provides the empirical proof that mechanical heart vibrations are more sensitive indicators of reduced blood flow (ischemia) than electrical changes, justifying OpenSCG's focus on SCG for high-precision cardiac screening.",
+      "key_metric": "SCG improved accuracy by +16 pp over stress ECG",
+      "accuracy": "The study supports the use of exercise-based SCG to significantly improve the detection of coronary artery disease compared to traditional ECG treadmill tests",
+      "n_count": 129,
+      "population_brief": "Patients with suspected CAD",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Validated method."
+    },
+    "content_path": "/science-hub/studies/S017.md",
+    "images": [],
+    "related_ids": []
+  },
+  {
+    "id": "S018",
+    "slug": "mode-af-study-mobile-phone-detection-of-af",
+    "title": "MODE-AF Study: Mobile Phone Detection of AF",
+    "authors_short": "Tero Koivisto et al.",
+    "year": 2018,
+    "doi": "10.1161/CIRCULATIONAHA.117.032804",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "Validates the effectiveness of combined accelerometer and gyroscope data for heart rhythm screening without external hardware.",
+      "key_metric": "95.3%",
+      "accuracy": "Reports 95",
+      "n_count": 300,
+      "population_brief": "150 patients in AF, 150 age- and sex-matched controls in sinus rhythm (SR)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "cornerstone",
+      "relevance": "Clinically validated smartphone-based screening for Atrial Fibrillation with near-perfect agreement to telemetry ECG."
+    },
+    "content_path": "/science-hub/studies/S018.md",
+    "images": [
+      {
+        "id": "S018_2_1",
+        "filename": "S018_p2_i1.png",
+        "path": "/science-hub/images/S018/S018_p2_i1.png",
+        "caption": "Figure. Visual presentation of mechanocardiography data.   A, Electrocardiographic, accelerometer, and gyroscope signals are presented in sinus rhythm (top) and atrial fibrillation (bot- tom). The corresponding heartbeats can be located in both the mechanical and the electrocardiographic signals during sinus  rhythm and atrial fibrillation. Because the different axes of the accelerometer and gyroscope signals appear to vary in quality,  our algorithm takes advantage of combining the information from various axes to provide a reliable estimate of the heart  rhythm. B, Mechanocardiography signal periodicity is represented visually in sinus rhythm (top), sinus rhythm converting to  atrial fibrillation (middle), and atrial fibrillation (bottom). The vertical axis represents time in seconds, and the horizontal axis  represents the instant period of the signal converted into beats per minute to denote heart rate. A continuous signal shape is  observed during a regular heart rhythm such as sinus rhythm (top), whereas a scattered pattern is observed during an irregular  rhythm such as atrial fibrillation (bottom). Middle, Sinus rhythm abruptly converts to atrial fibrillation at ≈140 seconds.",
+        "page": 2
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S019",
+    "slug": "mscardio-remote-monitoring-dataset",
+    "title": "MSCardio: Remote Monitoring Dataset",
+    "authors_short": "Amirtaha Taebi et al.",
+    "year": 2024,
+    "doi": "10.5281/zenodo.15657893",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "An open-access dataset used for training and validating algorithms on diverse smartphone hardware.",
+      "key_metric": "7,700+",
+      "accuracy": "Provides a large-scale real-world SCG dataset for technical characterization",
+      "n_count": 108,
+      "population_brief": "108 volunteers (46 male, 61 female), Age 18-62",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Large-scale real-world SCG data collection from diverse smartphone models."
+    },
+    "content_path": "/science-hub/studies/S019.md",
+    "images": [
+      {
+        "id": "S019_1_2",
+        "filename": "S019_p1_i2.png",
+        "path": "/science-hub/images/S019/S019_p1_i2.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S020",
+    "slug": "openscg-telemedicine-waveform-framework",
+    "title": "OpenSCG: Telemedicine Waveform Framework",
+    "authors_short": "OpenSCG Team et al.",
+    "year": 2024,
+    "doi": "",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "Technical infrastructure supporting scalable data streaming for research purposes.",
+      "key_metric": "Node.js / Python / WebSockets",
+      "accuracy": "Framework for cardiomechanical data transmission",
+      "n_count": 0,
+      "population_brief": "N/A",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Internal infrastructure for scalable telemedicine SCG deployment."
+    },
+    "content_path": "/science-hub/studies/S020.md",
+    "images": [],
+    "related_ids": []
+  },
+  {
+    "id": "S021",
+    "slug": "ramos-castro-2012-smartphone-hrv-challenges",
+    "title": "Ramos-Castro 2012: Smartphone HRV Challenges",
+    "authors_short": "Capdevila et al.",
+    "year": 2021,
+    "doi": "",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "S021 is a foundational technical warning for the mobile health industry. For OpenSCG, it provides the historical and scientific justification for our sophisticated backend synchronization—proving that we solve a known industry problem that prevents most competitors from achieving clinical-grade accuracy.",
+      "key_metric": "Smartphone HRV results are strongly influenced by instability in sampling frequency.",
+      "accuracy": "The study supports the need for high-precision time-stamping and jitter compensation when performing heart rate variability (HRV) analysis on smartphones",
+      "n_count": 121,
+      "population_brief": "Healthy subjects",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Identified sampling frequency stability as a key requirement for mobile HRV."
+    },
+    "content_path": "/science-hub/studies/S021.md",
+    "images": [],
+    "related_ids": []
+  },
+  {
+    "id": "S022",
+    "slug": "tatinati-2014-wavelet-peak-detection",
+    "title": "Tatinati 2014: Wavelet Peak Detection",
+    "authors_short": "Sahoo et al.",
+    "year": 2017,
+    "doi": "",
+    "cluster": "ml",
+    "answer_machine": {
+      "summary": "Foundational technical work on multi-resolution analysis of cardiomechanical signals.",
+      "key_metric": "Stationary Wavelet Transform (SWT)",
+      "accuracy": "The study supports the use of Wavelet transforms for non-stationary bio-signal analysis like SCG",
+      "n_count": 12,
+      "population_brief": "Healthy subjects",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Early validation of Wavelet analysis for SCG processing."
+    },
+    "content_path": "/science-hub/studies/S022.md",
+    "images": [],
+    "related_ids": []
+  },
+  {
+    "id": "S023",
+    "slug": "castiglioni-2022-scg-for-sleep-monitoring",
+    "title": "Castiglioni 2022: SCG for Sleep Monitoring",
+    "authors_short": "Castiglioni et al.",
+    "year": 2022,
+    "doi": "",
+    "cluster": "comparison",
+    "answer_machine": {
+      "summary": "Validates the use of mechanocardiography for long-term physiological monitoring during sleep.",
+      "key_metric": "SCG can track autonomic changes during sleep stages",
+      "accuracy": "The study supports using SCG for non-invasive, overnight monitoring of heart activity without the need for electrode patches",
+      "n_count": 10,
+      "population_brief": "Healthy and sleep-disordered subjects",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Demonstrated SCG feasibility for continuous overnight heart function monitoring."
+    },
+    "content_path": "/science-hub/studies/S023.md",
+    "images": [],
+    "related_ids": []
+  },
+  {
+    "id": "S024",
+    "slug": "zia-2022-quality-indexing-and-classification",
+    "title": "Zia 2022: Quality Indexing and Classification",
+    "authors_short": "Jonathan Zia et al.",
+    "year": 2022,
+    "doi": "10.1109/JBHI.2021.3119150",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "Provides the technical foundation for robust signal quality control in mobile SCG monitoring.",
+      "key_metric": "91.8%",
+      "accuracy": "The study supports the use of automated quality indexing to filter out noisy SCG data, ensuring that only high-quality signals are used for clinical interpretation",
+      "n_count": 20,
+      "population_brief": "20 healthy subjects",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Validated a unified framework for SCG signal quality assessment, critical for reliable monitoring."
+    },
+    "content_path": "/science-hub/studies/S024.md",
+    "images": [
+      {
+        "id": "S024_4_1",
+        "filename": "S024_p4_i1.png",
+        "path": "/science-hub/images/S024/S024_p4_i1.png",
+        "caption": "Fig. 2. (a) The traditional DTW algorithm, showing the warp path (blue), 1:1 correspondence path (gray), and required points (black). Blue dotted lines show features brought into alignment after warping. (b) The DTFM algorithm. Square shading indicates candidate points (black), prohibited points (crossed), locations of time-series features (gray), selected path (green), and path from normal DTW (blue). Valid warp paths are shown as solid lines, blue for sub-optimal and green for optimal. In this example, the third maximum in the signal is determined to be aberrant, and the third minimum in the signal is mapped to the second minimum in the template.",
+        "page": 4
+      },
+      {
+        "id": "S024_4_2",
+        "filename": "S024_p4_i2.png",
+        "path": "/science-hub/images/S024/S024_p4_i2.png",
+        "caption": "Fig. 2. (a) The traditional DTW algorithm, showing the warp path (blue), 1:1 correspondence path (gray), and required points (black). Blue dotted lines show features brought into alignment after warping. (b) The DTFM algorithm. Square shading indicates candidate points (black), prohibited points (crossed), locations of time-series features (gray), selected path (green), and path from normal DTW (blue). Valid warp paths are shown as solid lines, blue for sub-optimal and green for optimal. In this example, the third maximum in the signal is determined to be aberrant, and the third minimum in the signal is mapped to the second minimum in the template.",
+        "page": 4
+      },
+      {
+        "id": "S024_8_1",
+        "filename": "S024_p8_i1.png",
+        "path": "/science-hub/images/S024/S024_p8_i1.png",
+        "caption": "No caption found automatically.",
+        "page": 8
+      },
+      {
+        "id": "S024_8_2",
+        "filename": "S024_p8_i2.png",
+        "path": "/science-hub/images/S024/S024_p8_i2.png",
+        "caption": "No caption found automatically.",
+        "page": 8
+      },
+      {
+        "id": "S024_8_3",
+        "filename": "S024_p8_i3.png",
+        "path": "/science-hub/images/S024/S024_p8_i3.png",
+        "caption": "No caption found automatically.",
+        "page": 8
+      },
+      {
+        "id": "S024_8_4",
+        "filename": "S024_p8_i4.png",
+        "path": "/science-hub/images/S024/S024_p8_i4.png",
+        "caption": "No caption found automatically.",
+        "page": 8
+      },
+      {
+        "id": "S024_8_5",
+        "filename": "S024_p8_i5.png",
+        "path": "/science-hub/images/S024/S024_p8_i5.png",
+        "caption": "Fig. 4. (a) Template signal (black) and raw signal (red) before warping. Five peaks from each signal that likely correspond were chosen by visual inspection and are connected by dashed lines. (b) Warping paths from DTW (green) and DTFM (blue) plotted against 1:1 correspondence line (black, dashed). Sub-optimal (square, empty) and optimal (square, shaded) candidate points are indicated, with the candidate points corresponding to the ﬁve features in (a) being indicated by black circles. (c) Template signal (black) and raw signal (green) after DTW. The new locations of the ﬁve corresponding points from (a) are connected by dashed lines. (d) Template signal (black) and raw signal (blue) after DTFM. The new locations of the ﬁve corresponding points from (a) are connected by dashed lines. Peak mismatches caused by DTW are indicated by the dimension lines in (b) and (c). Relative importance of noise components in predicting distance estimation by DTW (e) and DTFM (f). Harmonic frequency refers to the number of periods per window of the sinusoidal noise.",
+        "page": 8
+      },
+      {
+        "id": "S024_8_6",
+        "filename": "S024_p8_i6.png",
+        "path": "/science-hub/images/S024/S024_p8_i6.png",
+        "caption": "Fig. 4. (a) Template signal (black) and raw signal (red) before warping. Five peaks from each signal that likely correspond were chosen by visual inspection and are connected by dashed lines. (b) Warping paths from DTW (green) and DTFM (blue) plotted against 1:1 correspondence line (black, dashed). Sub-optimal (square, empty) and optimal (square, shaded) candidate points are indicated, with the candidate points corresponding to the ﬁve features in (a) being indicated by black circles. (c) Template signal (black) and raw signal (green) after DTW. The new locations of the ﬁve corresponding points from (a) are connected by dashed lines. (d) Template signal (black) and raw signal (blue) after DTFM. The new locations of the ﬁve corresponding points from (a) are connected by dashed lines. Peak mismatches caused by DTW are indicated by the dimension lines in (b) and (c). Relative importance of noise components in predicting distance estimation by DTW (e) and DTFM (f). Harmonic frequency refers to the number of periods per window of the sinusoidal noise.",
+        "page": 8
+      },
+      {
+        "id": "S024_9_1",
+        "filename": "S024_p9_i1.png",
+        "path": "/science-hub/images/S024/S024_p9_i1.png",
+        "caption": "Fig. 5. (a) Stratiﬁcation of SCG signals using the DTFM-based SQI for a single subject. The columns from left to right show SCG intervals taken from rest, recovery, and exercise respectively. The top row corresponds to the top 2% of signals in each category based on their SQI; the middle rows correspond to the 50th percentile; and the bottom row corresponds to the bottom 2%. The correlation between scores assigned by manual annotation and the DTFM-based SQI are shown for the (b) rest, (c) recovery, (d) squatting, and (e) walking activity levels. The best-ﬁt line for these scores is shown (black, dotted), with the corresponding R2 of the ﬁt overlaid. For visual purposes, SQI scores were normalized to the range [0, 1].",
+        "page": 9
+      },
+      {
+        "id": "S024_9_2",
+        "filename": "S024_p9_i2.png",
+        "path": "/science-hub/images/S024/S024_p9_i2.png",
+        "caption": "No caption found automatically.",
+        "page": 9
+      },
+      {
+        "id": "S024_9_3",
+        "filename": "S024_p9_i3.png",
+        "path": "/science-hub/images/S024/S024_p9_i3.png",
+        "caption": "No caption found automatically.",
+        "page": 9
+      },
+      {
+        "id": "S024_9_4",
+        "filename": "S024_p9_i4.png",
+        "path": "/science-hub/images/S024/S024_p9_i4.png",
+        "caption": "Fig. 5. (a) Stratiﬁcation of SCG signals using the DTFM-based SQI for a single subject. The columns from left to right show SCG intervals taken from rest, recovery, and exercise respectively. The top row corresponds to the top 2% of signals in each category based on their SQI; the middle rows correspond to the 50th percentile; and the bottom row corresponds to the bottom 2%. The correlation between scores assigned by manual annotation and the DTFM-based SQI are shown for the (b) rest, (c) recovery, (d) squatting, and (e) walking activity levels. The best-ﬁt line for these scores is shown (black, dotted), with the corresponding R2 of the ﬁt overlaid. For visual purposes, SQI scores were normalized to the range [0, 1].",
+        "page": 9
+      },
+      {
+        "id": "S024_9_5",
+        "filename": "S024_p9_i5.png",
+        "path": "/science-hub/images/S024/S024_p9_i5.png",
+        "caption": "Fig. 5. (a) Stratiﬁcation of SCG signals using the DTFM-based SQI for a single subject. The columns from left to right show SCG intervals taken from rest, recovery, and exercise respectively. The top row corresponds to the top 2% of signals in each category based on their SQI; the middle rows correspond to the 50th percentile; and the bottom row corresponds to the bottom 2%. The correlation between scores assigned by manual annotation and the DTFM-based SQI are shown for the (b) rest, (c) recovery, (d) squatting, and (e) walking activity levels. The best-ﬁt line for these scores is shown (black, dotted), with the corresponding R2 of the ﬁt overlaid. For visual purposes, SQI scores were normalized to the range [0, 1].",
+        "page": 9
+      },
+      {
+        "id": "S024_10_1",
+        "filename": "S024_p10_i1.png",
+        "path": "/science-hub/images/S024/S024_p10_i1.png",
+        "caption": "Figure 5(b)-(d) show the relationship between DTFM-based SQI scores and those from visual manual annotation. Positive linear relationships are apparent at all activity levels, though this correlation is somewhat lower during walking. The results of this ﬁgure suggest that the heuristics by which human annotators scored the signal — including relative quality of features related to AO and AC — were reﬂected by the DTFM- based SQI. This follows intuition: since AO and AC generally yield high-energy features in the signal, distance minimization algorithms would incur a large penalty if these features were not identiﬁed and matched between the signal and template. The ability of the different quality indexing methods to distinguish signals from different activity levels is shown in Figure 6(a). As shown in the ﬁgure, DTFM more effectively stratiﬁes SCG segments taken during different activity levels based on their SQI compared to DTW. This is especially apparent between the rest and recovery periods, which DTW ranks as higher quality, in opposition to the visual scoring gold-standard. For this reason, the DTFM-based SQI produces a stratiﬁcation that is more congruent with visual scoring. These results are reﬂected in Figure 6(b). Notably, all scoring methods produce test statistics which are relatively high compared to the chi-square critical value of 7.82 for 3 degrees of freedom. Since the relative value of the test statistic is due to differences in variance and not necessarily the validity of the scores assigned by each method, Figure 6(b) does not suggest that one method is better than the other. Rather, the result of interest is that, for DTFM-based SQI, increasing the number of reference templates or annotators increases score stratiﬁcation. This suggests that, though there is no reference standard SCG, there are patterns on the population level which may be synthesized to effectively assess a signal. Furthermore, the relative separation when using DTFM increases compared to DTW as more templates are used, indicating that the addition of templates has a greater marginal beneﬁt for DTFM.",
+        "page": 10
+      },
+      {
+        "id": "S024_10_2",
+        "filename": "S024_p10_i2.png",
+        "path": "/science-hub/images/S024/S024_p10_i2.png",
+        "caption": "Figure 5(b)-(d) show the relationship between DTFM-based SQI scores and those from visual manual annotation. Positive linear relationships are apparent at all activity levels, though this correlation is somewhat lower during walking. The results of this ﬁgure suggest that the heuristics by which human annotators scored the signal — including relative quality of features related to AO and AC — were reﬂected by the DTFM- based SQI. This follows intuition: since AO and AC generally yield high-energy features in the signal, distance minimization algorithms would incur a large penalty if these features were not identiﬁed and matched between the signal and template. The ability of the different quality indexing methods to distinguish signals from different activity levels is shown in Figure 6(a). As shown in the ﬁgure, DTFM more effectively stratiﬁes SCG segments taken during different activity levels based on their SQI compared to DTW. This is especially apparent between the rest and recovery periods, which DTW ranks as higher quality, in opposition to the visual scoring gold-standard. For this reason, the DTFM-based SQI produces a stratiﬁcation that is more congruent with visual scoring. These results are reﬂected in Figure 6(b). Notably, all scoring methods produce test statistics which are relatively high compared to the chi-square critical value of 7.82 for 3 degrees of freedom. Since the relative value of the test statistic is due to differences in variance and not necessarily the validity of the scores assigned by each method, Figure 6(b) does not suggest that one method is better than the other. Rather, the result of interest is that, for DTFM-based SQI, increasing the number of reference templates or annotators increases score stratiﬁcation. This suggests that, though there is no reference standard SCG, there are patterns on the population level which may be synthesized to effectively assess a signal. Furthermore, the relative separation when using DTFM increases compared to DTW as more templates are used, indicating that the addition of templates has a greater marginal beneﬁt for DTFM.",
+        "page": 10
+      },
+      {
+        "id": "S024_10_3",
+        "filename": "S024_p10_i3.png",
+        "path": "/science-hub/images/S024/S024_p10_i3.png",
+        "caption": "Figure 5(b)-(d) show the relationship between DTFM-based SQI scores and those from visual manual annotation. Positive linear relationships are apparent at all activity levels, though this correlation is somewhat lower during walking. The results of this ﬁgure suggest that the heuristics by which human annotators scored the signal — including relative quality of features related to AO and AC — were reﬂected by the DTFM- based SQI. This follows intuition: since AO and AC generally yield high-energy features in the signal, distance minimization algorithms would incur a large penalty if these features were not identiﬁed and matched between the signal and template. The ability of the different quality indexing methods to distinguish signals from different activity levels is shown in Figure 6(a). As shown in the ﬁgure, DTFM more effectively stratiﬁes SCG segments taken during different activity levels based on their SQI compared to DTW. This is especially apparent between the rest and recovery periods, which DTW ranks as higher quality, in opposition to the visual scoring gold-standard. For this reason, the DTFM-based SQI produces a stratiﬁcation that is more congruent with visual scoring. These results are reﬂected in Figure 6(b). Notably, all scoring methods produce test statistics which are relatively high compared to the chi-square critical value of 7.82 for 3 degrees of freedom. Since the relative value of the test statistic is due to differences in variance and not necessarily the validity of the scores assigned by each method, Figure 6(b) does not suggest that one method is better than the other. Rather, the result of interest is that, for DTFM-based SQI, increasing the number of reference templates or annotators increases score stratiﬁcation. This suggests that, though there is no reference standard SCG, there are patterns on the population level which may be synthesized to effectively assess a signal. Furthermore, the relative separation when using DTFM increases compared to DTW as more templates are used, indicating that the addition of templates has a greater marginal beneﬁt for DTFM.",
+        "page": 10
+      },
+      {
+        "id": "S024_11_1",
+        "filename": "S024_p11_i1.png",
+        "path": "/science-hub/images/S024/S024_p11_i1.png",
+        "caption": "Fig. 8. Probability of prediction error given the confusion matrices in Figure 7 (a) and (b). The error probability using the DTW distance metric is shown in green, with the shaded area representing the error range across all sensor locations and green lines representing the error for individual locations. The error probability using DTFM is shown in blue, with the shaded area representing the error range and blue lines showing location-speciﬁc error. The black dotted lines correspond to the mean error probability across locations. The outlier green line is associated with detection of correct sensor placement.",
+        "page": 11
+      },
+      {
+        "id": "S024_11_2",
+        "filename": "S024_p11_i2.png",
+        "path": "/science-hub/images/S024/S024_p11_i2.png",
+        "caption": "Fig. 8. Probability of prediction error given the confusion matrices in Figure 7 (a) and (b). The error probability using the DTW distance metric is shown in green, with the shaded area representing the error range across all sensor locations and green lines representing the error for individual locations. The error probability using DTFM is shown in blue, with the shaded area representing the error range and blue lines showing location-speciﬁc error. The black dotted lines correspond to the mean error probability across locations. The outlier green line is associated with detection of correct sensor placement.",
+        "page": 11
+      },
+      {
+        "id": "S024_11_3",
+        "filename": "S024_p11_i3.png",
+        "path": "/science-hub/images/S024/S024_p11_i3.png",
+        "caption": "Fig. 8. Probability of prediction error given the confusion matrices in Figure 7 (a) and (b). The error probability using the DTW distance metric is shown in green, with the shaded area representing the error range across all sensor locations and green lines representing the error for individual locations. The error probability using DTFM is shown in blue, with the shaded area representing the error range and blue lines showing location-speciﬁc error. The black dotted lines correspond to the mean error probability across locations. The outlier green line is associated with detection of correct sensor placement.",
+        "page": 11
+      },
+      {
+        "id": "S024_11_4",
+        "filename": "S024_p11_i4.png",
+        "path": "/science-hub/images/S024/S024_p11_i4.png",
+        "caption": "Fig. 8. Probability of prediction error given the confusion matrices in Figure 7 (a) and (b). The error probability using the DTW distance metric is shown in green, with the shaded area representing the error range across all sensor locations and green lines representing the error for individual locations. The error probability using DTFM is shown in blue, with the shaded area representing the error range and blue lines showing location-speciﬁc error. The black dotted lines correspond to the mean error probability across locations. The outlier green line is associated with detection of correct sensor placement.",
+        "page": 11
+      },
+      {
+        "id": "S024_11_5",
+        "filename": "S024_p11_i5.png",
+        "path": "/science-hub/images/S024/S024_p11_i5.png",
+        "caption": "Fig. 8. Probability of prediction error given the confusion matrices in Figure 7 (a) and (b). The error probability using the DTW distance metric is shown in green, with the shaded area representing the error range across all sensor locations and green lines representing the error for individual locations. The error probability using DTFM is shown in blue, with the shaded area representing the error range and blue lines showing location-speciﬁc error. The black dotted lines correspond to the mean error probability across locations. The outlier green line is associated with detection of correct sensor placement.",
+        "page": 11
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S025",
+    "slug": "khosrow-khavar-2017-heart-sound-localization",
+    "title": "Khosrow-Khavar 2017: Heart Sound Localization",
+    "authors_short": "Yu & Liu et al.",
+    "year": 2020,
+    "doi": "",
+    "cluster": "ml",
+    "answer_machine": {
+      "summary": "Integrates phonocardiography and seismocardiography principles for automated cardiac cycle mapping.",
+      "key_metric": "High localization precision for S1 and S2",
+      "accuracy": "The study supports using SCG to capture mechanical vibrations associated with both heart valve motion and heart sounds",
+      "n_count": 16,
+      "population_brief": "Healthy subjects",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Proven utility of SCG for heart sound delineation without a stethoscope."
+    },
+    "content_path": "/science-hub/studies/S025.md",
+    "images": [],
+    "related_ids": []
+  },
+  {
+    "id": "S026",
+    "slug": "lahdenoja-2018-af-detection-via-smartphone",
+    "title": "Lahdenoja 2018: AF Detection via Smartphone",
+    "authors_short": "Olli Lahdenoja et al.",
+    "year": 2018,
+    "doi": "10.1109/JBHI.2017.2678450",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "Established the technical feasibility of smartphone-only arrhythmia screening.",
+      "key_metric": "97.4%",
+      "accuracy": "The study supports the use of multi-axial smartphone sensors to detect Atrial Fibrillation with 97%+ accuracy without external hardware",
+      "n_count": 30,
+      "population_brief": "16 patients with AF, 14 controls in SR",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Proven feasibility of high-accuracy AF detection using consumer smartphone inertial sensors."
+    },
+    "content_path": "/science-hub/studies/S026.md",
+    "images": [
+      {
+        "id": "S026_6_1",
+        "filename": "S026_p6_i1.jpeg",
+        "path": "/science-hub/images/S026/S026_p6_i1.jpeg",
+        "caption": "Fig. 1. Overall diagram of the machine learning part of the AFib detection application. The acquired signal in this example consists of 50 seconds of artifact free data, which is further divided into ﬁve 10 seconds segments. For each segment feature extraction is applied. The lower right corner represents how the feature vector is formed by row-wise concatenation of features speciﬁc to each axis. The upper right corner shows the majority voting, which selects the ﬁnal class for each of the six test persons based on the feature vectors and classiﬁcation result from each of the 10 second segments.",
+        "page": 6
+      },
+      {
+        "id": "S026_6_2",
+        "filename": "S026_p6_i2.jpeg",
+        "path": "/science-hub/images/S026/S026_p6_i2.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 6
+      },
+      {
+        "id": "S026_9_1",
+        "filename": "S026_p9_i1.jpeg",
+        "path": "/science-hub/images/S026/S026_p9_i1.jpeg",
+        "caption": "Fig. 6. Two screenshots from the AFib detection application running in Sony Xperia Z3. On the left a normal subject, and on the right an AFib subject. The data is shown only in (ACCZ and GYROY) axes. Before starting the measurement, the information of the user is ﬁlled in, and after the measurement the application informs the user whether he/she has AFib. The patient in this case suffered from chronic AFib, where the heart rate is made lower by medication and therefore the heart rate of the AFib patient is relatively low.",
+        "page": 9
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S027",
+    "slug": "suresh-2020-seismonet-end-to-end-dl",
+    "title": "Suresh 2020: SeismoNet End-to-End DL",
+    "authors_short": "Prithu Suresh et al.",
+    "year": 2020,
+    "doi": "arXiv:2010.05662",
+    "cluster": "ml",
+    "answer_machine": {
+      "summary": "S027 (SeismoNet) is a key technical reference for OpenSCG's early-stage ML development. It represents the shift from manual feature engineering to end-to-end deep learning, proving that raw SCG vibrations can be directly mapped to cardiac events using modern AI architectures.",
+      "key_metric": "SeismoNet (Deep Convolutional Neural Network)",
+      "accuracy": "The study supports the use of end-to-end deep convolutional neural networks (SeismoNet) to robustly extract heart activity from SCG signals",
+      "n_count": 20,
+      "population_brief": "Preprocessed CEBS dataset (20 healthy subjects)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Demonstrated the use of end-to-end DCNN for robust SCG waveform transformation."
+    },
+    "content_path": "/science-hub/studies/S027.md",
+    "images": [
+      {
+        "id": "S027_1_2",
+        "filename": "S027_p1_i2.png",
+        "path": "/science-hub/images/S027/S027_p1_i2.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S027_2_1",
+        "filename": "S027_p2_i1.png",
+        "path": "/science-hub/images/S027/S027_p2_i1.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S027_3_1",
+        "filename": "S027_p3_i1.png",
+        "path": "/science-hub/images/S027/S027_p3_i1.png",
+        "caption": "No caption found automatically.",
+        "page": 3
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S028",
+    "slug": "korsgaard-2025-beat-to-beat-delineation",
+    "title": "Korsgaard 2025: Beat-to-beat Delineation",
+    "authors_short": "T. Korsgaard et al.",
+    "year": 2025,
+    "doi": "10.3389/fdgth.2025.1699611",
+    "cluster": "ml",
+    "answer_machine": {
+      "summary": "Introduces and validates a robust deep-learning framework (SeismoTracker) for automated cardiomechanical signal analysis.",
+      "key_metric": "0.809 to 1.000",
+      "accuracy": "Demonstrates high-reliability automated identification of 11 SCG fiducial points (PPV up to 1",
+      "n_count": 198,
+      "population_brief": "198 subjects (Both healthy and with cardiac diseases)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "cornerstone",
+      "relevance": "Validated a robust deep-learning model for beat-to-beat segmentation of 11 SCG fiducial points across diverse populations."
+    },
+    "content_path": "/science-hub/studies/S028.md",
+    "images": [
+      {
+        "id": "S028_3_1",
+        "filename": "S028_p3_i1.jpeg",
+        "path": "/science-hub/images/S028/S028_p3_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 3
+      },
+      {
+        "id": "S028_5_1",
+        "filename": "S028_p5_i1.jpeg",
+        "path": "/science-hub/images/S028/S028_p5_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 5
+      },
+      {
+        "id": "S028_5_2",
+        "filename": "S028_p5_i2.jpeg",
+        "path": "/science-hub/images/S028/S028_p5_i2.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 5
+      },
+      {
+        "id": "S028_9_1",
+        "filename": "S028_p9_i1.jpeg",
+        "path": "/science-hub/images/S028/S028_p9_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 9
+      },
+      {
+        "id": "S028_10_1",
+        "filename": "S028_p10_i1.jpeg",
+        "path": "/science-hub/images/S028/S028_p10_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 10
+      },
+      {
+        "id": "S028_11_1",
+        "filename": "S028_p11_i1.jpeg",
+        "path": "/science-hub/images/S028/S028_p11_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 11
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S029",
+    "slug": "craighero-2024-cross-dataset-scg-analysis",
+    "title": "Craighero 2024: Cross-dataset SCG Analysis",
+    "authors_short": "Craighero et al.",
+    "year": 2024,
+    "doi": "10.48550/arXiv.2408.04439",
+    "cluster": "ml",
+    "answer_machine": {
+      "summary": "S029 is a critical piece for OpenSCG’s technical strategy. It addresses the 'reality gap'—the fact that models trained on clean lab data often fail in the field. By validating personalization and multi-sensor fusion, it provides a direct scientific foundation for OpenSCG’s 'U-Net v3' and adaptive processing pipeline.",
+      "key_metric": "0.92 to 0.94",
+      "accuracy": "The study supports the use of multi-channel (accelerometer + gyroscope) deep learning to overcome the challenges of 'domain shift' in real-world SCG monitoring",
+      "n_count": 72,
+      "population_brief": "Healthy subjects (CEBS, MEC) and subjects in daily life (BioPoli)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Demonstrated the necessity of personalization and multi-channel data for robust real-world SCG segmentation."
+    },
+    "content_path": "/science-hub/studies/S029.md",
+    "images": [
+      {
+        "id": "S029_2_1",
+        "filename": "S029_p2_i1.png",
+        "path": "/science-hub/images/S029/S029_p2_i1.png",
+        "caption": "Fig. 1. AO fiducial points and systolic complexes in a clean portion of SCG signal. Note that the bounding boxes are centered in the AO points.",
+        "page": 2
+      },
+      {
+        "id": "S029_3_1",
+        "filename": "S029_p3_i1.png",
+        "path": "/science-hub/images/S029/S029_p3_i1.png",
+        "caption": "Fig. 2. Example of Input (SCG signal), Output (probability prediction) and Ground Truth (Systolic complex) for our DL model. The SCG portion reported here is from BioPoli dataset, thus recorded in uncontrolled conditions.",
+        "page": 3
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S030",
+    "slug": "rahmani-2024-emowear-dataset",
+    "title": "Rahmani 2024: EmoWear Dataset",
+    "authors_short": "A. Rahmani et al.",
+    "year": 2024,
+    "doi": "10.1038/s41597-024-03429-3",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "S030 (EmoWear) is a pioneer in 'Everyday SCG'. While most studies focus on medical diagnosis, EmoWear proves that SCG can capture subtle physiological changes related to human emotions and daily actions. This is key for OpenSCG’s vision of a holistic 'Health & Well-being' monitor that understands the user’s context.",
+      "key_metric": "~70 hours of recordings",
+      "accuracy": "The study supports the use of SCG for non-clinical applications such as emotion recognition and context-awareness",
+      "n_count": 49,
+      "population_brief": "49 healthy adults (Age 21-45)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Demonstrated the feasibility of using a single chest-worn IMU for concurrent emotion and context (gait, voice, drinking) sensing."
+    },
+    "content_path": "/science-hub/studies/S030.md",
+    "images": [
+      {
+        "id": "S030_5_1",
+        "filename": "S030_p5_i1.jpeg",
+        "path": "/science-hub/images/S030/S030_p5_i1.jpeg",
+        "caption": "Fig. 1  (a) Sensor setup used in the dataset. Wearable hardware included: two ST SensorTile.boxes secured  with elastic strap, Zephyr BioHarness 3 strap worn on left body side, and Empatica E4 wristband, all having  contact with the body skin. An additional ST SensorTile.box was connected to a cup of water. Arrows indicate  the positive direction of the Cartesian coordinate system for each sensor, based on which acceleration data is  reported in the mat and csv packages. Reprinted with permission from IEEE55, slightly modified afterwards.  (b) An author demonstrates the complete experimental setup in action.",
+        "page": 5
+      },
+      {
+        "id": "S030_15_1",
+        "filename": "S030_p15_i1.png",
+        "path": "/science-hub/images/S030/S030_p15_i1.png",
+        "caption": "Fig. 6  Pearson correlation heat maps, computed separately for sitting intervals (from the beginning of progress  indicator presentation to self-assessment form submission) and moving intervals (from self-assessment form  submission to the beginning of the progress indicator for the subsequent experiment) and averaged over the  entire dataset. Compared signals (referred to as listed in Table 2) are noted in the matrix rows and are assigned  letters that are reused wherever the same source is used. Note 1: Signals from the heartbeat set and the breathing  set undergo preprocessing using bandpass filters and the calculation of their autocorrelation sequences. Note 2:   Filter cut-offs applied to the heartbeat set and the breathing set differ, even though identical letters may be  found.",
+        "page": 15
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S031",
+    "slug": "inan-2014-review-of-recent-advances",
+    "title": "Inan 2014: Review of Recent Advances",
+    "authors_short": "Omer T. Inan et al.",
+    "year": 2014,
+    "doi": "10.1109/jbhi.2014.2361732",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "S031 is the highly cited 'manifesto' of modern SCG research. For OpenSCG, it provides the authoritative background needed to justify why SCG technology is now ready for consumer and clinical scale after decades of dormancy.",
+      "key_metric": "730+",
+      "accuracy": "The review supports the technical validity of using modern MEMS accelerometers for heart vibration sensing",
+      "n_count": null,
+      "population_brief": "General population / Research subjects across multiple studies",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Summarized the technical renaissance and feasibility of SCG/BCG for non-invasive monitoring."
+    },
+    "content_path": "/science-hub/studies/S031.md",
+    "images": [],
+    "related_ids": []
+  },
+  {
+    "id": "S032",
+    "slug": "ha-2020-contactless-scg-via-radars",
+    "title": "Ha 2020: Contactless SCG via Radars",
+    "authors_short": "Ha et al.",
+    "year": 2020,
+    "doi": "10.1145/3372224.3419982",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "Explores the feasibility of passive, contact-free cardiac monitoring using millimeter-wave technology.",
+      "key_metric": "0.26%-1.29% for all events",
+      "accuracy": "Reports median errors of 0",
+      "n_count": 21,
+      "population_brief": "Healthy subjects",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Validated the feasibility of high-accuracy contactless SCG sensing using mmWave radar in controlled settings."
+    },
+    "content_path": "/science-hub/studies/S032.md",
+    "images": [
+      {
+        "id": "S032_1_2",
+        "filename": "S032_p1_i2.png",
+        "path": "/science-hub/images/S032/S032_p1_i2.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S032_1_5",
+        "filename": "S032_p1_i5.png",
+        "path": "/science-hub/images/S032/S032_p1_i5.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S032_1_7",
+        "filename": "S032_p1_i7.png",
+        "path": "/science-hub/images/S032/S032_p1_i7.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S032_2_2",
+        "filename": "S032_p2_i2.png",
+        "path": "/science-hub/images/S032/S032_p2_i2.png",
+        "caption": "Figure 1—Contactless SCG Recording. The plot to the right shows SCG recordings of a single heartbeat obtained from an accelerometer strapped to the apex of the heart (in blue) and from RF-SCG without any body contact (in purple). RF-SCG can also precisely time five micro-cardiac movements: opening and closing of the aortic valve, opening and closing of the mitral valve, and isovolumetric contraction (of the ventricles).",
+        "page": 2
+      },
+      {
+        "id": "S032_5_1",
+        "filename": "S032_p5_i1.png",
+        "path": "/science-hub/images/S032/S032_p5_i1.png",
+        "caption": "Figure 2—4D Cardiac Beamformer. The 4D cardiac beamformer consists of two parallel signal-processing chains. The first chain extracts a heart rate, and the second chain project eight channel signals into possible directions. Then, it calculates the highest cardiac power ratio with the help of both chains.",
+        "page": 5
+      },
+      {
+        "id": "S032_6_1",
+        "filename": "S032_p6_i1.png",
+        "path": "/science-hub/images/S032/S032_p6_i1.png",
+        "caption": "Figure 3—CNN-assisted Template Matching. The figure shows the different stages of RF-SCG’s segmentation algorithm. After the CNN and Maxpool layers, each segment between neighboring M’s is a candidate for the hearbeat period (or heart rate). The final stage involves heart rate estimation using a histogram.",
+        "page": 6
+      },
+      {
+        "id": "S032_7_1",
+        "filename": "S032_p7_i1.png",
+        "path": "/science-hub/images/S032/S032_p7_i1.png",
+        "caption": "Figure 4—Translation Filter. The figure plots the different layers of RF-SCG’s RF-to-SCG Translator. N is the batch size of data set. While the length of one frame is fixed, the number of channels is different across the layers. To translate the mmWave reflection to SCG recordings, every convolution layer functions as an FIR filter. The coefficients of every CNN layer are updated based on the calculated L2 −norm between the ground truth and translated results.",
+        "page": 7
+      },
+      {
+        "id": "S032_8_1",
+        "filename": "S032_p8_i1.png",
+        "path": "/science-hub/images/S032/S032_p8_i1.png",
+        "caption": "Figure 5—Automatic Labeling. The figure shows the network used for automatic labeling. Each box corresponds to a multi-channel feature map. The arrows denote the different operations. The number of channels is denoted on top of each box. The length of each layer is provided at the left edge of the box. White boxes represent copied feature maps.",
+        "page": 8
+      },
+      {
+        "id": "S032_9_1",
+        "filename": "S032_p9_i1.png",
+        "path": "/science-hub/images/S032/S032_p9_i1.png",
+        "caption": "Figure 7—Experimental Environment. The figure shows a subject sitting about 30cm away from the TI IWR1443 mmWave board’s antennas. The subject also wears a chest strap and SCG sensor under their T-shirt.",
+        "page": 9
+      },
+      {
+        "id": "S032_9_2",
+        "filename": "S032_p9_i2.png",
+        "path": "/science-hub/images/S032/S032_p9_i2.png",
+        "caption": "Figure 6—Overall Signal Processing Flow. The figure plots the waveforms at dif- ferent stages of RF-SCG’s pipeline, chronologically from top to bottom. Before the differentiator filter, the signal looks irrelevant to SCG recordings. After the differentiator filter and the beamforming stage, its trend starts showing some micro-cardiac events. The figure then plots one of the channels of the RF-to-SCG translator. Then, it plots the combination of all the translator’s channels, demonstrating the ability to successfully translate the millimeter-wave reflection into SCG recordings. Finally, the five fiducial points are extracted through the automatic labeling function.",
+        "page": 9
+      },
+      {
+        "id": "S032_10_1",
+        "filename": "S032_p10_i1.png",
+        "path": "/science-hub/images/S032/S032_p10_i1.png",
+        "caption": "Figure 8—Accuracy in Reconstructing the SCG Waveform. The figure plots the correlation coefficient between the measured radar reflection and the ground truth across different subjects. It compares the median correlation of RF-SCG (in blue) and the baseline (in green), demonstrating that RF-SCG significantly outperforms the baseline.",
+        "page": 10
+      },
+      {
+        "id": "S032_11_1",
+        "filename": "S032_p11_i1.png",
+        "path": "/science-hub/images/S032/S032_p11_i1.png",
+        "caption": "Figure 9—RF-SCG’s Overall Accuracy. The figure plots RF-SCG’s median error in timing each of the five micro-cardiac events of interest for 21 human subjects. The dashed yellow line denotes the the best-case accuracy achievable using a gold standard cardiac ultrasound (due to its higher quantization error).",
+        "page": 11
+      },
+      {
+        "id": "S032_11_2",
+        "filename": "S032_p11_i2.png",
+        "path": "/science-hub/images/S032/S032_p11_i2.png",
+        "caption": "Figure 10—CDF of Accuracies for Micro-Cardiac Events. The figure plots the CDF of RF-SCG’s accuracy in timing (a) systolic and (b) diastolic micro-cardiac events. The solid line represents RF-SCG and the dotted line corresponds to the stretched template method.",
+        "page": 11
+      },
+      {
+        "id": "S032_11_3",
+        "filename": "S032_p11_i3.png",
+        "path": "/science-hub/images/S032/S032_p11_i3.png",
+        "caption": "Figure 9—RF-SCG’s Overall Accuracy. The figure plots RF-SCG’s median error in timing each of the five micro-cardiac events of interest for 21 human subjects. The dashed yellow line denotes the the best-case accuracy achievable using a gold standard cardiac ultrasound (due to its higher quantization error).",
+        "page": 11
+      },
+      {
+        "id": "S032_12_1",
+        "filename": "S032_p12_i1.png",
+        "path": "/science-hub/images/S032/S032_p12_i1.png",
+        "caption": "Figure 12—Precision and Recall. The figure plots the precision and recall of RF-SCG’s automatic labeling component for each of the five micro-cardiac events of interest.",
+        "page": 12
+      },
+      {
+        "id": "S032_12_2",
+        "filename": "S032_p12_i2.png",
+        "path": "/science-hub/images/S032/S032_p12_i2.png",
+        "caption": "Figure 12—Precision and Recall. The figure plots the precision and recall of RF-SCG’s automatic labeling component for each of the five micro-cardiac events of interest.",
+        "page": 12
+      },
+      {
+        "id": "S032_13_1",
+        "filename": "S032_p13_i1.png",
+        "path": "/science-hub/images/S032/S032_p13_i1.png",
+        "caption": "Figure 13—Modality Performance and Environmental Problems. The figure plots the output of RF-SCG and an accelerometer-based SCG when there are environmental problems during the measurement.",
+        "page": 13
+      },
+      {
+        "id": "S032_13_2",
+        "filename": "S032_p13_i2.png",
+        "path": "/science-hub/images/S032/S032_p13_i2.png",
+        "caption": "Figure 13—Modality Performance and Environmental Problems. The figure plots the output of RF-SCG and an accelerometer-based SCG when there are environmental problems during the measurement.",
+        "page": 13
+      },
+      {
+        "id": "S032_13_3",
+        "filename": "S032_p13_i3.png",
+        "path": "/science-hub/images/S032/S032_p13_i3.png",
+        "caption": "No caption found automatically.",
+        "page": 13
+      },
+      {
+        "id": "S032_13_4",
+        "filename": "S032_p13_i4.png",
+        "path": "/science-hub/images/S032/S032_p13_i4.png",
+        "caption": "No caption found automatically.",
+        "page": 13
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S033",
+    "slug": "hossein-2024-robust-cardiac-energy-assessment",
+    "title": "Hossein 2024: Robust Cardiac Energy Assessment",
+    "authors_short": "Hossein et al.",
+    "year": 2024,
+    "doi": "10.3390/s24072139",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "Validates the repeatability of patient-performed SCG measurements in a real-world telemedicine context.",
+      "key_metric": "> 0.77",
+      "accuracy": "Finds high reliability (ICC > 0",
+      "n_count": 220,
+      "population_brief": "220 patients with various cardiovascular conditions (Heart Failure, Hypertension, Valvular Disease, Arrhythmias)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "cornerstone",
+      "relevance": "Validated the potential of smartphone-derived SCG for repeatable cardiac energy assessment in a clinical telemedicine context."
+    },
+    "content_path": "/science-hub/studies/S033.md",
+    "images": [
+      {
+        "id": "S033_1_1",
+        "filename": "S033_p1_i1.png",
+        "path": "/science-hub/images/S033/S033_p1_i1.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S033_3_1",
+        "filename": "S033_p3_i1.png",
+        "path": "/science-hub/images/S033/S033_p3_i1.png",
+        "caption": "No caption found automatically.",
+        "page": 3
+      },
+      {
+        "id": "S033_3_2",
+        "filename": "S033_p3_i2.jpeg",
+        "path": "/science-hub/images/S033/S033_p3_i2.jpeg",
+        "caption": "Figure 1. General overview of the study. The patients are instrumented with the kinocardiograph [16] and a reference Apple smartphone (iPhone SE 2020 with an application acquiring accelerations and angular rates at a sampling rate of 100 Hz). A mobile application was also installed on the patient’s personal smartphone. The smartphone was placed on the manubrium of the sternum, below the clavicle of the patient, who was asked to rest in the supine position for 5 min and to breathe normally before the start of the acquisitions. Then, the investigator performed an acquisition with the kinocardiograph and the reference smartphone synchronously (A), followed by a similar recording with the patient’s personal smartphone; thereafter, this recording was repeated less than 15 min later by the patient themselves (B). The patient was then instructed to perform measurements at home with their own smartphone three times a week for three months (C).",
+        "page": 3
+      },
+      {
+        "id": "S033_4_1",
+        "filename": "S033_p4_i1.jpeg",
+        "path": "/science-hub/images/S033/S033_p4_i1.jpeg",
+        "caption": "Figure 2. Schematic representation of simultaneous acquisition using a kinocardiograph and a commercial smartphone.",
+        "page": 4
+      },
+      {
+        "id": "S033_4_2",
+        "filename": "S033_p4_i2.jpeg",
+        "path": "/science-hub/images/S033/S033_p4_i2.jpeg",
+        "caption": "Figure 2. Schematic representation of simultaneous acquisition using a kinocardiograph and a commercial smartphone.",
+        "page": 4
+      },
+      {
+        "id": "S033_6_1",
+        "filename": "S033_p6_i1.png",
+        "path": "/science-hub/images/S033/S033_p6_i1.png",
+        "caption": "No caption found automatically.",
+        "page": 6
+      },
+      {
+        "id": "S033_6_2",
+        "filename": "S033_p6_i2.png",
+        "path": "/science-hub/images/S033/S033_p6_i2.png",
+        "caption": "Figure 3. Schematic representation of the kinetic energy computation based on seismocardiography. (a) The 6 channels of the SCG signal, 3 linear axes, and 3 rotational axes. (b) The Kinetic Energy signal computed from the 6 channels of SCG. (c) The Kinetic Energy signal and the segmented phases of the cardiac cycle.",
+        "page": 6
+      },
+      {
+        "id": "S033_9_1",
+        "filename": "S033_p9_i1.jpeg",
+        "path": "/science-hub/images/S033/S033_p9_i1.jpeg",
+        "caption": "Figure 4. Bland–Altman plot of the difference between (a) iKSys, (b) iKLate dia, (c) iKEarly dia, and (d) heart rate (HR) for each subject for the simultaneous kinocardiograph measurement and the smartphone measurement.",
+        "page": 9
+      },
+      {
+        "id": "S033_9_2",
+        "filename": "S033_p9_i2.png",
+        "path": "/science-hub/images/S033/S033_p9_i2.png",
+        "caption": "Figure 5. Bland–Altman plot of the difference between (a) iKSys, (b) iKLate dia, (c) iKEarly dia, and (d) heart rate (HR) for each subject for the clinician and patient measurements performed both with the patient’s smartphone.",
+        "page": 9
+      },
+      {
+        "id": "S033_9_3",
+        "filename": "S033_p9_i3.png",
+        "path": "/science-hub/images/S033/S033_p9_i3.png",
+        "caption": "No caption found automatically.",
+        "page": 9
+      },
+      {
+        "id": "S033_9_4",
+        "filename": "S033_p9_i4.png",
+        "path": "/science-hub/images/S033/S033_p9_i4.png",
+        "caption": "No caption found automatically.",
+        "page": 9
+      },
+      {
+        "id": "S033_9_5",
+        "filename": "S033_p9_i5.png",
+        "path": "/science-hub/images/S033/S033_p9_i5.png",
+        "caption": "No caption found automatically.",
+        "page": 9
+      },
+      {
+        "id": "S033_9_6",
+        "filename": "S033_p9_i6.png",
+        "path": "/science-hub/images/S033/S033_p9_i6.png",
+        "caption": "No caption found automatically.",
+        "page": 9
+      },
+      {
+        "id": "S033_9_7",
+        "filename": "S033_p9_i7.png",
+        "path": "/science-hub/images/S033/S033_p9_i7.png",
+        "caption": "No caption found automatically.",
+        "page": 9
+      },
+      {
+        "id": "S033_9_8",
+        "filename": "S033_p9_i8.png",
+        "path": "/science-hub/images/S033/S033_p9_i8.png",
+        "caption": "No caption found automatically.",
+        "page": 9
+      },
+      {
+        "id": "S033_9_9",
+        "filename": "S033_p9_i9.png",
+        "path": "/science-hub/images/S033/S033_p9_i9.png",
+        "caption": "No caption found automatically.",
+        "page": 9
+      },
+      {
+        "id": "S033_9_10",
+        "filename": "S033_p9_i10.png",
+        "path": "/science-hub/images/S033/S033_p9_i10.png",
+        "caption": "No caption found automatically.",
+        "page": 9
+      },
+      {
+        "id": "S033_9_11",
+        "filename": "S033_p9_i11.jpeg",
+        "path": "/science-hub/images/S033/S033_p9_i11.jpeg",
+        "caption": "Figure 4. Bland–Altman plot of the difference between (a) iKSys, (b) iKLate dia, (c) iKEarly dia, and (d) heart rate (HR) for each subject for the simultaneous kinocardiograph measurement and the smartphone measurement.",
+        "page": 9
+      },
+      {
+        "id": "S033_9_12",
+        "filename": "S033_p9_i12.png",
+        "path": "/science-hub/images/S033/S033_p9_i12.png",
+        "caption": "Figure 4. Bland–Altman plot of the difference between (a) iKSys, (b) iKLate dia, (c) iKEarly dia, and (d) heart rate (HR) for each subject for the simultaneous kinocardiograph measurement and the smartphone measurement.",
+        "page": 9
+      },
+      {
+        "id": "S033_10_1",
+        "filename": "S033_p10_i1.jpeg",
+        "path": "/science-hub/images/S033/S033_p10_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 10
+      },
+      {
+        "id": "S033_10_2",
+        "filename": "S033_p10_i2.png",
+        "path": "/science-hub/images/S033/S033_p10_i2.png",
+        "caption": "No caption found automatically.",
+        "page": 10
+      },
+      {
+        "id": "S033_10_3",
+        "filename": "S033_p10_i3.png",
+        "path": "/science-hub/images/S033/S033_p10_i3.png",
+        "caption": "No caption found automatically.",
+        "page": 10
+      },
+      {
+        "id": "S033_10_4",
+        "filename": "S033_p10_i4.png",
+        "path": "/science-hub/images/S033/S033_p10_i4.png",
+        "caption": "No caption found automatically.",
+        "page": 10
+      },
+      {
+        "id": "S033_10_5",
+        "filename": "S033_p10_i5.png",
+        "path": "/science-hub/images/S033/S033_p10_i5.png",
+        "caption": "No caption found automatically.",
+        "page": 10
+      },
+      {
+        "id": "S033_10_6",
+        "filename": "S033_p10_i6.png",
+        "path": "/science-hub/images/S033/S033_p10_i6.png",
+        "caption": "No caption found automatically.",
+        "page": 10
+      },
+      {
+        "id": "S033_10_7",
+        "filename": "S033_p10_i7.png",
+        "path": "/science-hub/images/S033/S033_p10_i7.png",
+        "caption": "Figure 6. Age-related patient compliance and participation for 138 patients. The graph illustrates the percentage of protocol compliance (dark gray) and the proportion of patient numbers (light gray) across different age categories. Statistically signiﬁcant differences in compliance are indicated by asterisks (* p < 0.01), demonstrating lower adherence in the <46 and >75 age groups compared to the 46–75 age groups.",
+        "page": 10
+      },
+      {
+        "id": "S033_10_8",
+        "filename": "S033_p10_i8.png",
+        "path": "/science-hub/images/S033/S033_p10_i8.png",
+        "caption": "Figure 6. Age-related patient compliance and participation for 138 patients. The graph illustrates the percentage of protocol compliance (dark gray) and the proportion of patient numbers (light gray) across different age categories. Statistically signiﬁcant differences in compliance are indicated by asterisks (* p < 0.01), demonstrating lower adherence in the <46 and >75 age groups compared to the 46–75 age groups.",
+        "page": 10
+      },
+      {
+        "id": "S033_10_9",
+        "filename": "S033_p10_i9.png",
+        "path": "/science-hub/images/S033/S033_p10_i9.png",
+        "caption": "Figure 6. Age-related patient compliance and participation for 138 patients. The graph illustrates the percentage of protocol compliance (dark gray) and the proportion of patient numbers (light gray) across different age categories. Statistically signiﬁcant differences in compliance are indicated by asterisks (* p < 0.01), demonstrating lower adherence in the <46 and >75 age groups compared to the 46–75 age groups.",
+        "page": 10
+      },
+      {
+        "id": "S033_10_10",
+        "filename": "S033_p10_i10.png",
+        "path": "/science-hub/images/S033/S033_p10_i10.png",
+        "caption": "Figure 6. Age-related patient compliance and participation for 138 patients. The graph illustrates the percentage of protocol compliance (dark gray) and the proportion of patient numbers (light gray) across different age categories. Statistically signiﬁcant differences in compliance are indicated by asterisks (* p < 0.01), demonstrating lower adherence in the <46 and >75 age groups compared to the 46–75 age groups.",
+        "page": 10
+      },
+      {
+        "id": "S033_15_1",
+        "filename": "S033_p15_i1.jpeg",
+        "path": "/science-hub/images/S033/S033_p15_i1.jpeg",
+        "caption": "Figure A1. Patients recruited during the study with no signs of heart failure, hypertension, or valvular heart disease. The plots shown represent, from top to bottom, the ECG from the kinocardiograph, a combination of the linear and rotation low-frequency signals, namely the Slf, the RMS envelope of Slf, namely Elf, and ﬁnally, the kinetic energy signals in the linear and rotational dimensions, respectively KLin and KRot.",
+        "page": 15
+      },
+      {
+        "id": "S033_15_2",
+        "filename": "S033_p15_i2.jpeg",
+        "path": "/science-hub/images/S033/S033_p15_i2.jpeg",
+        "caption": "Figure A1. Patients recruited during the study with no signs of heart failure, hypertension, or valvular heart disease. The plots shown represent, from top to bottom, the ECG from the kinocardiograph, a combination of the linear and rotation low-frequency signals, namely the Slf, the RMS envelope of Slf, namely Elf, and ﬁnally, the kinetic energy signals in the linear and rotational dimensions, respectively KLin and KRot.",
+        "page": 15
+      },
+      {
+        "id": "S033_16_1",
+        "filename": "S033_p16_i1.jpeg",
+        "path": "/science-hub/images/S033/S033_p16_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 16
+      },
+      {
+        "id": "S033_16_2",
+        "filename": "S033_p16_i2.jpeg",
+        "path": "/science-hub/images/S033/S033_p16_i2.jpeg",
+        "caption": "Figure A2. Patients recruited during the study with hypertension and moderate aortic insufﬁciency. The plots shown represent, from top to bottom, the ECG from the kinocardiograph, a combination of the linear and rotation low-frequency signals, namely the Slf, the RMS envelope of Slf, namely Elf, and ﬁnally, the kinetic energy signals in the linear and rotational dimensions, respectively KLin and KRot.",
+        "page": 16
+      },
+      {
+        "id": "S033_16_3",
+        "filename": "S033_p16_i3.jpeg",
+        "path": "/science-hub/images/S033/S033_p16_i3.jpeg",
+        "caption": "Figure A3. Patients recruited during the study with heart failure. The plots shown represent, from top to bottom, the ECG from the kinocardiograph, a combination of the linear and rotation low-frequency signals, namely the Slf, the RMS envelope of Slf, namely Elf, and ﬁnally, the kinetic energy signals in the linear and rotational dimensions, respectively KLin and KRot.",
+        "page": 16
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S034",
+    "slug": "ganti-2022-stroke-volume-in-chd",
+    "title": "Ganti 2022: Stroke Volume in CHD",
+    "authors_short": "V. Ganti et al.",
+    "year": 2022,
+    "doi": "10.1161/jaha.122.026067",
+    "cluster": "hf",
+    "answer_machine": {
+      "summary": "S034 is an important feasibility study that tests SCG in a complex patient population (CHD). By using Cardiac MRI as a comparator, it establishes a benchmark for non-invasive Stroke Volume monitoring in remote scenarios, while highlighting the benefit of multi-modal sensing.",
+      "key_metric": "28% (with respect to CMR)",
+      "accuracy": "The study demonstrates the feasibility of using wearable SCG (especially when integrated with ECG) to estimate Stroke Volume in patients with congenital heart disease",
+      "n_count": 45,
+      "population_brief": "Patients with congenital heart disease (CHD), children and adults",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Demonstrated feasibility of Stroke Volume estimation in CHD patients against MRI."
+    },
+    "content_path": "/science-hub/studies/S034.md",
+    "images": [
+      {
+        "id": "S034_3_1",
+        "filename": "S034_p3_i1.png",
+        "path": "/science-hub/images/S034/S034_p3_i1.png",
+        "caption": "Figure 1.  Concept overview. Study design showing wearable biosensor placement when supine and asynchronous reference cardiovascular magnetic resonance  imaging (CMR) measurement. Seismocardiogram (SCG) mechanistic overview detailing modulation due to cardiac physiology,  acquisition with an accelerometer, and sensing axes for ECG (negative, positive, and right-­leg-­drive [RLD] electrodes), and triaxial  SCG signals. Analysis pipeline, from sensor input to model estimation of stroke volume, for wearable (blue), demographic (green), and  CMR (purple) data. H indicates the transfer function between the input internal sources of cardiomechanical vibration and the output  SCG waveform measured on the surface of the torso; MRI, magnetic resonance imaging; and SCGdv, dorso-­ventral SCG.",
+        "page": 3
+      },
+      {
+        "id": "S034_5_1",
+        "filename": "S034_p5_i1.jpeg",
+        "path": "/science-hub/images/S034/S034_p5_i1.jpeg",
+        "caption": "Figure 2.  Wearable multimodal hardware engineering mechanics. A, Pertinent multimodal hardware diagram. Final wearable biosensor iteration with exploded view detailing photoplethysmogram (PPG)  components, gel-­electrode ECG connectors, lithium-­polymer battery, and printed circuit boards (PCBs). Main PCB with ATSAM4LS8  microcontroller (μC), BMG250 triaxial gyroscope and BME280 environmental sensor, micro secure digital card (μSD), and BQ24232  battery charger. Sensor PCB, connected to main PCB via flexible connector, with ADXL355 accelerometer, ADS1291 analog front end,  and magnetic wire connections to separate PCB containing SFH7016 multichip light-­emitting diode (LED) and SFH 2703 photodiode  (PD) used to acquire triaxial seismocardiogram (SCG), single-­lead ECG, and multiwavelength sternum PPG signals, respectively. B,  Sample 5 seconds of filtered wearable signal data from a single-­ventricle patient with corresponding amplitudes are shown. In order from  top to bottom: ECG, lateral SCG (SCGlat), head-­to-­foot SCG (SCGhf), dorso-­ventral SCG (SCGdv), green PPG (PPGg), red PPG (PPGr), and  infrared PPG (PPGi) signals. The darker blue ECG and SCGdv signals are those used in this work. USB indicates universal serial bus.",
+        "page": 5
+      },
+      {
+        "id": "S034_7_1",
+        "filename": "S034_p7_i1.png",
+        "path": "/science-hub/images/S034/S034_p7_i1.png",
+        "caption": "Figure 4.  Importance of features for stroke volume  estimation model. Importance of features for wearable system from magnitude of  ridge regression weights ranked in order from top to bottom  and color-­coded by wearable sensing modality, ECG and  seismocardiogram (SCG) signals. AC indicates aortic valve  closure; CMR, cardiovascular magnetic resonance imaging; HR,  heart rate; PEP, pre-­ejection period; RMS, root-­mean-­square;  and VET, ventricular ejection time.",
+        "page": 7
+      },
+      {
+        "id": "S034_7_2",
+        "filename": "S034_p7_i2.png",
+        "path": "/science-hub/images/S034/S034_p7_i2.png",
+        "caption": "Figure 3.  Wearable stroke volume (SV) estimation results. Correlation and Bland-­Altman plots between wearable signal estimated SV and the cardiovsacular magnetic resonance imaging  (CMR) imaging SV for held-­out test set of 9 patients. The coefficient of determination (R2, 0.76) and root-­mean-­square error (RMSE,  11.48 mL) are shown.",
+        "page": 7
+      },
+      {
+        "id": "S034_19_1",
+        "filename": "S034_p19_i1.png",
+        "path": "/science-hub/images/S034/S034_p19_i1.png",
+        "caption": "Figure S1. Signal processing pipeline. Block diagram of signal processing overview showing",
+        "page": 19
+      },
+      {
+        "id": "S034_20_1",
+        "filename": "S034_p20_i1.png",
+        "path": "/science-hub/images/S034/S034_p20_i1.png",
+        "caption": "Figure S2. Permutation feature importances for stroke volume (SV) estimation model.",
+        "page": 20
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S035",
+    "slug": "hansen-2024-scg-for-maximal-oxygen-uptake-in-sport",
+    "title": "Hansen 2024: SCG for Maximal Oxygen Uptake in Sport",
+    "authors_short": "Hansen et al.",
+    "year": 2023,
+    "doi": "10.1055/a-1144-3369",
+    "cluster": "hf",
+    "answer_machine": {
+      "summary": "S035 extends the utility of OpenSCG from medical screening to sports performance. By linking resting vibrations to VO2max, it proves that SCG is a multi-dimensional tool capable of monitoring both cardiac disease and physical fitness.",
+      "key_metric": "Resting SCG algorithms can estimate VO2max",
+      "accuracy": "The study supports the use of resting SCG to estimate maximal oxygen uptake (VO2max), a key measure of cardiorespiratory fitness",
+      "n_count": 97,
+      "population_brief": "Sub-elite football players",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Demonstrated the potential for SCG-based cardiorespiratory fitness estimation at rest."
+    },
+    "content_path": "/science-hub/studies/S035.md",
+    "images": [
+      {
+        "id": "S035_3_1",
+        "filename": "S035_p3_i1.png",
+        "path": "/science-hub/images/S035/S035_p3_i1.png",
+        "caption": "No caption found automatically.",
+        "page": 3
+      },
+      {
+        "id": "S035_3_2",
+        "filename": "S035_p3_i2.png",
+        "path": "/science-hub/images/S035/S035_p3_i2.png",
+        "caption": "No caption found automatically.",
+        "page": 3
+      },
+      {
+        "id": "S035_4_1",
+        "filename": "S035_p4_i1.jpeg",
+        "path": "/science-hub/images/S035/S035_p4_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 4
+      },
+      {
+        "id": "S035_5_1",
+        "filename": "S035_p5_i1.jpeg",
+        "path": "/science-hub/images/S035/S035_p5_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 5
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S036",
+    "slug": "shafiq-2016-automatic-sti-identification",
+    "title": "Shafiq 2016: Automatic STI Identification",
+    "authors_short": "Ghufran Shafiq et al.",
+    "year": 2016,
+    "doi": "10.1038/srep37524",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "S036 (Shafiq 2016) is a foundational paper for OpenSCG’s automated processing pipeline. By moving beyond lab-only supine measurements to seated trials and achieving millisecond-level precision, it validates the core algorithms needed for practical, non-invasive STI monitoring.",
+      "key_metric": "Within ±2 ms for most cycles",
+      "accuracy": "The study supports the use of sliding-template ensemble averaging to automatically identify systolic time intervals (STI) from SCG signals",
+      "n_count": 7,
+      "population_brief": "7 healthy subjects (Age 28.7 ± 1.89)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Demonstrated the feasibility of sliding-template automation for STI extraction in both supine and seated positions."
+    },
+    "content_path": "/science-hub/studies/S036.md",
+    "images": [
+      {
+        "id": "S036_2_1",
+        "filename": "S036_p2_i1.jpeg",
+        "path": "/science-hub/images/S036/S036_p2_i1.jpeg",
+        "caption": "Figure 2.  Experimental Setup - postures and data acquisition. Accelerometer placed at lower sternum was  considered for this study.",
+        "page": 2
+      },
+      {
+        "id": "S036_2_2",
+        "filename": "S036_p2_i2.jpeg",
+        "path": "/science-hub/images/S036/S036_p2_i2.jpeg",
+        "caption": "Figure 2.  Experimental Setup - postures and data acquisition. Accelerometer placed at lower sternum was  considered for this study.",
+        "page": 2
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S037",
+    "slug": "centracchio-2023-ecg-free-heartbeat-detection",
+    "title": "Centracchio 2023: ECG-Free Heartbeat Detection",
+    "authors_short": "J. Centracchio et al.",
+    "year": 2023,
+    "doi": "10.3390/s23104684",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "S037 is a significant validation for OpenSCG’s core algorithm. By testing on a large cohort of 77 *pathological* subjects (not just healthy ones), it confirms that SCG-based heart rate monitoring is robust against the signal distortions caused by valvular heart diseases.",
+      "key_metric": "96% (using combined systolic-diastolic templates)",
+      "accuracy": "The study supports the use of simple template matching and normalized cross-correlation to detect heartbeats from SCG signals without an ECG reference",
+      "n_count": 77,
+      "population_brief": "77 patients with Valvular Heart Diseases (VHD)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Validated a highly accurate template-matching approach for ECG-free heart rate monitoring in cardiac patients."
+    },
+    "content_path": "/science-hub/studies/S037.md",
+    "images": [
+      {
+        "id": "S037_1_1",
+        "filename": "S037_p1_i1.png",
+        "path": "/science-hub/images/S037/S037_p1_i1.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S037_1_2",
+        "filename": "S037_p1_i2.png",
+        "path": "/science-hub/images/S037/S037_p1_i2.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S037_1_3",
+        "filename": "S037_p1_i3.png",
+        "path": "/science-hub/images/S037/S037_p1_i3.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S037_1_4",
+        "filename": "S037_p1_i4.png",
+        "path": "/science-hub/images/S037/S037_p1_i4.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S037_1_5",
+        "filename": "S037_p1_i5.png",
+        "path": "/science-hub/images/S037/S037_p1_i5.png",
+        "caption": "No caption found automatically.",
+        "page": 1
+      },
+      {
+        "id": "S037_5_1",
+        "filename": "S037_p5_i1.jpeg",
+        "path": "/science-hub/images/S037/S037_p5_i1.jpeg",
+        "caption": "Figure 1. An excerpt ofthe pre-processed SCG (black line) and ECG (blue line) signals from subject #UP-21. The blue points mark the locations of the R-peaks.",
+        "page": 5
+      },
+      {
+        "id": "S037_6_1",
+        "filename": "S037_p6_i1.jpeg",
+        "path": "/science-hub/images/S037/S037_p6_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 6
+      },
+      {
+        "id": "S037_6_2",
+        "filename": "S037_p6_i2.jpeg",
+        "path": "/science-hub/images/S037/S037_p6_i2.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 6
+      },
+      {
+        "id": "S037_6_3",
+        "filename": "S037_p6_i3.jpeg",
+        "path": "/science-hub/images/S037/S037_p6_i3.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 6
+      },
+      {
+        "id": "S037_6_4",
+        "filename": "S037_p6_i4.jpeg",
+        "path": "/science-hub/images/S037/S037_p6_i4.jpeg",
+        "caption": "Figure 2. Some examples of the ECG signals (blue lines), SCG signals (black lines), and the selected templates (red lines) from: (a) subject #UP-21; (b) subject #UP-11. The template in panel (a) comprises both the systolic and diastolic complexes in the cardiac cycle, while the one in panel (b) includes only the systolic complex.",
+        "page": 6
+      },
+      {
+        "id": "S037_7_1",
+        "filename": "S037_p7_i1.png",
+        "path": "/science-hub/images/S037/S037_p7_i1.png",
+        "caption": "Table 2. Template selection criteria. The templates depicted in the table correspond to those high- lighted in red in Figure 2.",
+        "page": 7
+      },
+      {
+        "id": "S037_7_2",
+        "filename": "S037_p7_i2.png",
+        "path": "/science-hub/images/S037/S037_p7_i2.png",
+        "caption": "Table 2. Template selection criteria. The templates depicted in the table correspond to those high- lighted in red in Figure 2.",
+        "page": 7
+      },
+      {
+        "id": "S037_8_1",
+        "filename": "S037_p8_i1.jpeg",
+        "path": "/science-hub/images/S037/S037_p8_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 8
+      },
+      {
+        "id": "S037_8_2",
+        "filename": "S037_p8_i2.jpeg",
+        "path": "/science-hub/images/S037/S037_p8_i2.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 8
+      },
+      {
+        "id": "S037_8_3",
+        "filename": "S037_p8_i3.jpeg",
+        "path": "/science-hub/images/S037/S037_p8_i3.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 8
+      },
+      {
+        "id": "S037_8_4",
+        "filename": "S037_p8_i4.png",
+        "path": "/science-hub/images/S037/S037_p8_i4.png",
+        "caption": "Figure 3. Some excerpts of the ECG (blue line), SCG (black line), and NCC (orange line) signals from: (a) subject #UP-21; (b) subject #UP-11. The blue and black points mark the locations of the R-peaks and NCC peaks, respectively. The NCC signal in panel (a) was obtained by considering the template depicted in Figure 2a, which comprised both the systolic and diastolic complexes in the selected cardiac cycle. The NCC signal in panel (b), instead, was obtained by considering the template in Figure 2b, which consisted only of the systolic complex of the selected heartbeat.",
+        "page": 8
+      },
+      {
+        "id": "S037_9_1",
+        "filename": "S037_p9_i1.png",
+        "path": "/science-hub/images/S037/S037_p9_i1.png",
+        "caption": "No caption found automatically.",
+        "page": 9
+      },
+      {
+        "id": "S037_9_2",
+        "filename": "S037_p9_i2.png",
+        "path": "/science-hub/images/S037/S037_p9_i2.png",
+        "caption": "Figure 4. Cont.",
+        "page": 9
+      },
+      {
+        "id": "S037_10_1",
+        "filename": "S037_p10_i1.png",
+        "path": "/science-hub/images/S037/S037_p10_i1.png",
+        "caption": "Figure 4. An example of the NCC peak detection from subject #CP-36: (a) false positive; (b) false negative; (c) detection error.",
+        "page": 10
+      },
+      {
+        "id": "S037_10_2",
+        "filename": "S037_p10_i2.jpeg",
+        "path": "/science-hub/images/S037/S037_p10_i2.jpeg",
+        "caption": "Figure 4. An example of the NCC peak detection from subject #CP-36: (a) false positive; (b) false negative; (c) detection error.",
+        "page": 10
+      },
+      {
+        "id": "S037_10_3",
+        "filename": "S037_p10_i3.jpeg",
+        "path": "/science-hub/images/S037/S037_p10_i3.jpeg",
+        "caption": "Figure 5. An example of the ECG (blue line), SCG (black line), and NCC (orange line) signals from subject #UP-21. The blue and black points mark the locations of the R-peaks and NCC peaks, respectively. The temporal distance between two NCC peaks (double arrow green line) is referred to as the inter-beat interval.",
+        "page": 10
+      },
+      {
+        "id": "S037_10_4",
+        "filename": "S037_p10_i4.png",
+        "path": "/science-hub/images/S037/S037_p10_i4.png",
+        "caption": "Figure 4. An example of the NCC peak detection from subject #CP-36: (a) false positive; (b) false negative; (c) detection error.",
+        "page": 10
+      },
+      {
+        "id": "S037_10_5",
+        "filename": "S037_p10_i5.jpeg",
+        "path": "/science-hub/images/S037/S037_p10_i5.jpeg",
+        "caption": "Figure 4. An example of the NCC peak detection from subject #CP-36: (a) false positive; (b) false negative; (c) detection error.",
+        "page": 10
+      },
+      {
+        "id": "S037_10_6",
+        "filename": "S037_p10_i6.jpeg",
+        "path": "/science-hub/images/S037/S037_p10_i6.jpeg",
+        "caption": "Figure 5. An example of the ECG (blue line), SCG (black line), and NCC (orange line) signals from subject #UP-21. The blue and black points mark the locations of the R-peaks and NCC peaks, respectively. The temporal distance between two NCC peaks (double arrow green line) is referred to as the inter-beat interval.",
+        "page": 10
+      },
+      {
+        "id": "S037_13_1",
+        "filename": "S037_p13_i1.jpeg",
+        "path": "/science-hub/images/S037/S037_p13_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 13
+      },
+      {
+        "id": "S037_13_2",
+        "filename": "S037_p13_i2.jpeg",
+        "path": "/science-hub/images/S037/S037_p13_i2.jpeg",
+        "caption": "Figure 6. Statistical analyses on the inter-beat intervals: (a) results of regression and correlation analyses; (b) results of Bland–Altman analysis for the NCC signals with case 1 templates.",
+        "page": 13
+      },
+      {
+        "id": "S037_15_1",
+        "filename": "S037_p15_i1.jpeg",
+        "path": "/science-hub/images/S037/S037_p15_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 15
+      },
+      {
+        "id": "S037_15_2",
+        "filename": "S037_p15_i2.jpeg",
+        "path": "/science-hub/images/S037/S037_p15_i2.jpeg",
+        "caption": "Figure 7. Statistical analyses on the inter-beat intervals: (a) results of regression and correlation analyses; (b) results of Bland–Altman analysis for the NCC signals with case 2 templates.",
+        "page": 15
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S038",
+    "slug": "wilson-1993-diagnostic-accuracy-of-scg-for-cad",
+    "title": "Wilson 1993: Diagnostic Accuracy of SCG for CAD",
+    "authors_short": "R. A. Wilson et al.",
+    "year": 1993,
+    "doi": "10.1016/0002-9149(93)90508-a",
+    "cluster": "cad",
+    "answer_machine": {
+      "summary": "Historical multicenter study highlighting the incremental diagnostic value of mechanical heart signals over traditional stress testing.",
+      "key_metric": "73% for SCG vs 48% for ECG (p < 0.001)",
+      "accuracy": "Reports that exercise SCG achieved 73% sensitivity compared to 48% for ECG in detecting anatomic CAD",
+      "n_count": 129,
+      "population_brief": "129 patients (Group A: 89 with >=50% stenosis, Group B: 40 with <50% stenosis)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "cornerstone",
+      "relevance": "Significantly improved sensitivity for the detection of anatomic and physiologic CAD over ECG during exercise testing."
+    },
+    "content_path": "/science-hub/studies/S038.md",
+    "images": [],
+    "related_ids": []
+  },
+  {
+    "id": "S039",
+    "slug": "zia-2020-resilient-sti-estimation",
+    "title": "Zia 2020: Resilient STI Estimation",
+    "authors_short": "Shafiq et al.",
+    "year": 2016,
+    "doi": "",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "Pioneering work on motion-robust seismocardiography algorithms.",
+      "key_metric": "Proposed algorithms show high resilience to walking-induced noise",
+      "accuracy": "The study supports the technical feasibility of extracting cardiac timing intervals even when the subject is not perfectly still",
+      "n_count": 7,
+      "population_brief": "Healthy subjects",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Proven feasibility of mobile STI monitoring during daily activity."
+    },
+    "content_path": "/science-hub/studies/S039.md",
+    "images": [],
+    "related_ids": []
+  },
+  {
+    "id": "S040",
+    "slug": "sorensen-2020-scg-in-pregnancy",
+    "title": "Sørensen 2020: SCG in Pregnancy",
+    "authors_short": "Sørensen et al.",
+    "year": 2020,
+    "doi": "",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "Application of cardiomechanical sensing to maternal health and obstetrics.",
+      "key_metric": "SCG can track hemodynamic shifts throughout pregnancy trimesters",
+      "accuracy": "The study supports using SCG for non-invasive maternal monitoring to detect early signs of pregnancy-related cardiac stress",
+      "n_count": 30,
+      "population_brief": "Pregnant women",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Demonstrated SCG utility for monitoring maternal cardiac load during pregnancy."
+    },
+    "content_path": "/science-hub/studies/S040.md",
+    "images": [],
+    "related_ids": []
+  },
+  {
+    "id": "S041",
+    "slug": "garcia-gonzalez-2013-cebs-database",
+    "title": "García-González 2013: CEBS Database",
+    "authors_short": "M. A. García-González et al.",
+    "year": 2013,
+    "doi": "10.13026/C2KW23",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "S041 (CEBS Database) is a 'gold standard' dataset for technical SCG research. For OpenSCG, it serves as the primary benchmarking tool for validating our signal processing filters and basic peak detection logic before moving to complex real-world data.",
+      "key_metric": "60 records (Basal, Music, Post-music)",
+      "accuracy": "The study supports the use of SCG as a reliable surrogate for ECG in measuring heart rate variability (HRV)",
+      "n_count": 20,
+      "population_brief": "20 presumed healthy volunteers",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Provided a high-resolution open database (CEBS) for benchmarking SCG-based heartbeat detection and HRV analysis."
+    },
+    "content_path": "/science-hub/studies/S041.md",
+    "images": [],
+    "related_ids": []
+  },
+  {
+    "id": "S042",
+    "slug": "postolache-2010-bed-integrated-scg",
+    "title": "Postolache 2010: Bed-Integrated SCG",
+    "authors_short": "Leitão et al.",
+    "year": 2018,
+    "doi": "",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "Early demonstration of 'smart environment' heart monitoring using mechanical sensors.",
+      "key_metric": "Comparable to standard SCG for HR estimation",
+      "accuracy": "The study supports the integration of vibration sensors into furniture for unobtrusive health tracking",
+      "n_count": 22,
+      "population_brief": "Healthy volunteers",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Proven feasibility of ambient, contact-free cardiac monitoring."
+    },
+    "content_path": "/science-hub/studies/S042.md",
+    "images": [],
+    "related_ids": []
+  },
+  {
+    "id": "S044",
+    "slug": "ebrahimkhani-2023-scg-for-aortic-valve-stenosis",
+    "title": "Ebrahimkhani 2023: SCG for Aortic Valve Stenosis",
+    "authors_short": "D. Ebrahimkhani et al.",
+    "year": 2023,
+    "doi": "10.1007/s10439-023-03342-7",
+    "cluster": "hf",
+    "answer_machine": {
+      "summary": "Demonstrates the capability of SCG to capture high-fidelity hemodynamic information previously thought to require advanced imaging.",
+      "key_metric": "0.99",
+      "accuracy": "The study supports the use of SCG and deep learning to non-invasively detect Aortic Valve Stenosis and predict complex hemodynamic metrics (like peak velocity and pressure gradients) usually obtained via 4D Flow MRI",
+      "n_count": 32,
+      "population_brief": "Patients with Aortic Valve Stenosis (AVS) (N=22) and controls (N=10)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Validated the use of SCG and Deep Learning to predict aortic hemodynamics and detect Aortic Valve Stenosis."
+    },
+    "content_path": "/science-hub/studies/S044.md",
+    "images": [],
+    "related_ids": []
+  },
+  {
+    "id": "S045",
+    "slug": "parlato-2025-foster-multimodal-dataset",
+    "title": "Parlato 2025: FOSTER Multimodal Dataset",
+    "authors_short": "A. Parlato et al.",
+    "year": 2025,
+    "doi": "10.1038/s41597-025-05694-2",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "S045 (FOSTER) is a high-quality 2025 dataset that represents the future of multimodal 'Force-based' monitoring. For OpenSCG, it provides the precise temporal alignment needed to train models that combine vibrations (SCG) with acoustic data (PCG), enabling more robust detection of heart valve events.",
+      "key_metric": "7 minutes per subject @ 10 kHz sampling rate",
+      "accuracy": "The study supports the integration of multiple mechanical sensing modalities (SCG, FCG, PCG) for a holistic view of heart function",
+      "n_count": 40,
+      "population_brief": "40 healthy subjects (20 males, 20 females), Age 26.93 ± 7.09",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Validated a high-resolution multimodal dataset for synchronized cardio-respiratory mechanical sensing."
+    },
+    "content_path": "/science-hub/studies/S045.md",
+    "images": [
+      {
+        "id": "S045_3_1",
+        "filename": "S045_p3_i1.png",
+        "path": "/science-hub/images/S045/S045_p3_i1.png",
+        "caption": "Fig. 1  Age distribution of the FOSTER dataset population.",
+        "page": 3
+      },
+      {
+        "id": "S045_3_2",
+        "filename": "S045_p3_i2.png",
+        "path": "/science-hub/images/S045/S045_p3_i2.png",
+        "caption": "Fig. 2  Measurement setup used in data acquisition of the FOSTER dataset.",
+        "page": 3
+      },
+      {
+        "id": "S045_4_1",
+        "filename": "S045_p4_i1.png",
+        "path": "/science-hub/images/S045/S045_p4_i1.png",
+        "caption": "Fig. 3  An excerpt of signals acquired from subject #018. The six recorded signals represented from top to  bottom are: ECG (blue); FCGPZT (red); FCGPVDF (orange); SCG (violet); Respiration (green); PCG (grey).   (a) a 200-seconds segment including quiet breathing and apnea phases; the graph area with green background  corresponds to the inspiratory apnea, while the graph area with red background corresponds to the expiratory  apnea; (b) a 14-seconds segment including 20 heartbeats and 4 respiratory cycles during quiet breathing.",
+        "page": 4
+      },
+      {
+        "id": "S045_5_1",
+        "filename": "S045_p5_i1.png",
+        "path": "/science-hub/images/S045/S045_p5_i1.png",
+        "caption": "Fig. 4  Amplitude spectrum of ECG signal of subject #006. The shaded region (1–5 kHz) represents the  frequency band used to estimate the power spectral density (PSD) of the noise. This range is assumed to contain  only noise components, ensuring a reliable estimation of the noise floor.",
+        "page": 5
+      },
+      {
+        "id": "S045_6_1",
+        "filename": "S045_p6_i1.png",
+        "path": "/science-hub/images/S045/S045_p6_i1.png",
+        "caption": "Fig. 5  Excerpt of cardiac components extracted from FCG raw signals, with FRG, and ECG signals from  subject #018: (a) PVDF sensor signals; (b) PZT sensor signals.",
+        "page": 6
+      },
+      {
+        "id": "S045_8_1",
+        "filename": "S045_p8_i1.png",
+        "path": "/science-hub/images/S045/S045_p8_i1.png",
+        "caption": "Fig. 6  Statistical analyses on the inter-beat intervals (IBIs) obtained from dHF-FCG signals (extracted from  the PVDF and PZT sensor signal) and reference ECG signals: (a) results of regression and correlation analysis  achieved from dHF-FCGPVDF signal; (b) results of Bland–Altman analysis achieved from dHF-FCGPVDF signal;  (c) results of regression and correlation analysis achieved from dHF-FCGPZT signal; (d) results of Bland–Altman  analysis achieved from dHF-FCGPZT signal.",
+        "page": 8
+      },
+      {
+        "id": "S045_9_1",
+        "filename": "S045_p9_i1.png",
+        "path": "/science-hub/images/S045/S045_p9_i1.png",
+        "caption": "Fig. 7  Statistical analyses on the inter-beat intervals (IBIs) obtained from HS-FCG signals (extracted from  the PVDF and PZT sensor signal) and reference ECG signals: (a) results of regression and correlation analysis  achieved from HS-FCGPVDF signal; (b) results of Bland–Altman analysis achieved from HS-FCGPVDF signal;  (c) results of regression and correlation analysis achieved from HS-FCGPZT signal; (d) results of Bland–Altman  analysis achieved from HS-FCGPZT signal.",
+        "page": 9
+      },
+      {
+        "id": "S045_10_1",
+        "filename": "S045_p10_i1.png",
+        "path": "/science-hub/images/S045/S045_p10_i1.png",
+        "caption": "Fig. 8  Histograms of the errors on the IBI estimates between the reference ECG signal and the FCG signal  components: (a) histogram of errors on IBIs between ECG and dHF-FCGPVDF; (b) histogram of errors on IBIs  between ECG and dHF-FCGPZT; (c) histogram of errors on IBIs between ECG and HS-FCGPVDF; (d) histogram  of errors on IBIs between ECG and HS-FCGPZT.",
+        "page": 10
+      },
+      {
+        "id": "S045_11_1",
+        "filename": "S045_p11_i1.png",
+        "path": "/science-hub/images/S045/S045_p11_i1.png",
+        "caption": "Fig. 9  Statistical analyses on the inter-breath intervals (IBrIs) obtained from ERB and FRGPVDF signals:   (a) results of regression and correlation analyses; (b) results of Bland–Altman analysis.",
+        "page": 11
+      },
+      {
+        "id": "S045_12_1",
+        "filename": "S045_p12_i1.png",
+        "path": "/science-hub/images/S045/S045_p12_i1.png",
+        "caption": "Fig. 10  Statistical analyses on the inter-breath intervals (IBrIs) obtained from ERB and FRGPZT signals:   (a) results of regression and correlation analyses; (b) results of Bland–Altman analysis.",
+        "page": 12
+      },
+      {
+        "id": "S045_12_2",
+        "filename": "S045_p12_i2.png",
+        "path": "/science-hub/images/S045/S045_p12_i2.png",
+        "caption": "Fig. 11  Histograms of the errors on the IBrI estimates between the reference ERB signal and the FRG signal  component: (a) histogram of errors on IBrIs between ERB and FRGPVDF; (b) histogram of errors on IBrIs  between ECG and FRGPZT.",
+        "page": 12
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S046",
+    "slug": "golenderov-2026-rhythmic-spectrum-disorders-in-field",
+    "title": "Golenderov 2026: Rhythmic Spectrum Disorders in Field",
+    "authors_short": "Golenderov et al.",
+    "year": 2026,
+    "doi": "10.48550/arxiv.2601.13926",
+    "cluster": "tech",
+    "answer_machine": {
+      "summary": "Demonstrates the effectiveness of advanced neural networks in processing heterogeneous and noisy smartphone sensor data.",
+      "key_metric": "99.80%",
+      "accuracy": "Validates robust AO peak detection in noisy real-world data (7,700+ hours) with 99",
+      "n_count": 100,
+      "population_brief": "Volunteers using consumer smartphones (7,700+ hours of data)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Achieved state-of-the-art accuracy for AO peak detection in noisy, field-collected smartphone SCG data."
+    },
+    "content_path": "/science-hub/studies/S046.md",
+    "images": [
+      {
+        "id": "S046_4_1",
+        "filename": "S046_p4_i1.png",
+        "path": "/science-hub/images/S046/S046_p4_i1.png",
+        "caption": "Figure 1: Overview of the dataset statistics: (a) distribution of mobile device vendors and (b) distribution of accelerom- eter sampling frequencies.",
+        "page": 4
+      },
+      {
+        "id": "S046_4_2",
+        "filename": "S046_p4_i2.png",
+        "path": "/science-hub/images/S046/S046_p4_i2.png",
+        "caption": "Figure 1: Overview of the dataset statistics: (a) distribution of mobile device vendors and (b) distribution of accelerom- eter sampling frequencies.",
+        "page": 4
+      },
+      {
+        "id": "S046_4_3",
+        "filename": "S046_p4_i3.png",
+        "path": "/science-hub/images/S046/S046_p4_i3.png",
+        "caption": "Figure 2: Labeled SCG.",
+        "page": 4
+      },
+      {
+        "id": "S046_10_1",
+        "filename": "S046_p10_i1.png",
+        "path": "/science-hub/images/S046/S046_p10_i1.png",
+        "caption": "No caption found automatically.",
+        "page": 10
+      },
+      {
+        "id": "S046_10_2",
+        "filename": "S046_p10_i2.png",
+        "path": "/science-hub/images/S046/S046_p10_i2.png",
+        "caption": "Figure 4: Interpretability analysis of the best-performing model (U-Net v3 + Dice+BCE) on smartphone SCG recordings.",
+        "page": 10
+      }
+    ],
+    "related_ids": []
+  },
+  {
+    "id": "S047",
+    "slug": "agam-2022-diastolic-scg-vs-echo",
+    "title": "Agam 2022: Diastolic SCG vs Echo",
+    "authors_short": "Ahmad Agam et al.",
+    "year": 2022,
+    "doi": "10.1093/ehjdh/ztac043",
+    "cluster": "comparison",
+    "answer_machine": {
+      "summary": "Validates SCG’s potential for evaluating diastolic function. Note: This source was previously referenced as S038 in some contexts.",
+      "key_metric": "r=0.713 (P<0.001) for peak-to-peak diastolic SCG",
+      "accuracy": "This study reports significant correlation between diastolic SCG amplitudes and echocardiographic e' velocity",
+      "n_count": 45,
+      "population_brief": "45 healthy subjects (Age 20-80)",
+      "devices": []
+    },
+    "appraisal_summary": {
+      "confidence": "supporting",
+      "relevance": "Demonstrated significant correlation between diastolic SCG amplitudes and echocardiographic e' velocity."
+    },
+    "content_path": "/science-hub/studies/S047.md",
+    "images": [
+      {
+        "id": "S047_2_1",
+        "filename": "S047_p2_i1.png",
+        "path": "/science-hub/images/S047/S047_p2_i1.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_2_2",
+        "filename": "S047_p2_i2.png",
+        "path": "/science-hub/images/S047/S047_p2_i2.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_2_3",
+        "filename": "S047_p2_i3.png",
+        "path": "/science-hub/images/S047/S047_p2_i3.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_2_4",
+        "filename": "S047_p2_i4.png",
+        "path": "/science-hub/images/S047/S047_p2_i4.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_2_5",
+        "filename": "S047_p2_i5.png",
+        "path": "/science-hub/images/S047/S047_p2_i5.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_2_6",
+        "filename": "S047_p2_i6.png",
+        "path": "/science-hub/images/S047/S047_p2_i6.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_2_13",
+        "filename": "S047_p2_i13.png",
+        "path": "/science-hub/images/S047/S047_p2_i13.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_2_24",
+        "filename": "S047_p2_i24.png",
+        "path": "/science-hub/images/S047/S047_p2_i24.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_2_26",
+        "filename": "S047_p2_i26.png",
+        "path": "/science-hub/images/S047/S047_p2_i26.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_2_27",
+        "filename": "S047_p2_i27.png",
+        "path": "/science-hub/images/S047/S047_p2_i27.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_2_35",
+        "filename": "S047_p2_i35.png",
+        "path": "/science-hub/images/S047/S047_p2_i35.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_2_46",
+        "filename": "S047_p2_i46.png",
+        "path": "/science-hub/images/S047/S047_p2_i46.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_2_57",
+        "filename": "S047_p2_i57.png",
+        "path": "/science-hub/images/S047/S047_p2_i57.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_2_68",
+        "filename": "S047_p2_i68.png",
+        "path": "/science-hub/images/S047/S047_p2_i68.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_2_79",
+        "filename": "S047_p2_i79.png",
+        "path": "/science-hub/images/S047/S047_p2_i79.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_2_90",
+        "filename": "S047_p2_i90.png",
+        "path": "/science-hub/images/S047/S047_p2_i90.png",
+        "caption": "No caption found automatically.",
+        "page": 2
+      },
+      {
+        "id": "S047_4_1",
+        "filename": "S047_p4_i1.jpeg",
+        "path": "/science-hub/images/S047/S047_p4_i1.jpeg",
+        "caption": "Figure 1 Heatmap demonstrating Pearson’s correlation between the diastolic seismocardiography variables and the echocardiography variables.  The four top figures illustrate correlation between seismocardiography measures and echocardiography when the patients were in supine and tilted  position. The two lower figures illustrate the correlation between changes in seismocardiography and echocardiography when the subject change  from to supine position and tilt position. Underlined numbers are significant correlations (P < 0.05).",
+        "page": 4
+      },
+      {
+        "id": "S047_7_1",
+        "filename": "S047_p7_i1.jpeg",
+        "path": "/science-hub/images/S047/S047_p7_i1.jpeg",
+        "caption": "Figure 2 Correlation plots for e′ and the amplitudes from seismocardiography in tilted and supine position. mg, milligravity.",
+        "page": 7
+      },
+      {
+        "id": "S047_8_1",
+        "filename": "S047_p8_i1.jpeg",
+        "path": "/science-hub/images/S047/S047_p8_i1.jpeg",
+        "caption": "No caption found automatically.",
+        "page": 8
+      }
+    ],
+    "related_ids": []
+  }
+]
